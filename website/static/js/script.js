@@ -1,13 +1,13 @@
 const buildings = [
-    'BARRACKS',
-    'STABLE',
-    'ARCHERY_RANGE',
-    'SIEGE_WORKSHOP',
-    'CASTLE',
-    'DOCK',
-    'MONASTERY',
-    'MARKET',
-    'TOWN_CENTER' // Moved to the last position
+    'barracks',
+    'stable',
+    'archery_range',
+    'siege_workshop',
+    'castle',
+    'dock',
+    'monastery',
+    'market',
+    'town_center' // Moved to the last position
 ];
 
 const civilizations = [
@@ -75,7 +75,7 @@ function showBuildingSelector() {
     const container = document.getElementById('building-options');
     container.innerHTML = buildings.map(building => `
         <div class="building-option" onclick="selectBuilding('${building}')">
-            <img src="/images/Buildings/${building.toLowerCase()}.png" 
+            <img src="/static/images/buildings/${building}.png" 
                  onerror="this.style.display='none'" 
                  alt="${formatBuildingName(building)}">
             ${formatBuildingName(building)}
