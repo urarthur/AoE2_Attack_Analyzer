@@ -67,6 +67,7 @@ function selectCiv(civilization) {
     showBuildingSelector();
 }
 
+
 function showBuildingSelector() {
     const title = document.getElementById('selector-title');
     title.textContent = `Select Building`;
@@ -74,7 +75,7 @@ function showBuildingSelector() {
     const container = document.getElementById('building-options');
     container.innerHTML = buildings.map(building => `
         <div class="building-option" onclick="selectBuilding('${building}')">
-            <img src="/static/images/Buildings/${building.toLowerCase()}.png" 
+            <img src="/images/Buildings/${building.toLowerCase()}.png" 
                  onerror="this.style.display='none'" 
                  alt="${formatBuildingName(building)}">
             ${formatBuildingName(building)}
