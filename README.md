@@ -2,7 +2,7 @@
 
 A comprehensive web application for analyzing unit matchups and damage calculations in Age of Empires II: Definitive Edition.
 
-## Features 
+## Features
 
 - **Unit vs Unit Analysis**: Calculate detailed damage outputs between any two units in the game
 - **Civilization-Specific Calculations**: Takes into account civilization bonuses and tech tree restrictions
