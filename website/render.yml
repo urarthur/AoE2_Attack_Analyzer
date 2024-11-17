@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: aoe2-unit-counter
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn wsgi:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: FLASK_APP
+        value: app.py
+      - key: FLASK_ENV
+        value: production
