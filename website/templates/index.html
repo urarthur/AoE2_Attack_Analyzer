@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Age of Empires 2: DE</title>
+    <link rel="icon" href="../static/images/Other/Aoe2.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <style>
+      body {
+        background-image: url("../static/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: flex-start; /* Change from center to flex-start */
+        align-items: center;
+        font-family: Arial, sans-serif;
+        color: white;
+        padding-bottom: 0; /* Remove padding */
+        position: relative; /* Add this */
+        min-height: 100vh; /* Add this */
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.75); /* Changed opacity to 75% */
+        width: 90vw;
+        max-width: 1800px; /* Add max-width to prevent extreme stretching */
+        height: calc(100vh - 40px); /* Reduced from 160px to 40px to extend further down */
+        min-height: 600px; /* Add min-height */
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Change to flex-start */
+        padding: 1vh 2vw; /* Use relative units */
+        margin: 10px auto; /* Added bottom margin */
+        position: relative; /* Add this */
+        overflow-y: auto; /* Add scroll to overlay */
+      }
+
+      .content-wrapper {
+        flex-direction: column;
+        justify-content: flex-start; /* Change from flex-start to center */
+        align-items: center;
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%; /* Changed from fixed height to 100% */
+        max-height: calc(100vh - 60px); /* Adjusted to account for margins */
+        overflow-y: auto;
+        display: flex;
+        padding-top: 20px; /* Change from 33vh to 20px */
+        margin-bottom: 20px; /* Added bottom margin */
+        margin-top: 10px; /* Reduced from 20px to 10px */
+      }
+
+      .middle {
+        margin: 0 auto; /* Remove negative margin */
+        width: 60%;
+        min-width: 600px; /* Add min-width */
+        max-width: 1200px; /* Add max-width */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Change from flex-start to center */
+        align-items: center;
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative; /* Add this line */
+      }
+
+      .select-boxes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin: 0; /* Remove margin to prevent pushing content down */
+        gap: 0.2vw; /* Reduce from 1vw to 0.2vw to bring boxes much closer together */
+      }
+
+      /* Add this new style */
+      .select-boxes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+      }
+
+      .select-box {
+        width: 160px; /* Increased from 150px */
+        height: 160px; /* Increased from 150px */
+        min-width: 130px; /* Increased from 120px */
+        aspect-ratio: 1;
+        border-radius: 20px;
+        border: 4px solid #4c3830;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.2s;
+        background-color: rgba(0, 0, 0, 0.7); /* Changed opacity to 75% */
+        text-align: center; /* Center the text */
+        padding: 15px; /* Increased from 10px to ensure consistent spacing */
+        position: relative; /* Add this line */
+      }
+      
+      .select-box img {
+        max-width: 64px; /* Reduced from 100px */
+        max-height: 64px; /* Reduced from 100px */
+        object-fit: contain; /* Ensure image maintains aspect ratio */
+        margin-bottom: 8px; /* Add margin to separate from text */
+      }
+
+      .select-box span {
+        font-size: 1.2em; /* Reduced from 1.8em */
+        font-weight: bold;
+        text-align: center;
+        padding: 8px; /* Reduced from 15px */
+      }
+
+      .select-box:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      }
+
+      .popup-overlay {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: min(90vw, 1400px); /* Increased from 1200px to accommodate more units */
+        height: min(90vh, 900px); /* Increased from 800px to accommodate more units */
+        background-color: rgba(0, 0, 0, 0.95);
+        border-radius: 20px;
+        border: 4px solid #4c3830;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        z-index: 100;
+      }
+
+      .popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .popup-header h2 {
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .close-btn {
+        background-color: #ff4444;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        color: white;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.2s;
+      }
+
+      .close-btn:hover {
+        background-color: #ff6666;
+      }
+
+      .select-buildings {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(140px, 1fr)
+        ); /* Adjust columns to fit larger boxes */
+        gap: 15px; /* Decrease gap to reduce empty spaces */
+        padding: 15px; /* Decrease padding inside the container */
+        overflow-y: auto;
+        max-height: calc(80vh - 100px);
+        overflow-x: hidden; /* Prevent horizontal scrollbar */
+      }
+
+      .building-option {
+        width: 140px; /* Fixed width */
+        height: 140px; /* Fixed height */
+        min-width: 120px; /* Add min-width */
+        aspect-ratio: 1;
+        gap: 20px; /* Decrease gap to reduce empty spaces */
+        padding: 10px; /* Decrease padding inside the container */
+        overflow-y: auto;
+        max-height: calc(100vh - 200px);
+        overflow-x: hidden; /* Prevent horizontal scrollbar */
+        font-size: 1em; /* Reduced from 1.2em */
+      }
+      .building-option {
+        grid-template-columns: repeat(
+          auto-fill,
+          minmax(140px, 1fr)
+        ); /* Adjust columns to fit larger boxes */
+        gap: 10px; /* Decrease gap to reduce empty spaces */
+        padding: 10px; /* Decrease padding inside the container */
+        overflow-y: auto;
+        max-height: calc(100vh - 200px);
+        overflow-x: hidden; /* Prevent horizontal scrollbar */
+      }
+
+      .building-option {
+        aspect-ratio: 1;
+        border-radius: 15px;
+        border: 2px solid #4c3830; /* Added border color */
+        display: flex;
+        flex-direction: column; /* Stack image and text vertically */
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.2em; /* Reduced from 1.5em */
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        transition: all 0.2s;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: auto; /* Allow the height to adjust based on content */
+        width: 100%; /* Ensure width fits within the container */
+      }
+      .civ-option {
+        width: 140px; /* Fixed width */
+        height: 140px; /* Fixed height */
+        min-width: 120px; /* Add min-width */
+        display: flex;
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: center;
+        justify-content: center;
+        padding: 0; /* Remove padding */
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 2px solid #4c3830;
+        border-radius: 10px; /* Adjust border radius */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 5px; /* Reduce margin to ensure closer spacing between boxes */
+      }
+
+      .building-option img {
+        width: 64px; /* Reduced from 80px */
+        height: 64px; /* Reduced from 80px */
+        margin-bottom: 10px;
+      }
+
+      .building-option span {
+        font-size: 1em; /* Adjust font size if needed */
+        text-align: center; /* Center the text */
+        white-space: normal; /* Allow text to wrap */
+        word-wrap: break-word; /* Break long words if necessary */
+        hyphens: auto; /* Add hyphens for long words */
+      }
+
+      .building-option:hover {
+        transform: scale(1.05);
+        background-color: rgba(20, 20, 20, 0.9);
+      }
+
+      .civ-option:hover {
+        transform: translateY(-2px);
+        background-color: rgba(40, 40, 40, 0.9);
+        border-color: #4c3830;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .civ-emblem {
+        width: 100px; /* Set icon width to 100px */
+        height: 100px; /* Set icon height to 100px */
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+
+      .civ-option:hover .civ-emblem {
+        transform: scale(1.1);
+      }
+
+      .civ-name {
+        font-size: 1em;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        margin-top: 5px; /* Space between icon and text */
+      }
+
+      .civ-option.generic {
+        background: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.7),
+          rgba(40, 40, 40, 0.7)
+        );
+        border-color: #4c3830;
+      }
+
+      .civ-option.generic:hover {
+        background: linear-gradient(
+          45deg,
+          rgba(20, 20, 20, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        border-color: #4c3830;
+      }
+
+      .units-grid {
+        display: grid;
+        grid-auto-flow: column; /* Makes the grid flow by columns instead of rows */
+        grid-template-rows: repeat(auto-fill, minmax(110px, 1fr)); /* Increased from 100px */
+        gap: 8px; /* Reduced from 10px */
+        padding: 5px; /* Reduced from 6px */
+        width: fit-content;
+        max-width: 100%; /* Ensure it doesn't overflow the container */
+        margin: 0 auto;
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+      }
+
+      .unit-card {
+        width: 120px; /* Slightly reduced from 130px */
+        min-height: 120px; /* Slightly reduced from 130px */
+        min-width: 110px; /* Slightly reduced from 120px */
+        max-width: 120px; /* Add max-width to prevent stretching */
+        margin: 2px; /* Add small margin */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+        transition: all 0.2s;
+        overflow: hidden; /* Prevent content from spilling out */
+      }
+
+      .unit-card:hover {
+        transform: scale(1.02);
+        background-color: rgba(20, 20, 20, 0.9);
+      }
+
+      .unit-icon {
+        width: 72px; /* Increased from 64px */
+        height: 72px; /* Increased from 64px */
+        margin-right: 0;
+        margin-bottom: 6px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Add this to position the overlay correctly */
+      }
+
+      .unit-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .unit-excluded {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #ff0000;
+        font-size: 48px;
+        font-weight: bold;
+        cursor: not-allowed;
+      }
+
+      /* Optional: Add hover effect for excluded units */
+      .unit-excluded:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .unit-content {
+        width: 100%; /* Ensure full width */
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .unit-name {
+        font-weight: bold;
+        font-size: 0.8em; /* Slightly reduced from 0.9em */
+        color: #fff;
+        word-break: break-word; /* Allow breaking at any character */
+        overflow-wrap: break-word;
+        text-align: center;
+        width: 100%; /* Ensure full width */
+        max-height: 60px; /* Limit height */
+        overflow-y: auto; /* Allow vertical scroll if needed */
+        margin: 0; /* Remove margin */
+        padding: 2px 0; /* Add small vertical padding */
+        line-height: 1.2; /* Reduce line height */
+      }
+
+      .unit-info {
+        font-size: 0.9em;
+        color: #ccc;
+      }
+
+      h2 {
+        margin: 10px 0;
+        font-size: 1.8em;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      .custom-border {
+        border: 2px solid #4c3830;
+      }
+
+      .switch-box {
+        display: none;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid #4c3830;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        position: absolute;
+        bottom: calc(100% - 45px); /* Changed from -25px to -45px to move the button lower */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+
+      .switch-box:hover {
+        transform: translateX(-50%) scale(1.02); /* Keep the horizontal centering while scaling */
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      }
+
+      .unit-stats-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px; /* Add margin to separate from other content */
+      }
+
+      .unit-stats {
+        width: 100%;
+        min-width: 200px;
+        max-width: 300px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 15px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        margin-top: 0; /* Remove top margin */
+        text-align: center;
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+      }
+
+      .unit-stats-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .unit-stats-item {
+        width: fit-content;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 8px 12px;
+        border-radius: 5px;
+        white-space: nowrap;
+      }
+
+      .error-message {
+        color: red;
+      }
+
+      .bottom-panel {
+        position: relative; /* Ensure the switch button positions relative to this */
+        display: none;
+        width: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+      }
+
+      .total-attack {
+        display: none; /* Hide initially */
+        position: relative;
+        top: -20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        margin-bottom: -20px; /* Adjust margin to fit between the boxes */
+      }
+
+      .select-buildings.civ-options {
+        gap: 10px; /* Reduce gap between civilization icons */
+      }
+
+      .civ-option {
+        margin: 3px; /* Reduce margin to ensure closer spacing */
+      }
+
+      .counter-unit-table {
+        width: auto; /* Adjust width to fit content */
+        margin-top: 20px;
+        border-collapse: collapse;
+        text-align: right; /* Align the table to the right */
+      }
+
+      .counter-unit-table th,
+      .counter-unit-table td {
+        border: 1px solid #4c3830;
+        padding: 8px;
+        text-align: center;
+      }
+
+      .counter-unit-table th {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+      }
+
+      .counter-unit-table td {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+
+      .counter-unit-panel {
+        width: auto;
+        min-width: 50%;
+        max-width: 600px; /* Add max-width */
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        margin-top: 20px;
+        text-align: center;
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+      }
+
+      .counter-unit-panel h2 {
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        color: white;
+        text-align: center;
+      }
+
+      .counter-unit-table {
+        width: 100%; /* Change to 100% to fit the panel */
+        margin-top: 10px;
+        border-collapse: collapse;
+        text-align: right;
+      }
+      .counter-unit-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px; /* Add gap between tables */
+      }
+
+      .counter-unit-panel {
+        width: 48%; /* Adjust width to fit both panels */
+        min-width: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+      }
+
+      .counter-unit-table {
+        width: auto; /* Let table width be determined by content */
+        margin: 10px auto; /* Center the table in panel */
+        border-collapse: collapse;
+      }
+
+      .counter-unit-table th,
+      .counter-unit-table td {
+        padding: 8px 15px; /* Add more horizontal padding */
+        white-space: nowrap; /* Prevent text wrapping */
+      }
+
+      .filter-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        color: white;
+        gap: 8px;
+      }
+
+      .filter-checkbox input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+
+      .top-opponents-container {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .top-opponents-container h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      .logo {
+        position: absolute;
+        top: -3px; /* Changed from -5px to -3px to move the logo 2px lower */
+        left: 5px;
+        width: 80px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        z-index: 1;
+      }
+
+      /* Hide scrollbar for all elements */
+      * {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+      }
+
+      *::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+
+      .counter-unit-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px;
+      }
+
+      .counter-unit-panel {
+        flex: 1; /* Add this line */
+        min-width: 0; /* Add this line */
+        max-width: 48%; /* Add this line */
+      }
+
+      /* Add these new styles */
+      .copyright {
+        position: relative; /* Changed from absolute */
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #aaa;
+        text-align: center;
+        padding: 15px;
+        font-size: 0.8em;
+        border: 2px solid #4c3830;
+        border-radius: 10px; /* Match the border radius of other panels */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        width: calc(100% - 40px); /* Adjust width to account for margins */
+        margin: 20px auto; /* Changed from top-only margin */
+        max-width: calc(100% - 40px); /* Add max-width to prevent stretching */
+      }
+
+      .upgrades-panel {
+        width: fit-content;
+        min-width: 600px; /* Add min-width */
+        max-width: 1200px; /* Add max-width */
+        margin: 2vh auto; /* Center horizontally */
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+        box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+        overflow: hidden; /* Add this to prevent overflow */
+      }
+
+      .upgrades-panel h2 {
+        margin: 0 0 10px 0; /* Change margin to only have bottom margin */
+        font-size: 1.2em; /* Reduce font size */
+        text-align: center; /* Center the title */
+        padding: 5px; /* Add padding */
+        border-radius: 5px; /* Add border radius */
+      }
+
+      .upgrades-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Keep 5 columns */
+        grid-template-rows: repeat(3, 1fr); /* Change from 4 to 3 rows */
+        gap: 10px;
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      .defender-upgrades-grid {
+        margin-left: auto; /* Push the grid to the right */
+        margin-right: 0; /* Ensure right alignment */
+      }
+
+      .upgrade-icon {
+        width: 60px; /* Fixed width */
+        height: 60px; /* Fixed height */
+        min-width: 50px; /* Add min-width */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 2px solid #4c3830; /* Increase border size */
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer; /* Make it clickable */
+        transition: border-color 0.2s; /* Add transition for border color */
+        position: relative; /* Add this line for tooltip */
+      }
+
+      /* Add these new styles */
+      .upgrade-restricted-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ff0000;
+        font-size: 48px;
+        font-weight: bold;
+        cursor: not-allowed;
+        z-index: 1;
+      }
+
+      .upgrade-restricted img {
+        opacity: 0.6;
+      }
+
+      .upgrade-icon img {
+        width: 50px; /* Increase size */
+        height: 50px; /* Increase size */
+        object-fit: contain;
+      }
+
+      .upgrade-icon.selected {
+        border-color: #ffcc00; /* Highlight border when selected */
+      }
+
+      .upgrade-icon.defender-selected {
+        border-color: #ff4444; /* Highlight border in red for defender */
+      }
+
+      .upgrade-icon:hover::after {
+        content: attr(
+          data-tooltip
+        ); /* Use the data-tooltip attribute for the tooltip */
+        position: absolute;
+        bottom: -25px; /* Position the tooltip below the icon */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 0.8em;
+        z-index: 10;
+      }
+
+      .vertical-line {
+        width: 2px;
+        background-color: #4c3830;
+        height: auto; /* Change to auto */
+        margin: 0 20px;
+        flex-shrink: 0; /* Prevent line from shrinking */
+      }
+
+      .panel {
+        width: fit-content;
+        max-width: 300px;
+        margin: 0 10px;
+        display: none;
+        align-items: flex-start; /* Change from center to flex-start */
+      }
+
+      /* Add these CSS rules */
+      .select-box {
+        /* ...existing select-box styles... */
+        position: relative; /* Add this to enable absolute positioning of emblem */
+      }
+
+      .civ-emblem-container {
+        position: absolute;
+        top: -45px; /* Increased distance from the box */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 64px; /* Slightly smaller width */
+        height: 64px; /* Slightly smaller height */
+        display: none; /* Hidden by default */
+        margin-bottom: 10px; /* Add space between emblem and box */
+      }
+
+      .civ-emblem-container.show {
+        display: block;
+      }
+
+      .civ-emblem-container.img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 4px;
+      }
+
+      /* Add margin to the top of the unit image container to prevent overlap */
+      .select-box > div:last-child {
+        margin-top: 5px;
+      }
+
+      /* Add these CSS rules */
+      .upgrade-section {
+        display: flex;
+        flex-direction: column;
+        flex: 1; /* Allow sections to grow */
+        min-width: fit-content; /* Add this line */
+        max-width: calc(50% - 20px); /* Add this line to limit width */
+      }
+
+      .upgrade-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      .upgrade-checkbox input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+      }
+
+      .tooltip {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 0.8em;
+        white-space: nowrap;
+        z-index: 1000;
+        display: none;
+      }
+
+      /* Add this new style for the upgrades container */
+      .upgrades-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+        overflow-x: auto; /* Allow horizontal scroll if needed */
+      }
+
+      .separator-line {
+        grid-column: 1 / -1; /* Span all columns */
+        border-bottom: 2px solid #4c3830; /* Match the style of the vertical line */
+        margin: 0; /* Remove unnecessary space */
+      }
+
+      /* Add styles for the container that holds both panels and middle section */
+      .panel-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Align items to top */
+        width: 100%;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      /* Add media queries for smaller screens */
+      @media screen and (max-width: 1200px) {
+        .middle {
+          width: 80%;
+        }
+
+        .select-boxes {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .select-box {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        body {
+          padding-bottom: 0; /* Remove padding */
+          font-size: 14px; /* Base font size for mobile */
+        }
+
+        .overlay {
+          width: 95vw;
+          padding: 10px;
+          margin: 10px auto;
+          height: auto;
+          min-height: calc(100vh - 40px);
+        }
+
+        .content-wrapper {
+          padding: 10px;
+          margin: 0;
+        }
+
+        .middle {
+          width: 100%;
+          min-width: unset;
+          padding: 5px;
+        }
+
+        .select-boxes {
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .select-box {
+          width: calc(50% - 20px); /* Two boxes per row */
+          height: auto;
+          aspect-ratio: 1;
+          min-width: 100px;
+          font-size: clamp(0.8rem, 3vw, 1.2rem); /* Responsive font size */
+        }
+
+        .select-box img {
+          width: clamp(40px, 8vw, 80px);
+          height: auto;
+        }
+
+        .unit-stats {
+          width: 100%;
+          min-width: unset;
+          font-size: 0.9em;
+        }
+
+        .popup-overlay {
+          width: 90vw;
+          height: 80vh;
+          padding: 10px;
+        }
+
+        .popup-header h2 {
+          font-size: 1.2em;
+        }
+
+        .select-buildings {
+          grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+          gap: 8px;
+        }
+
+        .building-option, .civ-option {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 1;
+          font-size: 0.9em;
+          padding: 5px;
+        }
+
+        .building-option img, .civ-emblem {
+          width: clamp(40px, 8vw, 60px);
+          height: auto;
+        }
+
+        .upgrades-panel {
+          width: 100%;
+          min-width: unset;
+          padding: 10px;
+        }
+
+        .upgrades-grid {
+          gap: 5px;
+        }
+
+        .upgrade-icon {
+          width: clamp(30px, 8vw, 50px);
+          height: auto;
+          aspect-ratio: 1;
+        }
+
+        .upgrade-icon img {
+          width: 100%;
+          height: auto;
+        }
+
+        .counter-unit-container {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .counter-unit-panel {
+          width: 100%;
+          font-size: 0.9em;
+        }
+
+        .unit-vs-unit-panel {
+          font-size: 0.9em;
+        }
+
+        .copyright {
+          font-size: 0.7em;
+          padding: 10px;
+          margin: 10px 0;
+        }
+
+        .logo {
+          width: 40px; /* Even smaller on mobile */
+        }
+      }
+
+      /* Mobile Landscape Optimizations */
+      @media screen and (max-height: 600px), (max-width: 900px) {
+        body {
+          height: auto;
+          min-height: 100vh;
+        }
+
+        .overlay {
+          width: 95vw;
+          height: auto;
+          min-height: calc(100vh - 40px);
+          margin: 10px;
+          padding: 10px;
+        }
+
+        .content-wrapper {
+          padding-top: 10px;
+          height: auto;
+          max-height: none;
+        }
+
+        .middle {
+          width: 100%;
+          min-width: auto;
+          margin: 0;
+        }
+
+        .select-boxes {
+          flex-direction: row;
+          gap: 10px;
+          padding: 5px;
+        }
+
+        .select-box {
+          width: 120px;
+          height: 120px;
+          min-width: 100px;
+          padding: 5px;
+        }
+
+        .select-box img {
+          max-width: 60px;
+          max-height: 60px;
+        }
+
+        .select-box span {
+          font-size: 1.2em;
+          padding: 5px;
+        }
+
+        .popup-overlay {
+          width: 90vw;
+          height: 80vh;
+          padding: 10px;
+        }
+
+        .select-buildings {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+          gap: 10px;
+          padding: 10px;
+        }
+
+        .building-option, .civ-option {
+          width: 100px;
+          height: 100px;
+          min-width: 80px;
+          padding: 5px;
+        }
+
+        .building-option img, .civ-emblem {
+          width: 60px;
+          height: 60px;
+        }
+
+        .unit-stats-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .unit-stats {
+          min-width: 150px;
+          padding: 10px;
+        }
+
+        .upgrades-panel {
+          min-width: auto;
+          width: 100%;
+        }
+
+        .upgrades-grid {
+          gap: 5px;
+        }
+
+        .upgrade-icon {
+          width: 40px;
+          height: 40px;
+        }
+
+        .upgrade-icon img {
+          width: 35px;
+          height: 35px;
+        }
+
+        .counter-unit-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+
+        .counter-unit-panel {
+          width: calc(50% - 15px);
+          min-width: auto;
+          padding: 10px;
+        }
+
+        .counter-unit-table {
+          font-size: 0.9em;
+        }
+
+        .counter-unit-table th,
+        .counter-unit-table td {
+          padding: 4px 8px;
+        }
+
+        .unit-stats-item {
+          font-size: 0.9em;
+          padding: 4px 8px;
+        }
+
+        h2 {
+          font-size: 1.4em;
+          margin: 5px 0;
+        }
+
+        .copyright {
+          padding: 10px;
+          font-size: 0.7em;
+          margin: 10px auto;
+        }
+      }
+
+      /* Additional breakpoint for very small screens */
+      @media screen and (max-width: 380px) {
+        body {
+          font-size: 12px;
+        }
+
+        .select-box {
+          width: 100%; /* Full width on very small screens */
+          max-width: 200px;
+          margin: 0 auto;
+        }
+
+        .building-option, .civ-option {
+          font-size: 0.8em;
+        }
+
+        .unit-stats-item {
+          padding: 4px;
+          font-size: 0.9em;
+        }
+
+        .popup-header h2 {
+          font-size: 1em;
+        }
+      }
+
+      /* Landscape mode optimization */
+      @media screen and (max-height: 500px) and (orientation: landscape) {
+        .overlay {
+          height: auto;
+          min-height: 100vh;
+        }
+
+        .select-boxes {
+          flex-direction: row;
+          justify-content: center;
+          gap: 15px;
+        }
+
+        .select-box {
+          width: clamp(80px, 15vw, 120px);
+          height: auto;
+        }
+
+        .content-wrapper {
+          max-height: none;
+        }
+
+        .popup-overlay {
+          height: 90vh;
+        }
+
+        .counter-unit-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .counter-unit-panel {
+          width: calc(50% - 10px);
+        }
+      }
+
+      /* Add fluid typography */
+      html {
+        font-size: clamp(14px, 1vw + 0.5rem, 16px);
+      }
+
+      /* Make spacing more consistent */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Optimize scrolling for mobile */
+      @media (hover: none) and (pointer: coarse) {
+        .content-wrapper,
+        .select-buildings,
+        .units-grid {
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+
+      /* Hide tooltip on touch devices */
+      @media (hover: none) {
+        .tooltip {
+          display: none !important;
+        }
+      }
+
+      @media screen and (orientation: portrait) {
+        html {
+          transform: rotate(-90deg);
+          transform-origin: left top;
+          width: 100vh;
+          height: 100vw;
+          overflow-x: hidden;
+          position: absolute;
+          top: 100%;
+          left: 0;
+        }
+        body {
+          margin: 0;
+          width: 100vh;
+          height: 100vw;
+          transform-origin: top left;
+          overflow-x: hidden;
+          position: relative;
+        }
+      }
+
+      /* Add this to your existing media queries */
+      @media screen and (max-width: 768px) {
+        html {
+          overflow: hidden;
+        }
+        body {
+          overflow: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        .overlay {
+          height: 100vh;
+          width: 100vw;
+          overflow: auto;
+        }
+      }
+
+      /* Force landscape for iOS devices */
+      @supports (-webkit-overflow-scrolling: touch) {
+        @media screen and (orientation: portrait) {
+          html {
+            transform: rotate(-90deg);
+            transform-origin: left top;
+            width: 100vh;
+            height: 100vw;
+            overflow-x: hidden;
+            position: absolute;
+            top: 100%;
+            left: 0;
+          }
+        }
+      }
+
+      #units-box {
+        width: 100%;
+        height: calc(100% - 60px); /* Account for header height */
+        overflow: auto; /* Enable scrolling if needed */
+        padding: 10px;
+      }
+
+      .page-title {
+        text-align: center;
+        width: 100%;
+        margin: 5px 0; /* Reduced from 10px to 5px */
+        position: relative;
+        font-size: 2.5em; /* Increased font size */
+        padding: 0;
+        line-height: 1; /* Add this to reduce line height */
+        font-weight: bold; /* Make the title bold */
+        color: #ffd700; /* Change color to gold */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+      }
+
+      .counter-unit-table th:first-child,
+      .counter-unit-table td:first-child {
+          text-align: left;
+      }
+
+      .counter-unit-table th:nth-child(2),
+      .counter-unit-table td:nth-child(2) {
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip" id="tooltip"></div>
+    <div class="overlay" style="position: relative">
+      <div style="display: flex; justify-content: center; width: 100%; position: relative;">
+        <a href="/" style="position: absolute; left: 5px; top: 0px; z-index: 1;">
+          <img src="../static/images/Other/Aoe2.png" alt="AoE2 Logo" class="logo" />
+        </a>
+        <h2 class="page-title">Attack Analyzer</h2>
+      </div>
+      <div
+        class="panel-container"
+        style="display: flex; justify-content: center; align-items: flex-start; width: 100%; height: 100%;"
+      >
+        <!-- Wrap inner content -->
+        <div class="panel" id="left-panel" style="align-items: flex-start">
+          <!-- Align to the left -->
+          <!-- Attacker Stats at the top -->
+          <div class="unit-stats" id="attacker-stats" style="margin-bottom: 20px">
+            <!-- Center the stats -->
+            <h2>Attacker Stats</h2>
+            <div id="attacker-stats-content">
+              Select an attacker to view its stats.
+            </div>
+          </div>
+          <!-- Other content of the left panel -->
+          <div class="other-content">
+            <!-- Add your additional content here -->
+          </div>
+        </div>
+        <div class="middle">
+          <div class="select-boxes">
+            <div class="select-box" id="attacker-box" data-unit-id="" onclick="openSelector('attacker')">
+              <span>Select Attacker</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              <div class="bottom-panel" id="unit-vs-unit-panel" style="margin-bottom: 20px">
+                <!-- Add margin-bottom for spacing -->
+                <div id="unit-vs-unit-content">
+                  Select both an attacker and a defender to view the analysis.
+                </div>
+              </div>
+              <!-- Move switch button here -->
+              <div class="switch-box" onclick="switchUnits()">
+                <span>⇄</span>
+              </div>
+            </div>
+            <div class="select-box" id="defender-box" data-unit-id="" onclick="openSelector('defender')">
+              <span>Select Defender</span>
+            </div>
+          </div>
+          <div class="upgrades-panel" id="upgrades-panel" style="display: none">
+            <h2>Upgrades</h2>
+            <!-- Remove style attribute and unnecessary div -->
+            <div class="upgrades-container">
+              <div class="upgrade-section">
+                <label class="upgrade-checkbox">
+                  <input type="checkbox" id="attacker-full-upgrade" />
+                  Full upgrade
+                </label>
+                <div class="upgrades-grid" id="attacker-upgrades-grid"></div>
+              </div>
+              <div class="vertical-line"></div>
+              <div class="upgrade-section" style="align-items: flex-end; width: 100%">
+                <!-- Align to the right -->
+                <div style="display: flex; flex-direction: column; align-items: flex-end; width: 100%;">
+                  <label class="upgrade-checkbox" style="justify-content: flex-end">
+                    <!-- Align checkbox to the right -->
+                    <input type="checkbox" id="defender-full-upgrade" />
+                    Full upgrade
+                  </label>
+                  <div class="upgrades-grid defender-upgrades-grid" id="defender-upgrades-grid" style="align-self: flex-end"></div>
+                  <!-- Align grid to the right -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="battle-info"></div>
+          <!-- Add counter unit details table here -->
+          <div id="counter-unit-details" style="width: 100%; text-align: right">
+            <div class="counter-unit-container">
+              <!-- Tables will be added here dynamically -->
+            </div>
+          </div>
+          <!-- Add copyright panel here, inside middle panel -->
+          <div class="copyright" style="margin: 20px 0 0 0; width: calc(100% - 4px);">
+            Version: Age of Empires II DE Update 127161<br />
+            A project by Urarthur.
+            <a href="https://github.com/urarthur/AoE2-DE_Attack_Analyzer/tree/main" style="color: #aaa">Contribute on GitHub</a>.
+            
+            <br /> 
+            <br /> 
+            Age of Empires II © Microsoft Corporation.<br />
+            AoE2:DE Attack Analyzer was created under Microsoft's "Game Content Usage Rules"
+            using assets from Age of Empires II, and it is not endorsed by or
+            affiliated with Microsoft.
+          </div>
+        </div>
+        <div class="panel" id="right-panel" style="display: none; align-items: flex-end">
+          <!-- Align to the right -->
+          <!-- Defender Stats at the top -->
+          <div class="unit-stats" id="defender-stats" style="margin-bottom: 20px">
+            <!-- Center the stats -->
+            <h2>Defender Stats</h2>
+            <div id="defender-stats-content"></div>
+          </div>
+          <!-- Other content of the right panel -->
+        </div>
+      </div>
+    </div>
+    <!-- Building Selection Popup -->
+    <div
+      class="popup-overlay"
+      id="building-selector"
+    >
+      <div class="popup-header">
+        <h2 id="selector-title">Select Building</h2>
+        <button class="close-btn" onclick="closePopup('building-selector')">
+          ×
+        </button>
+      </div>
+      <div
+        class="select-buildings building-options"
+        id="building-options"
+      ></div>
+    </div>
+    <!-- Civilization Selection Popup -->
+    <div
+      class="popup-overlay"
+      id="civ-selector"
+    >
+      <div class="popup-header">
+        <h2>Select Civilization</h2>
+        <button class="close-btn" onclick="closePopup('civ-selector')">
+          ×
+        </button>
+      </div>
+      <div
+        class="select-buildings civ-options"
+        id="civ-options"
+      ></div>
+    </div>
+    <!-- Units Display Popup -->
+    <div class="popup-overlay" id="units-popup">
+      <div class="popup-header">
+        <h2>Available Units</h2>
+        <button class="close-btn" onclick="closePopup('units-popup')">×</button>
+      </div>
+      <div id="units-box"></div>
+    </div>
+    <!-- Link to script.js -->
+    <script src="/static/js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Your JavaScript code here
+      });
+    </script>
+  </body>
+</html>

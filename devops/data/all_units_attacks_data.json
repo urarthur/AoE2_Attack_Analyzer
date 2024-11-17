@@ -1,0 +1,6571 @@
+[
+    {
+        "Unit ID": 1800,
+        "Unit Name": "COMPOSITE_BOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Armenians",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1802,
+        "Unit Name": "ELITE_COMPOSITE_BOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Armenians",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 725,
+        "Unit Name": "JAGUAR_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Aztecs",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 10,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 10,
+                "Attack Class Name": "Condottieri"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 726,
+        "Unit Name": "ELITE_JAGUAR_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Aztecs",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 11,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 10,
+                "Attack Class Name": "Condottieri"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1759,
+        "Unit Name": "RATHA_(RANGED)",
+        "Building": "CASTLE",
+        "Civ": "Bengalis",
+        "Attacks": [
+            {
+                "Attack Class": 3,
+                "Attack Amount": 5,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 1,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1761,
+        "Unit Name": "ELITE_RATHA_(RANGED)",
+        "Building": "CASTLE",
+        "Civ": "Bengalis",
+        "Attacks": [
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1007,
+        "Unit Name": "CAMEL_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Berbers",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 0,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 28,
+                "Attack Amount": 4,
+                "Attack Class Name": "Mounted Archers"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1009,
+        "Unit Name": "ELITE_CAMEL_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Berbers",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 0,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 28,
+                "Attack Amount": 6,
+                "Attack Class Name": "Mounted Archers"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1704,
+        "Unit Name": "HUSSITE_WAGON",
+        "Building": "CASTLE",
+        "Civ": "Bohemians",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 1,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 3,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1706,
+        "Unit Name": "ELITE_HUSSITE_WAGON",
+        "Building": "CASTLE",
+        "Civ": "Bohemians",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 2,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 13,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 3,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 8,
+        "Unit Name": "LONGBOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Britons",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 530,
+        "Unit Name": "ELITE_LONGBOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Britons",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1225,
+        "Unit Name": "KONNIK",
+        "Building": "CASTLE",
+        "Civ": "Bulgarians",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1227,
+        "Unit Name": "ELITE_KONNIK",
+        "Building": "CASTLE",
+        "Civ": "Bulgarians",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1252,
+        "Unit Name": "DISMOUNTED_KONNIK",
+        "Building": "CASTLE",
+        "Civ": "Bulgarians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 0,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1253,
+        "Unit Name": "DISMOUNTED_ELITE_KONNIK",
+        "Building": "CASTLE",
+        "Civ": "Bulgarians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 0,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 13,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1655,
+        "Unit Name": "COUSTILLIER",
+        "Building": "CASTLE",
+        "Civ": "Burgundians",
+        "Attacks": [
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1657,
+        "Unit Name": "ELITE_COUSTILLIER",
+        "Building": "CASTLE",
+        "Civ": "Burgundians",
+        "Attacks": [
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1699,
+        "Unit Name": "FLEMISHPIKEMAN",
+        "Building": "BARRACKS",
+        "Civ": "Burgundians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 8,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 6,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 6,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 8,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 6,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1126,
+        "Unit Name": "ARAMBAI",
+        "Building": "CASTLE",
+        "Civ": "Burmese",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 2,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 0,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1128,
+        "Unit Name": "ELITE_ARAMBAI",
+        "Building": "CASTLE",
+        "Civ": "Burmese",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 2,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 0,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 40,
+        "Unit Name": "CATAPHRACT",
+        "Building": "CASTLE",
+        "Civ": "Byzantines",
+        "Attacks": [
+            {
+                "Attack Class": 1,
+                "Attack Amount": 9,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 9,
+                "Attack Class Name": "Condottieri"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 553,
+        "Unit Name": "ELITE_CATAPHRACT",
+        "Building": "CASTLE",
+        "Civ": "Byzantines",
+        "Attacks": [
+            {
+                "Attack Class": 1,
+                "Attack Amount": 12,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 10,
+                "Attack Class Name": "Condottieri"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 232,
+        "Unit Name": "WOAD_RAIDER",
+        "Building": "CASTLE",
+        "Civ": "Celts",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 534,
+        "Unit Name": "ELITE_WOAD_RAIDER",
+        "Building": "CASTLE",
+        "Civ": "Celts",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 3,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 3,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 73,
+        "Unit Name": "CHU_KO_NU",
+        "Building": "CASTLE",
+        "Civ": "Chinese",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 0,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 559,
+        "Unit Name": "ELITE_CHU_KO_NU",
+        "Building": "CASTLE",
+        "Civ": "Chinese",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 0,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1231,
+        "Unit Name": "KIPCHAK",
+        "Building": "CASTLE",
+        "Civ": "Cumans",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 1,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1233,
+        "Unit Name": "ELITE_KIPCHAK",
+        "Building": "CASTLE",
+        "Civ": "Cumans",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 1,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 5,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1735,
+        "Unit Name": "URUMI_SWORDSMAN",
+        "Building": "CASTLE",
+        "Civ": "Dravidians",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 1,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1737,
+        "Unit Name": "ELITE_URUMI_SWORDSMAN",
+        "Building": "CASTLE",
+        "Civ": "Dravidians",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 29,
+                "Attack Amount": 3,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1016,
+        "Unit Name": "SHOTEL_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Ethiopians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 16,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1018,
+        "Unit Name": "ELITE_SHOTEL_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Ethiopians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 1,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 18,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 281,
+        "Unit Name": "THROWING_AXEMAN",
+        "Building": "CASTLE",
+        "Civ": "Franks",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 1,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 1,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 531,
+        "Unit Name": "ELITE_THROWING_AXEMAN",
+        "Building": "CASTLE",
+        "Civ": "Franks",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 4,
+        "Unit Name": "ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 3,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 0,
+                "Attack Class Name": "Stone Defense & Harbors"
+            }
+        ]
+    },
+    {
+        "Unit ID": 5,
+        "Unit Name": "HAND_CANNONEER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 1,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 10,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 17,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 2,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 6,
+        "Unit Name": "ELITE_SKIRMISHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 28,
+                "Attack Amount": 2,
+                "Attack Class Name": "Mounted Archers"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 4,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 4,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 3,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 7,
+        "Unit Name": "SKIRMISHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 28,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Archers"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 3,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 3,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 2,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 13,
+        "Unit Name": "FISHING_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": []
+    },
+    {
+        "Unit ID": 17,
+        "Unit Name": "TRADE_COG",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": []
+    },
+    {
+        "Unit ID": 21,
+        "Unit Name": "WAR_GALLEY",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 7,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 9,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 4,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 9,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 24,
+        "Unit Name": "CROSSBOWMAN",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 3,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 5,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 0,
+                "Attack Class Name": "Stone Defense & Harbors"
+            }
+        ]
+    },
+    {
+        "Unit ID": 36,
+        "Unit Name": "BOMBARD_CANNON",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 200,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 40,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 40,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 20,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 40,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 40,
+                "Attack Class Name": "Fishing Ships"
+            },
+            {
+                "Attack Class": 37,
+                "Attack Amount": 40,
+                "Attack Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 38,
+        "Unit Name": "KNIGHT",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 39,
+        "Unit Name": "CAVALRY_ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 74,
+        "Unit Name": "MILITIA",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 0,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 75,
+        "Unit Name": "MAN_AT_ARMS",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 77,
+        "Unit Name": "LONG_SWORDSMAN",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 6,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 3,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 83,
+        "Unit Name": "VILLAGER",
+        "Building": "TOWN_CENTER",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 3,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 3,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 6,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 14,
+                "Attack Amount": 0,
+                "Attack Class Name": "Wolves etc"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 37,
+                "Attack Amount": 6,
+                "Attack Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 93,
+        "Unit Name": "SPEARMAN",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 1,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 1,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 15,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 3,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 15,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 9,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 12,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 35,
+                "Attack Amount": 4,
+                "Attack Class Name": "Mamelukes"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 9,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 125,
+        "Unit Name": "MONK",
+        "Building": "MONASTERY",
+        "Civ": "GENERIC",
+        "Attacks": []
+    },
+    {
+        "Unit ID": 128,
+        "Unit Name": "TRADE_CART",
+        "Building": "MARKET",
+        "Civ": "GENERIC",
+        "Attacks": []
+    },
+    {
+        "Unit ID": 279,
+        "Unit Name": "SCORPION",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 2,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 6,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 0,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 1,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 280,
+        "Unit Name": "MANGONEL",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 35,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 40,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 12,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 37,
+                "Attack Amount": 40,
+                "Attack Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 283,
+        "Unit Name": "CAVALIER",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 331,
+        "Unit Name": "TREBUCHET",
+        "Building": "CASTLE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 250,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 200,
+                "Attack Class Name": "Base Pierce"
+            }
+        ]
+    },
+    {
+        "Unit ID": 358,
+        "Unit Name": "PIKEMAN",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 1,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 1,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 25,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 22,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 16,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 18,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 35,
+                "Attack Amount": 11,
+                "Attack Class Name": "Mamelukes"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 16,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 359,
+        "Unit Name": "HALBERDIER",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 1,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 1,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 28,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 32,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 17,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 26,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 35,
+                "Attack Amount": 11,
+                "Attack Class Name": "Mamelukes"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 17,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 420,
+        "Unit Name": "CANNON_GALLEON",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 200,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 50,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 25,
+                "Attack Class Name": "Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 422,
+        "Unit Name": "CAPPED_RAM",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 160,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 3,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 50,
+                "Attack Class Name": "Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 440,
+        "Unit Name": "PETARD",
+        "Building": "CASTLE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 26,
+                "Attack Amount": 100,
+                "Attack Class Name": "Castles & Kreposts"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 500,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 25,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 60,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 22,
+                "Attack Amount": 900,
+                "Attack Class Name": "Walls & Gates"
+            }
+        ]
+    },
+    {
+        "Unit ID": 441,
+        "Unit Name": "HUSSAR",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 25,
+                "Attack Amount": 12,
+                "Attack Class Name": "Monks"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 442,
+        "Unit Name": "GALLEON",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 8,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 11,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 4,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 11,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 448,
+        "Unit Name": "SCOUT_CAVALRY",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 25,
+                "Attack Amount": 6,
+                "Attack Class Name": "Monks"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 3,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 473,
+        "Unit Name": "TWO_HANDED_SWORDSMAN",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 8,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 474,
+        "Unit Name": "HEAVY_CAV_ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 4,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 492,
+        "Unit Name": "ARBALESTER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 3,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 0,
+                "Attack Class Name": "Stone Defense & Harbors"
+            }
+        ]
+    },
+    {
+        "Unit ID": 527,
+        "Unit Name": "DEMOLITION_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 220,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 110,
+                "Attack Class Name": "Base Melee"
+            }
+        ]
+    },
+    {
+        "Unit ID": 528,
+        "Unit Name": "HEAVY_DEMO_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 280,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 140,
+                "Attack Class Name": "Base Melee"
+            }
+        ]
+    },
+    {
+        "Unit ID": 529,
+        "Unit Name": "FIRE_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 2,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 3,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 2,
+                "Attack Amount": 2,
+                "Attack Class Name": "Turtle Ships and Thirisadai"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 1,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 2,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 3,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 532,
+        "Unit Name": "FAST_FIRE_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 3,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 4,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 2,
+                "Attack Amount": 3,
+                "Attack Class Name": "Turtle Ships and Thirisadai"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 1,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 3,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 4,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 539,
+        "Unit Name": "GALLEY",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 6,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 8,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 3,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 8,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 542,
+        "Unit Name": "HEAVY_SCORPION",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 4,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 8,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 0,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 16,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 2,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 545,
+        "Unit Name": "TRANSPORT_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": []
+    },
+    {
+        "Unit ID": 546,
+        "Unit Name": "LIGHT_CAVALRY",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 25,
+                "Attack Amount": 10,
+                "Attack Class Name": "Monks"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 548,
+        "Unit Name": "SIEGE_RAM",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 200,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 65,
+                "Attack Class Name": "Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 550,
+        "Unit Name": "ONAGER",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 45,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 50,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 12,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 37,
+                "Attack Amount": 50,
+                "Attack Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 567,
+        "Unit Name": "CHAMPION",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 8,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 13,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 569,
+        "Unit Name": "PALADIN",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 588,
+        "Unit Name": "SIEGE_ONAGER",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 60,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 75,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 12,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 37,
+                "Attack Amount": 50,
+                "Attack Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 691,
+        "Unit Name": "ELITE_CANNON_GALLEON",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 275,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 60,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 25,
+                "Attack Class Name": "Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1103,
+        "Unit Name": "FIRE_GALLEY",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 1,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 3,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 2,
+                "Attack Amount": 1,
+                "Attack Class Name": "Turtle Ships and Thirisadai"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 0,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 1,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 1,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1104,
+        "Unit Name": "DEMOLITION_RAFT",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 180,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 90,
+                "Attack Class Name": "Base Melee"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1105,
+        "Unit Name": "SIEGE_TOWER",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": []
+    },
+    {
+        "Unit ID": 1258,
+        "Unit Name": "BATTERING_RAM",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 150,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 2,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 40,
+                "Attack Class Name": "Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1803,
+        "Unit Name": "MONASPA",
+        "Building": "CASTLE",
+        "Civ": "Georgians",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1805,
+        "Unit Name": "ELITE_MONASPA",
+        "Building": "CASTLE",
+        "Civ": "Georgians",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 41,
+        "Unit Name": "HUSKARL",
+        "Building": "CASTLE",
+        "Civ": "Goths",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 6,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 555,
+        "Unit Name": "ELITE_HUSKARL",
+        "Building": "CASTLE",
+        "Civ": "Goths",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 3,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 3,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 10,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1741,
+        "Unit Name": "CHAKRAM_THROWER",
+        "Building": "CASTLE",
+        "Civ": "Gurjaras",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 1,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 1,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 3,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 0,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 0,
+                "Attack Class Name": "Condottieri"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1743,
+        "Unit Name": "ELITE_CHAKRAM_THROWER",
+        "Building": "CASTLE",
+        "Civ": "Gurjaras",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 1,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 1,
+                "Attack Class Name": "Condottieri"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1747,
+        "Unit Name": "GHULAM",
+        "Building": "CASTLE",
+        "Civ": "Hindustanis",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 5,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1749,
+        "Unit Name": "ELITE_GHULAM",
+        "Building": "CASTLE",
+        "Civ": "Hindustanis",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 6,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 755,
+        "Unit Name": "TARKAN",
+        "Building": "CASTLE",
+        "Civ": "Huns",
+        "Attacks": [
+            {
+                "Attack Class": 26,
+                "Attack Amount": 10,
+                "Attack Class Name": "Castles & Kreposts"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 8,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 12,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 22,
+                "Attack Amount": 8,
+                "Attack Class Name": "Walls & Gates"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 757,
+        "Unit Name": "ELITE_TARKAN",
+        "Building": "CASTLE",
+        "Civ": "Huns",
+        "Attacks": [
+            {
+                "Attack Class": 26,
+                "Attack Amount": 10,
+                "Attack Class Name": "Castles & Kreposts"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 10,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 12,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 22,
+                "Attack Amount": 10,
+                "Attack Class Name": "Walls & Gates"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 879,
+        "Unit Name": "KAMAYUK",
+        "Building": "CASTLE",
+        "Civ": "Incas",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 8,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 6,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 20,
+                "Attack Class Name": "Elephants"
+            }
+        ]
+    },
+    {
+        "Unit ID": 881,
+        "Unit Name": "ELITE_KAMAYUK",
+        "Building": "CASTLE",
+        "Civ": "Incas",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 12,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 10,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 20,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 35,
+                "Attack Amount": 1,
+                "Attack Class Name": "Mamelukes"
+            }
+        ]
+    },
+    {
+        "Unit ID": 866,
+        "Unit Name": "GENOESE_CROSSBOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Italians",
+        "Attacks": [
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 5,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 4,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 5,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 4,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 4,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 868,
+        "Unit Name": "ELITE_GENOESE_CROSSBOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Italians",
+        "Attacks": [
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 7,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 5,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 7,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 6,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 5,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 882,
+        "Unit Name": "CONDOTTIERO",
+        "Building": "BARRACKS",
+        "Civ": "Italians",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 23,
+                "Attack Amount": 10,
+                "Attack Class Name": "Gunpowder Units"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            }
+        ]
+    },
+    {
+        "Unit ID": 291,
+        "Unit Name": "SAMURAI",
+        "Building": "CASTLE",
+        "Civ": "Japanese",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 19,
+                "Attack Amount": 10,
+                "Attack Class Name": "Unique Units"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 560,
+        "Unit Name": "ELITE_SAMURAI",
+        "Building": "CASTLE",
+        "Civ": "Japanese",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 3,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 3,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 19,
+                "Attack Amount": 12,
+                "Attack Class Name": "Unique Units"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1120,
+        "Unit Name": "BALLISTA_ELEPHANT",
+        "Building": "CASTLE",
+        "Civ": "Khmer",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 3,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 3,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 18,
+                "Attack Amount": 100,
+                "Attack Class Name": "Trees"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 2,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 8,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 8,
+                "Attack Class Name": "Fishing Ships"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1122,
+        "Unit Name": "ELITE_BALLISTA_ELEPHANT",
+        "Building": "CASTLE",
+        "Civ": "Khmer",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 4,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 18,
+                "Attack Amount": 100,
+                "Attack Class Name": "Trees"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 4,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 8,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 8,
+                "Attack Class Name": "Fishing Ships"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 827,
+        "Unit Name": "WAR_WAGON",
+        "Building": "CASTLE",
+        "Civ": "Koreans",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 5,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 829,
+        "Unit Name": "ELITE_WAR_WAGON",
+        "Building": "CASTLE",
+        "Civ": "Koreans",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 5,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1234,
+        "Unit Name": "LEITIS",
+        "Building": "CASTLE",
+        "Civ": "Lithuanians",
+        "Attacks": [
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 13,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1236,
+        "Unit Name": "ELITE_LEITIS",
+        "Building": "CASTLE",
+        "Civ": "Lithuanians",
+        "Attacks": [
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 16,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 869,
+        "Unit Name": "MAGYAR_HUSZAR",
+        "Building": "CASTLE",
+        "Civ": "Magyars",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 1,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 5,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 871,
+        "Unit Name": "ELITE_MAGYAR_HUSZAR",
+        "Building": "CASTLE",
+        "Civ": "Magyars",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 2,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 8,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1123,
+        "Unit Name": "KARAMBIT_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Malay",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1125,
+        "Unit Name": "ELITE_KARAMBIT_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Malay",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 1,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1013,
+        "Unit Name": "GBETO",
+        "Building": "CASTLE",
+        "Civ": "Malians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 1,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1015,
+        "Unit Name": "ELITE_GBETO",
+        "Building": "CASTLE",
+        "Civ": "Malians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 1,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 13,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 763,
+        "Unit Name": "PLUMED_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Mayans",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 1,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 5,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 1,
+                "Attack Class Name": "Condottieri"
+            }
+        ]
+    },
+    {
+        "Unit ID": 765,
+        "Unit Name": "ELITE_PLUMED_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Mayans",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 2,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 5,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 2,
+                "Attack Class Name": "Condottieri"
+            }
+        ]
+    },
+    {
+        "Unit ID": 11,
+        "Unit Name": "MANGUDAI",
+        "Building": "CASTLE",
+        "Civ": "Mongols",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 1,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 3,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 561,
+        "Unit Name": "ELITE_MANGUDAI",
+        "Building": "CASTLE",
+        "Civ": "Mongols",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 1,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 5,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 185,
+        "Unit Name": "SLINGER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 1,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 3,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 10,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 10,
+                "Attack Class Name": "Condottieri"
+            }
+        ]
+    },
+    {
+        "Unit ID": 207,
+        "Unit Name": "IMPERIAL_CAMEL_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 18,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 9,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 9,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 35,
+                "Attack Amount": 7,
+                "Attack Class Name": "Mamelukes"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 9,
+                "Attack Class Name": "Fishing Ships"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 250,
+        "Unit Name": "LONGBOAT",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 7,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 9,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 4,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 9,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 329,
+        "Unit Name": "CAMEL_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 9,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 5,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 5,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 5,
+                "Attack Class Name": "Fishing Ships"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 330,
+        "Unit Name": "HEAVY_CAMEL_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 18,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 9,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 9,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 35,
+                "Attack Amount": 7,
+                "Attack Class Name": "Mamelukes"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 9,
+                "Attack Class Name": "Fishing Ships"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 533,
+        "Unit Name": "ELITE_LONGBOAT",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 7,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 10,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 4,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 10,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 751,
+        "Unit Name": "EAGLE_SCOUT",
+        "Building": "BARRACKS",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 25,
+                "Attack Amount": 8,
+                "Attack Class Name": "Monks"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 3,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 0,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 0,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 752,
+        "Unit Name": "ELITE_EAGLE_WARRIOR",
+        "Building": "BARRACKS",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 25,
+                "Attack Amount": 10,
+                "Attack Class Name": "Monks"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 4,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 2,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 5,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 3,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 2,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 753,
+        "Unit Name": "EAGLE_WARRIOR",
+        "Building": "BARRACKS",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 25,
+                "Attack Amount": 8,
+                "Attack Class Name": "Monks"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 3,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 3,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 1,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 2,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 1,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 775,
+        "Unit Name": "MISSIONARY",
+        "Building": "MONASTERY",
+        "Civ": "NON-GENERIC",
+        "Attacks": []
+    },
+    {
+        "Unit ID": 831,
+        "Unit Name": "TURTLE_SHIP",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 50,
+                "Attack Class Name": "Base Melee"
+            }
+        ]
+    },
+    {
+        "Unit ID": 832,
+        "Unit Name": "ELITE_TURTLE_SHIP",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 50,
+                "Attack Class Name": "Base Melee"
+            }
+        ]
+    },
+    {
+        "Unit ID": 873,
+        "Unit Name": "ELEPHANT_ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 875,
+        "Unit Name": "ELITE_ELEPHANT_ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 0,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1010,
+        "Unit Name": "GENITOUR",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 3,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 4,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 28,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Archers"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 3,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1012,
+        "Unit Name": "ELITE_GENITOUR",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 5,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 28,
+                "Attack Amount": 2,
+                "Attack Class Name": "Mounted Archers"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 3,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1132,
+        "Unit Name": "BATTLE_ELEPHANT",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 4,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 4,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1134,
+        "Unit Name": "ELITE_BATTLE_ELEPHANT",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 7,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 7,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1155,
+        "Unit Name": "IMPERIAL_SKIRMISHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 28,
+                "Attack Amount": 3,
+                "Attack Class Name": "Mounted Archers"
+            },
+            {
+                "Attack Class": 27,
+                "Attack Amount": 4,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 5,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1263,
+        "Unit Name": "FLAMING_CAMEL",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 200,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 20,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 50,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 50,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 5,
+                "Attack Amount": 130,
+                "Attack Class Name": "Elephants"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 25,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1370,
+        "Unit Name": "STEPPE_LANCER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 0,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1372,
+        "Unit Name": "ELITE_STEPPE_LANCER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 0,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1570,
+        "Unit Name": "XOLOTL_WARRIOR",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1707,
+        "Unit Name": "WINGED_HUSSAR",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 25,
+                "Attack Amount": 14,
+                "Attack Class Name": "Monks"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 23,
+                "Attack Amount": 4,
+                "Attack Class Name": "Gunpowder Units"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1709,
+        "Unit Name": "HOUFNICE",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 250,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 50,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 50,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 20,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 50,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 50,
+                "Attack Class Name": "Fishing Ships"
+            },
+            {
+                "Attack Class": 37,
+                "Attack Amount": 50,
+                "Attack Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1744,
+        "Unit Name": "ARMORED_ELEPHANT",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 90,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 25,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1746,
+        "Unit Name": "SIEGE_ELEPHANT",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 105,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 4,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 35,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1750,
+        "Unit Name": "THIRISADAI",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 9,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 9,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 4,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 9,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1751,
+        "Unit Name": "SHRIVAMSHA_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1753,
+        "Unit Name": "ELITE_SHRIVAMSHA_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1755,
+        "Unit Name": "CAMEL_SCOUT",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 2,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 0,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 0,
+                "Attack Class Name": "Fishing Ships"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1793,
+        "Unit Name": "LEGIONARY",
+        "Building": "BARRACKS",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 8,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 4,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            },
+            {
+                "Attack Class": 32,
+                "Attack Amount": 4,
+                "Attack Class Name": "Condottieri"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1795,
+        "Unit Name": "DROMON",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 34,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 20,
+                "Attack Amount": 2,
+                "Attack Class Name": "Siege Units"
+            },
+            {
+                "Attack Class": 22,
+                "Attack Amount": 15,
+                "Attack Class Name": "Walls & Gates"
+            },
+            {
+                "Attack Class": 26,
+                "Attack Amount": 9,
+                "Attack Class Name": "Castles & Kreposts"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1811,
+        "Unit Name": "WARRIOR_PRIEST",
+        "Building": "MONASTERY",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 0,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1813,
+        "Unit Name": "SAVAR",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 2,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 239,
+        "Unit Name": "WAR_ELEPHANT",
+        "Building": "CASTLE",
+        "Civ": "Persians",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 30,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 15,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 30,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 558,
+        "Unit Name": "ELITE_WAR_ELEPHANT",
+        "Building": "CASTLE",
+        "Civ": "Persians",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 30,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 20,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 13,
+                "Attack Amount": 30,
+                "Attack Class Name": "Stone Defense & Harbors"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1701,
+        "Unit Name": "OBUCH",
+        "Building": "CASTLE",
+        "Civ": "Poles",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1703,
+        "Unit Name": "ELITE_OBUCH",
+        "Building": "CASTLE",
+        "Civ": "Poles",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 3,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 6,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1001,
+        "Unit Name": "ORGAN_GUN",
+        "Building": "CASTLE",
+        "Civ": "Portuguese",
+        "Attacks": [
+            {
+                "Attack Class": 1,
+                "Attack Amount": 2,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 1,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 2,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1003,
+        "Unit Name": "ELITE_ORGAN_GUN",
+        "Building": "CASTLE",
+        "Civ": "Portuguese",
+        "Attacks": [
+            {
+                "Attack Class": 1,
+                "Attack Amount": 2,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 1,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 1,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 2,
+                "Attack Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1004,
+        "Unit Name": "CARAVEL",
+        "Building": "DOCK",
+        "Civ": "Portuguese",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 8,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 6,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 4,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 6,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1006,
+        "Unit Name": "ELITE_CARAVEL",
+        "Building": "DOCK",
+        "Civ": "Portuguese",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 9,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 16,
+                "Attack Amount": 7,
+                "Attack Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 4,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 34,
+                "Attack Amount": 7,
+                "Attack Class Name": "Fishing Ships"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1790,
+        "Unit Name": "CENTURION",
+        "Building": "CASTLE",
+        "Civ": "Romans",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 13,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1792,
+        "Unit Name": "ELITE_CENTURION",
+        "Building": "CASTLE",
+        "Civ": "Romans",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 15,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 282,
+        "Unit Name": "MAMELUKE",
+        "Building": "CASTLE",
+        "Civ": "Saracens",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 8,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 9,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 556,
+        "Unit Name": "ELITE_MAMELUKE",
+        "Building": "CASTLE",
+        "Civ": "Saracens",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 10,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 12,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 35,
+                "Attack Amount": 1,
+                "Attack Class Name": "Mamelukes"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1658,
+        "Unit Name": "SERJEANT",
+        "Building": "CASTLE",
+        "Civ": "Sicilians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 5,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1659,
+        "Unit Name": "ELITE_SERJEANT",
+        "Building": "CASTLE",
+        "Civ": "Sicilians",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 3,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 3,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 876,
+        "Unit Name": "BOYAR",
+        "Building": "CASTLE",
+        "Civ": "Slavs",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 878,
+        "Unit Name": "ELITE_BOYAR",
+        "Building": "CASTLE",
+        "Civ": "Slavs",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 771,
+        "Unit Name": "CONQUISTADOR",
+        "Building": "CASTLE",
+        "Civ": "Spanish",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 16,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 4,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 773,
+        "Unit Name": "ELITE_CONQUISTADOR",
+        "Building": "CASTLE",
+        "Civ": "Spanish",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 2,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 18,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 6,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1228,
+        "Unit Name": "KESHIK",
+        "Building": "CASTLE",
+        "Civ": "Tatars",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 9,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1230,
+        "Unit Name": "ELITE_KESHIK",
+        "Building": "CASTLE",
+        "Civ": "Tatars",
+        "Attacks": [
+            {
+                "Attack Class": 4,
+                "Attack Amount": 11,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 15,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Archers"
+            },
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 38,
+                "Attack Amount": 0,
+                "Attack Class Name": "Skirmishers"
+            },
+            {
+                "Attack Class": 39,
+                "Attack Amount": -3,
+                "Attack Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 25,
+        "Unit Name": "TEUTONIC_KNIGHT",
+        "Building": "CASTLE",
+        "Civ": "Teutons",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 4,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 554,
+        "Unit Name": "ELITE_TEUTONIC_KNIGHT",
+        "Building": "CASTLE",
+        "Civ": "Teutons",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 4,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 4,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 17,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 46,
+        "Unit Name": "JANISSARY",
+        "Building": "CASTLE",
+        "Civ": "Turks",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 17,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 2,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 557,
+        "Unit Name": "ELITE_JANISSARY",
+        "Building": "CASTLE",
+        "Civ": "Turks",
+        "Attacks": [
+            {
+                "Attack Class": 11,
+                "Attack Amount": 0,
+                "Attack Class Name": "All Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 22,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 3,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1129,
+        "Unit Name": "RATTAN_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Vietnamese",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 6,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 0,
+                "Attack Class Name": "Infantry"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1131,
+        "Unit Name": "ELITE_RATTAN_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Vietnamese",
+        "Attacks": [
+            {
+                "Attack Class": 27,
+                "Attack Amount": 2,
+                "Attack Class Name": "Spearmen"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 0,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 1,
+                "Attack Amount": 0,
+                "Attack Class Name": "Infantry"
+            },
+            {
+                "Attack Class": 3,
+                "Attack Amount": 7,
+                "Attack Class Name": "Base Pierce"
+            },
+            {
+                "Attack Class": 17,
+                "Attack Amount": 0,
+                "Attack Class Name": "High Pierce Armor Siege Units"
+            }
+        ]
+    },
+    {
+        "Unit ID": 692,
+        "Unit Name": "BERSERK",
+        "Building": "CASTLE",
+        "Civ": "Vikings",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 2,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 2,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 12,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    },
+    {
+        "Unit ID": 694,
+        "Unit Name": "ELITE_BERSERK",
+        "Building": "CASTLE",
+        "Civ": "Vikings",
+        "Attacks": [
+            {
+                "Attack Class": 29,
+                "Attack Amount": 3,
+                "Attack Class Name": "Eagle Warriors"
+            },
+            {
+                "Attack Class": 21,
+                "Attack Amount": 3,
+                "Attack Class Name": "Standard Buildings"
+            },
+            {
+                "Attack Class": 4,
+                "Attack Amount": 14,
+                "Attack Class Name": "Base Melee"
+            },
+            {
+                "Attack Class": 8,
+                "Attack Amount": 0,
+                "Attack Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Attack Class": 30,
+                "Attack Amount": 0,
+                "Attack Class Name": "Camels"
+            }
+        ]
+    }
+]

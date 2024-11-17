@@ -1,0 +1,6173 @@
+[
+    {
+        "Unit ID": 1800,
+        "Unit Name": "COMPOSITE_BOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Armenians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1802,
+        "Unit Name": "ELITE_COMPOSITE_BOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Armenians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 725,
+        "Unit Name": "JAGUAR_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Aztecs",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 726,
+        "Unit Name": "ELITE_JAGUAR_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Aztecs",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1759,
+        "Unit Name": "RATHA_(RANGED)",
+        "Building": "CASTLE",
+        "Civ": "Bengalis",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 1,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1761,
+        "Unit Name": "ELITE_RATHA_(RANGED)",
+        "Building": "CASTLE",
+        "Civ": "Bengalis",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 1,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1007,
+        "Unit Name": "CAMEL_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Berbers",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1009,
+        "Unit Name": "ELITE_CAMEL_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Berbers",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1704,
+        "Unit Name": "HUSSITE_WAGON",
+        "Building": "CASTLE",
+        "Civ": "Bohemians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 7,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 37,
+                "Armour Amount": 0,
+                "Armour Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1706,
+        "Unit Name": "ELITE_HUSSITE_WAGON",
+        "Building": "CASTLE",
+        "Civ": "Bohemians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 10,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 37,
+                "Armour Amount": 0,
+                "Armour Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 8,
+        "Unit Name": "LONGBOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Britons",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 530,
+        "Unit Name": "ELITE_LONGBOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Britons",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1225,
+        "Unit Name": "KONNIK",
+        "Building": "CASTLE",
+        "Civ": "Bulgarians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1227,
+        "Unit Name": "ELITE_KONNIK",
+        "Building": "CASTLE",
+        "Civ": "Bulgarians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1252,
+        "Unit Name": "DISMOUNTED_KONNIK",
+        "Building": "CASTLE",
+        "Civ": "Bulgarians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1253,
+        "Unit Name": "DISMOUNTED_ELITE_KONNIK",
+        "Building": "CASTLE",
+        "Civ": "Bulgarians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1655,
+        "Unit Name": "COUSTILLIER",
+        "Building": "CASTLE",
+        "Civ": "Burgundians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1657,
+        "Unit Name": "ELITE_COUSTILLIER",
+        "Building": "CASTLE",
+        "Civ": "Burgundians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1699,
+        "Unit Name": "FLEMISHPIKEMAN",
+        "Building": "BARRACKS",
+        "Civ": "Burgundians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1126,
+        "Unit Name": "ARAMBAI",
+        "Building": "CASTLE",
+        "Civ": "Burmese",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1128,
+        "Unit Name": "ELITE_ARAMBAI",
+        "Building": "CASTLE",
+        "Civ": "Burmese",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 40,
+        "Unit Name": "CATAPHRACT",
+        "Building": "CASTLE",
+        "Civ": "Byzantines",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 12,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 553,
+        "Unit Name": "ELITE_CATAPHRACT",
+        "Building": "CASTLE",
+        "Civ": "Byzantines",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 16,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 232,
+        "Unit Name": "WOAD_RAIDER",
+        "Building": "CASTLE",
+        "Civ": "Celts",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 534,
+        "Unit Name": "ELITE_WOAD_RAIDER",
+        "Building": "CASTLE",
+        "Civ": "Celts",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 73,
+        "Unit Name": "CHU_KO_NU",
+        "Building": "CASTLE",
+        "Civ": "Chinese",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 559,
+        "Unit Name": "ELITE_CHU_KO_NU",
+        "Building": "CASTLE",
+        "Civ": "Chinese",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1231,
+        "Unit Name": "KIPCHAK",
+        "Building": "CASTLE",
+        "Civ": "Cumans",
+        "Armours": [
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1233,
+        "Unit Name": "ELITE_KIPCHAK",
+        "Building": "CASTLE",
+        "Civ": "Cumans",
+        "Armours": [
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1735,
+        "Unit Name": "URUMI_SWORDSMAN",
+        "Building": "CASTLE",
+        "Civ": "Dravidians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1737,
+        "Unit Name": "ELITE_URUMI_SWORDSMAN",
+        "Building": "CASTLE",
+        "Civ": "Dravidians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1016,
+        "Unit Name": "SHOTEL_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Ethiopians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1018,
+        "Unit Name": "ELITE_SHOTEL_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Ethiopians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 281,
+        "Unit Name": "THROWING_AXEMAN",
+        "Building": "CASTLE",
+        "Civ": "Franks",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 531,
+        "Unit Name": "ELITE_THROWING_AXEMAN",
+        "Building": "CASTLE",
+        "Civ": "Franks",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 4,
+        "Unit Name": "ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 5,
+        "Unit Name": "HAND_CANNONEER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 6,
+        "Unit Name": "ELITE_SKIRMISHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 38,
+                "Armour Amount": 0,
+                "Armour Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 7,
+        "Unit Name": "SKIRMISHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 38,
+                "Armour Amount": 0,
+                "Armour Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 13,
+        "Unit Name": "FISHING_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 34,
+                "Armour Amount": 0,
+                "Armour Class Name": "Fishing Ships"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 17,
+        "Unit Name": "TRADE_COG",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 21,
+        "Unit Name": "WAR_GALLEY",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 24,
+        "Unit Name": "CROSSBOWMAN",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 36,
+        "Unit Name": "BOMBARD_CANNON",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 5,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 38,
+        "Unit Name": "KNIGHT",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 39,
+        "Unit Name": "CAVALRY_ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 74,
+        "Unit Name": "MILITIA",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 75,
+        "Unit Name": "MAN_AT_ARMS",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 77,
+        "Unit Name": "LONG_SWORDSMAN",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 83,
+        "Unit Name": "VILLAGER",
+        "Building": "TOWN_CENTER",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 93,
+        "Unit Name": "SPEARMAN",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 27,
+                "Armour Amount": 0,
+                "Armour Class Name": "Spearmen"
+            },
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 125,
+        "Unit Name": "MONK",
+        "Building": "MONASTERY",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 25,
+                "Armour Amount": 0,
+                "Armour Class Name": "Monks"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 128,
+        "Unit Name": "TRADE_CART",
+        "Building": "MARKET",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 279,
+        "Unit Name": "SCORPION",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 7,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 280,
+        "Unit Name": "MANGONEL",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 283,
+        "Unit Name": "CAVALIER",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 331,
+        "Unit Name": "TREBUCHET",
+        "Building": "CASTLE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 358,
+        "Unit Name": "PIKEMAN",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 27,
+                "Armour Amount": 0,
+                "Armour Class Name": "Spearmen"
+            },
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 359,
+        "Unit Name": "HALBERDIER",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 27,
+                "Armour Amount": 0,
+                "Armour Class Name": "Spearmen"
+            },
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 420,
+        "Unit Name": "CANNON_GALLEON",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 422,
+        "Unit Name": "CAPPED_RAM",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": -3,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 190,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 17,
+                "Armour Amount": 1,
+                "Armour Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 440,
+        "Unit Name": "PETARD",
+        "Building": "CASTLE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 441,
+        "Unit Name": "HUSSAR",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 442,
+        "Unit Name": "GALLEON",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 448,
+        "Unit Name": "SCOUT_CAVALRY",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 473,
+        "Unit Name": "TWO_HANDED_SWORDSMAN",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 474,
+        "Unit Name": "HEAVY_CAV_ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 492,
+        "Unit Name": "ARBALESTER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 527,
+        "Unit Name": "DEMOLITION_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 3,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 528,
+        "Unit Name": "HEAVY_DEMO_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 5,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 5,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 529,
+        "Unit Name": "FIRE_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 6,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 532,
+        "Unit Name": "FAST_FIRE_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 9,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 539,
+        "Unit Name": "GALLEY",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 542,
+        "Unit Name": "HEAVY_SCORPION",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 545,
+        "Unit Name": "TRANSPORT_SHIP",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 546,
+        "Unit Name": "LIGHT_CAVALRY",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 548,
+        "Unit Name": "SIEGE_RAM",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": -3,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 195,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 17,
+                "Armour Amount": 2,
+                "Armour Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 550,
+        "Unit Name": "ONAGER",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 7,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 567,
+        "Unit Name": "CHAMPION",
+        "Building": "BARRACKS",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 569,
+        "Unit Name": "PALADIN",
+        "Building": "STABLE",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 588,
+        "Unit Name": "SIEGE_ONAGER",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 691,
+        "Unit Name": "ELITE_CANNON_GALLEON",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1103,
+        "Unit Name": "FIRE_GALLEY",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 6,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1104,
+        "Unit Name": "DEMOLITION_RAFT",
+        "Building": "DOCK",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 1,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1105,
+        "Unit Name": "SIEGE_TOWER",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": -2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 100,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 17,
+                "Armour Amount": 0,
+                "Armour Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1258,
+        "Unit Name": "BATTERING_RAM",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": -3,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 180,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 17,
+                "Armour Amount": 0,
+                "Armour Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1803,
+        "Unit Name": "MONASPA",
+        "Building": "CASTLE",
+        "Civ": "Georgians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1805,
+        "Unit Name": "ELITE_MONASPA",
+        "Building": "CASTLE",
+        "Civ": "Georgians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 5,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 41,
+        "Unit Name": "HUSKARL",
+        "Building": "CASTLE",
+        "Civ": "Goths",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 555,
+        "Unit Name": "ELITE_HUSKARL",
+        "Building": "CASTLE",
+        "Civ": "Goths",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1741,
+        "Unit Name": "CHAKRAM_THROWER",
+        "Building": "CASTLE",
+        "Civ": "Gurjaras",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1743,
+        "Unit Name": "ELITE_CHAKRAM_THROWER",
+        "Building": "CASTLE",
+        "Civ": "Gurjaras",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1747,
+        "Unit Name": "GHULAM",
+        "Building": "CASTLE",
+        "Civ": "Hindustanis",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1749,
+        "Unit Name": "ELITE_GHULAM",
+        "Building": "CASTLE",
+        "Civ": "Hindustanis",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 755,
+        "Unit Name": "TARKAN",
+        "Building": "CASTLE",
+        "Civ": "Huns",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 757,
+        "Unit Name": "ELITE_TARKAN",
+        "Building": "CASTLE",
+        "Civ": "Huns",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 879,
+        "Unit Name": "KAMAYUK",
+        "Building": "CASTLE",
+        "Civ": "Incas",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 881,
+        "Unit Name": "ELITE_KAMAYUK",
+        "Building": "CASTLE",
+        "Civ": "Incas",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 866,
+        "Unit Name": "GENOESE_CROSSBOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Italians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 868,
+        "Unit Name": "ELITE_GENOESE_CROSSBOWMAN",
+        "Building": "CASTLE",
+        "Civ": "Italians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 882,
+        "Unit Name": "CONDOTTIERO",
+        "Building": "BARRACKS",
+        "Civ": "Italians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 10,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 32,
+                "Armour Amount": 0,
+                "Armour Class Name": "Condottieri"
+            }
+        ]
+    },
+    {
+        "Unit ID": 291,
+        "Unit Name": "SAMURAI",
+        "Building": "CASTLE",
+        "Civ": "Japanese",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 560,
+        "Unit Name": "ELITE_SAMURAI",
+        "Building": "CASTLE",
+        "Civ": "Japanese",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1120,
+        "Unit Name": "BALLISTA_ELEPHANT",
+        "Building": "CASTLE",
+        "Civ": "Khmer",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 5,
+                "Armour Amount": 0,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 37,
+                "Armour Amount": 20,
+                "Armour Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1122,
+        "Unit Name": "ELITE_BALLISTA_ELEPHANT",
+        "Building": "CASTLE",
+        "Civ": "Khmer",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 5,
+                "Armour Amount": 0,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 37,
+                "Armour Amount": 20,
+                "Armour Class Name": "Hussite Wagons"
+            }
+        ]
+    },
+    {
+        "Unit ID": 827,
+        "Unit Name": "WAR_WAGON",
+        "Building": "CASTLE",
+        "Civ": "Koreans",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": -1,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 829,
+        "Unit Name": "ELITE_WAR_WAGON",
+        "Building": "CASTLE",
+        "Civ": "Koreans",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": -1,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1234,
+        "Unit Name": "LEITIS",
+        "Building": "CASTLE",
+        "Civ": "Lithuanians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1236,
+        "Unit Name": "ELITE_LEITIS",
+        "Building": "CASTLE",
+        "Civ": "Lithuanians",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 869,
+        "Unit Name": "MAGYAR_HUSZAR",
+        "Building": "CASTLE",
+        "Civ": "Magyars",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 871,
+        "Unit Name": "ELITE_MAGYAR_HUSZAR",
+        "Building": "CASTLE",
+        "Civ": "Magyars",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1123,
+        "Unit Name": "KARAMBIT_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Malay",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1125,
+        "Unit Name": "ELITE_KARAMBIT_WARRIOR",
+        "Building": "CASTLE",
+        "Civ": "Malay",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1013,
+        "Unit Name": "GBETO",
+        "Building": "CASTLE",
+        "Civ": "Malians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1015,
+        "Unit Name": "ELITE_GBETO",
+        "Building": "CASTLE",
+        "Civ": "Malians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 763,
+        "Unit Name": "PLUMED_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Mayans",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 765,
+        "Unit Name": "ELITE_PLUMED_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Mayans",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 11,
+        "Unit Name": "MANGUDAI",
+        "Building": "CASTLE",
+        "Civ": "Mongols",
+        "Armours": [
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 561,
+        "Unit Name": "ELITE_MANGUDAI",
+        "Building": "CASTLE",
+        "Civ": "Mongols",
+        "Armours": [
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 185,
+        "Unit Name": "SLINGER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 207,
+        "Unit Name": "IMPERIAL_CAMEL_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 250,
+        "Unit Name": "LONGBOAT",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 329,
+        "Unit Name": "CAMEL_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 330,
+        "Unit Name": "HEAVY_CAMEL_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 533,
+        "Unit Name": "ELITE_LONGBOAT",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 751,
+        "Unit Name": "EAGLE_SCOUT",
+        "Building": "BARRACKS",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 29,
+                "Armour Amount": 0,
+                "Armour Class Name": "Eagle Warriors"
+            },
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 752,
+        "Unit Name": "ELITE_EAGLE_WARRIOR",
+        "Building": "BARRACKS",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 29,
+                "Armour Amount": 0,
+                "Armour Class Name": "Eagle Warriors"
+            },
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 753,
+        "Unit Name": "EAGLE_WARRIOR",
+        "Building": "BARRACKS",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 29,
+                "Armour Amount": 0,
+                "Armour Class Name": "Eagle Warriors"
+            },
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 775,
+        "Unit Name": "MISSIONARY",
+        "Building": "MONASTERY",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 25,
+                "Armour Amount": 0,
+                "Armour Class Name": "Monks"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 831,
+        "Unit Name": "TURTLE_SHIP",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 8,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 2,
+                "Armour Amount": 0,
+                "Armour Class Name": "Turtle Ships and Thirisadai"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 5,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 832,
+        "Unit Name": "ELITE_TURTLE_SHIP",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 11,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 2,
+                "Armour Amount": 1,
+                "Armour Class Name": "Turtle Ships and Thirisadai"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 873,
+        "Unit Name": "ELEPHANT_ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 5,
+                "Armour Amount": 0,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": -4,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 875,
+        "Unit Name": "ELITE_ELEPHANT_ARCHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 5,
+                "Armour Amount": 0,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": -4,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1010,
+        "Unit Name": "GENITOUR",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 38,
+                "Armour Amount": 0,
+                "Armour Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1012,
+        "Unit Name": "ELITE_GENITOUR",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 1,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 38,
+                "Armour Amount": 0,
+                "Armour Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1132,
+        "Unit Name": "BATTLE_ELEPHANT",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 5,
+                "Armour Amount": 0,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1134,
+        "Unit Name": "ELITE_BATTLE_ELEPHANT",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 5,
+                "Armour Amount": 0,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1155,
+        "Unit Name": "IMPERIAL_SKIRMISHER",
+        "Building": "ARCHERY_RANGE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 5,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 38,
+                "Armour Amount": 0,
+                "Armour Class Name": "Skirmishers"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1263,
+        "Unit Name": "FLAMING_CAMEL",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1370,
+        "Unit Name": "STEPPE_LANCER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1372,
+        "Unit Name": "ELITE_STEPPE_LANCER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1570,
+        "Unit Name": "XOLOTL_WARRIOR",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1707,
+        "Unit Name": "WINGED_HUSSAR",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1709,
+        "Unit Name": "HOUFNICE",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1744,
+        "Unit Name": "ARMORED_ELEPHANT",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 5,
+                "Armour Amount": 17,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": -2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 7,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 17,
+                "Armour Amount": 0,
+                "Armour Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 140,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1746,
+        "Unit Name": "SIEGE_ELEPHANT",
+        "Building": "SIEGE_WORKSHOP",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 5,
+                "Armour Amount": 20,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": -2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 10,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 17,
+                "Armour Amount": 0,
+                "Armour Class Name": "High Pierce Armor Siege Units"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 150,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1750,
+        "Unit Name": "THIRISADAI",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 8,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 2,
+                "Armour Amount": 0,
+                "Armour Class Name": "Turtle Ships and Thirisadai"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 10,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1751,
+        "Unit Name": "SHRIVAMSHA_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1753,
+        "Unit Name": "ELITE_SHRIVAMSHA_RIDER",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1755,
+        "Unit Name": "CAMEL_SCOUT",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1793,
+        "Unit Name": "LEGIONARY",
+        "Building": "BARRACKS",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1795,
+        "Unit Name": "DROMON",
+        "Building": "DOCK",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1811,
+        "Unit Name": "WARRIOR_PRIEST",
+        "Building": "MONASTERY",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 25,
+                "Armour Amount": 0,
+                "Armour Class Name": "Monks"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1813,
+        "Unit Name": "SAVAR",
+        "Building": "STABLE",
+        "Civ": "NON-GENERIC",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 239,
+        "Unit Name": "WAR_ELEPHANT",
+        "Building": "CASTLE",
+        "Civ": "Persians",
+        "Armours": [
+            {
+                "Armour Class": 5,
+                "Armour Amount": 0,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 558,
+        "Unit Name": "ELITE_WAR_ELEPHANT",
+        "Building": "CASTLE",
+        "Civ": "Persians",
+        "Armours": [
+            {
+                "Armour Class": 5,
+                "Armour Amount": 0,
+                "Armour Class Name": "Elephants"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1701,
+        "Unit Name": "OBUCH",
+        "Building": "CASTLE",
+        "Civ": "Poles",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1703,
+        "Unit Name": "ELITE_OBUCH",
+        "Building": "CASTLE",
+        "Civ": "Poles",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1001,
+        "Unit Name": "ORGAN_GUN",
+        "Building": "CASTLE",
+        "Civ": "Portuguese",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1003,
+        "Unit Name": "ELITE_ORGAN_GUN",
+        "Building": "CASTLE",
+        "Civ": "Portuguese",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 20,
+                "Armour Amount": 0,
+                "Armour Class Name": "Siege Units"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1004,
+        "Unit Name": "CARAVEL",
+        "Building": "DOCK",
+        "Civ": "Portuguese",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1006,
+        "Unit Name": "ELITE_CARAVEL",
+        "Building": "DOCK",
+        "Civ": "Portuguese",
+        "Armours": [
+            {
+                "Armour Class": 16,
+                "Armour Amount": 0,
+                "Armour Class Name": "Ships (except Fish ships)"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1790,
+        "Unit Name": "CENTURION",
+        "Building": "CASTLE",
+        "Civ": "Romans",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1792,
+        "Unit Name": "ELITE_CENTURION",
+        "Building": "CASTLE",
+        "Civ": "Romans",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 282,
+        "Unit Name": "MAMELUKE",
+        "Building": "CASTLE",
+        "Civ": "Saracens",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 35,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mamelukes"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 556,
+        "Unit Name": "ELITE_MAMELUKE",
+        "Building": "CASTLE",
+        "Civ": "Saracens",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 35,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mamelukes"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 30,
+                "Armour Amount": 0,
+                "Armour Class Name": "Camels"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            },
+            {
+                "Armour Class": 39,
+                "Armour Amount": -3,
+                "Armour Class Name": "Cavalry Resistance"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1658,
+        "Unit Name": "SERJEANT",
+        "Building": "CASTLE",
+        "Civ": "Sicilians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1659,
+        "Unit Name": "ELITE_SERJEANT",
+        "Building": "CASTLE",
+        "Civ": "Sicilians",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 876,
+        "Unit Name": "BOYAR",
+        "Building": "CASTLE",
+        "Civ": "Slavs",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 878,
+        "Unit Name": "ELITE_BOYAR",
+        "Building": "CASTLE",
+        "Civ": "Slavs",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 8,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 771,
+        "Unit Name": "CONQUISTADOR",
+        "Building": "CASTLE",
+        "Civ": "Spanish",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 773,
+        "Unit Name": "ELITE_CONQUISTADOR",
+        "Building": "CASTLE",
+        "Civ": "Spanish",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 28,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Archers"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1228,
+        "Unit Name": "KESHIK",
+        "Building": "CASTLE",
+        "Civ": "Tatars",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1230,
+        "Unit Name": "ELITE_KESHIK",
+        "Building": "CASTLE",
+        "Civ": "Tatars",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 8,
+                "Armour Amount": 0,
+                "Armour Class Name": "Mounted Units (exc. Camels)"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 3,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 25,
+        "Unit Name": "TEUTONIC_KNIGHT",
+        "Building": "CASTLE",
+        "Civ": "Teutons",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 7,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 554,
+        "Unit Name": "ELITE_TEUTONIC_KNIGHT",
+        "Building": "CASTLE",
+        "Civ": "Teutons",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 10,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 46,
+        "Unit Name": "JANISSARY",
+        "Building": "CASTLE",
+        "Civ": "Turks",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 557,
+        "Unit Name": "ELITE_JANISSARY",
+        "Building": "CASTLE",
+        "Civ": "Turks",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 23,
+                "Armour Amount": 0,
+                "Armour Class Name": "Gunpowder Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1129,
+        "Unit Name": "RATTAN_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Vietnamese",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 4,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 1131,
+        "Unit Name": "ELITE_RATTAN_ARCHER",
+        "Building": "CASTLE",
+        "Civ": "Vietnamese",
+        "Armours": [
+            {
+                "Armour Class": 4,
+                "Armour Amount": 0,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 15,
+                "Armour Amount": 0,
+                "Armour Class Name": "All Archers"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 6,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 692,
+        "Unit Name": "BERSERK",
+        "Building": "CASTLE",
+        "Civ": "Vikings",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    },
+    {
+        "Unit ID": 694,
+        "Unit Name": "ELITE_BERSERK",
+        "Building": "CASTLE",
+        "Civ": "Vikings",
+        "Armours": [
+            {
+                "Armour Class": 1,
+                "Armour Amount": 0,
+                "Armour Class Name": "Infantry"
+            },
+            {
+                "Armour Class": 4,
+                "Armour Amount": 2,
+                "Armour Class Name": "Base Melee"
+            },
+            {
+                "Armour Class": 3,
+                "Armour Amount": 1,
+                "Armour Class Name": "Base Pierce"
+            },
+            {
+                "Armour Class": 19,
+                "Armour Amount": 0,
+                "Armour Class Name": "Unique Units"
+            },
+            {
+                "Armour Class": 31,
+                "Armour Amount": 0,
+                "Armour Class Name": "Obsolete"
+            }
+        ]
+    }
+]
