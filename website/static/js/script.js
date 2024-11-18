@@ -323,9 +323,8 @@ function displayCounterUnitDetails(details) {
     // Modify the layout to center the title and align checkbox and ? icon to the right
     content += `
         <div class="counter-unit-panel" style="margin-left: ${selectedAttacker ? 'auto' : '0'};">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-                <!-- Removed empty div for spacing -->
-                <h2 style="text-align: center; flex: 1;">${defenderName.replace(/_/g, ' ')}</h2>
+            <div style="display: flex; align-items: center; gap: 30px;">
+                <h2 style="text-align: center; flex: 1; margin: 0;">${defenderName.replace(/_/g, ' ')}     </h2>
                 <div>
                     <input type="checkbox" id="excludeSiege" checked>
                     <span class="tooltip-icon" data-tooltip="Exclude Siege & Dock Units">?</span>
@@ -406,20 +405,26 @@ function fetchUnitArmours(unitId) {
 
 function displayUnitArmours(armourDetails) {
     const unitStatsContent = document.getElementById('defender-stats-content');
+    
+    // Early return for error
     if (armourDetails.error) {
-        unitStatsContent.innerHTML += `<p class="error-message">${armourDetails.error}</p>`;
         return;
     }
 
-    // Show all armour classes, including those with zero values
+    // Get existing basic stats HTML
+    const basicStats = unitStatsContent.querySelector('.unit-stats-grid:first-child')?.outerHTML || '';
+
+    // Prepare the armours section
     const armours = armourDetails.map(armour => `
-        <div class="unit-stats-item">
+        <div class="unit-stats-item" style="word-break: break-word;">
             <strong>${armour["Armour Class Name"]}:</strong> ${armour["Armour Amount"]}
         </div>
     `).join('');
 
-    unitStatsContent.innerHTML += `
-        <h2 style="margin-top: 40px;">Armour Classes</h2> <!-- Rename to Armour Classes -->
+    // Set complete new content
+    unitStatsContent.innerHTML = `
+        ${basicStats}
+        <h2 style="margin-top: 40px; text-align: left;">Armour Classes</h2>
         <div class="unit-stats-grid">
             ${armours}
         </div>
@@ -446,30 +451,47 @@ function displayUnitStats(unitDetails, isDefender) {
     }
 
     const cost = [];
-    if (unitDetails.cost.wood > 0) cost.push(`<img src="/static/images/Other/wood.png" alt="Wood" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.wood}`);
-    if (unitDetails.cost.food > 0) cost.push(`<img src="/static/images/Other/food.png" alt="Food" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.food}`);
-    if (unitDetails.cost.gold > 0) cost.push(`<img src="/static/images/Other/gold.png" alt="Gold" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.gold}`);
-    if (unitDetails.cost.stone > 0) cost.push(`<img src="/static/images/Other/stone.png" alt="Stone" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.stone}`);
+    if (unitDetails.cost.wood > 0) cost.push(`<span><img src="/static/images/Other/wood.png" alt="Wood" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.wood}</span>`);
+    if (unitDetails.cost.food > 0) cost.push(`<span><img src="/static/images/Other/food.png" alt="Food" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.food}</span>`);
+    if (unitDetails.cost.gold > 0) cost.push(`<span><img src="/static/images/Other/gold.png" alt="Gold" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.gold}</span>`);
+    if (unitDetails.cost.stone > 0) cost.push(`<span><img src="/static/images/Other/stone.png" alt="Stone" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.stone}</span>`);
 
     unitStatsContent.innerHTML = `
         <div class="unit-stats-grid">
-            <div class="unit-stats-item"><strong>Cost:</strong> ${cost.join(', ')}</div>
-            <div class="unit-stats-item"><strong>Attack:</strong> ${unitDetails.attack}</div>
-            <div class="unit-stats-item"><strong>Melee Armor:</strong> ${unitDetails.melee_armor}</div>
-            <div class="unit-stats-item"><strong>Pierce Armor:</strong> ${unitDetails.pierce_armor}</div>
-            <div class="unit-stats-item"><strong>Hit Points:</strong> ${unitDetails.hit_points}</div>
+            <div class="unit-stats-item">
+                <strong style="flex-shrink: 0;">Cost:</strong>
+                <div style="display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; flex: 1;">
+                    ${cost.join(' ')}
+                </div>
+            </div>
+            <div class="unit-stats-item">
+                <strong>Attack:</strong> <span>${unitDetails.attack}</span>
+            </div>
+            <div class="unit-stats-item">
+                <strong>Melee Armor:</strong> <span>${unitDetails.melee_armor}</span>
+            </div>
+            <div class="unit-stats-item">
+                <strong>Pierce Armor:</strong> <span>${unitDetails.pierce_armor}</span>
+            </div>
+            <div class="unit-stats-item">
+                <strong>Hit Points:</strong> <span>${unitDetails.hit_points}</span>
+            </div>
         </div>
     `;
 }
 
 function displayUnitAttacks(attackDetails, isDefender) {
     const unitStatsContent = document.getElementById(isDefender ? 'defender-stats-content' : 'attacker-stats-content');
+    
+    // Early return for error
     if (attackDetails.error) {
-        unitStatsContent.innerHTML += `<p class="error-message">${attackDetails.error}</p>`;
         return;
     }
 
-    // Separate base attacks and other attacks
+    // Get existing basic stats HTML
+    const basicStats = unitStatsContent.querySelector('.unit-stats-grid:first-child')?.outerHTML || '';
+
+    // Prepare the attacks section
     const baseAttacks = attackDetails.filter(attack => 
         attack["Attack Class Name"] === "Base Pierce" || attack["Attack Class Name"] === "Base Melee"
     );
@@ -479,17 +501,17 @@ function displayUnitAttacks(attackDetails, isDefender) {
         attack["Attack Class Name"] !== "Cavalry Resistance"
     );
 
-    // Sort attacks by amount, placing 0 values at the bottom
     const sortedAttacks = [...baseAttacks, ...otherAttacks].sort((a, b) => b["Attack Amount"] - a["Attack Amount"]);
-
     const attacks = sortedAttacks.map(attack => `
-        <div class="unit-stats-item" style="word-wrap: break-word; white-space: normal;">
+        <div class="unit-stats-item" style="word-break: break-word;">
             <strong>${attack["Attack Class Name"]}:</strong> ${attack["Attack Amount"]}
         </div>
     `).join('');
 
-    unitStatsContent.innerHTML += `
-        <h2 style="margin-top: 40px;">Base & Bonus Attack</h2>
+    // Set complete new content
+    unitStatsContent.innerHTML = `
+        ${basicStats}
+        <h2 style="margin-top: 40px;">Attack Classes</h2>
         <div class="unit-stats-grid">
             ${attacks}
         </div>
@@ -556,33 +578,47 @@ function switchUnits() {
     const defenderBox = document.getElementById('defender-box');
     
     if (attackerBox.querySelector('img') && defenderBox.querySelector('img')) {
-        // Store the current unit IDs
+        // Store the current unit IDs and civilizations
         const oldAttackerId = selectedAttacker;
         const oldDefenderId = selectedDefender;
-        
-        // Swap the HTML content
-        const attackerContent = attackerBox.innerHTML;
-        const defenderContent = defenderBox.innerHTML;
-        attackerBox.innerHTML = defenderContent;
-        defenderBox.innerHTML = attackerContent;
-        
-        // Swap the selected unit IDs
+        const oldAttackerCiv = attackerCiv;
+        const oldDefenderCiv = defenderCiv;
+        const oldAttackerContent = attackerBox.innerHTML;
+        const oldDefenderContent = defenderBox.innerHTML;
+        const oldAttackerUnitId = attackerBox.getAttribute('data-unit-id');
+        const oldDefenderUnitId = defenderBox.getAttribute('data-unit-id');
+
+        // Swap the stored values
         selectedAttacker = oldDefenderId;
         selectedDefender = oldAttackerId;
-        
-        // Re-run all necessary operations
-        fetchUnitDetails(selectedAttacker, false); // For attacker
-        fetchUnitDetails(selectedDefender, true);  // For defender
-        fetchUnitVsUnitData(selectedAttacker, selectedDefender);
-        fetchCounterUnitDetails(selectedDefender); // Add this line to fetch counter unit details
-    }
+        attackerCiv = oldDefenderCiv;
+        defenderCiv = oldAttackerCiv;
+        attackerBox.innerHTML = oldDefenderContent;
+        defenderBox.innerHTML = oldAttackerContent;
+        attackerBox.setAttribute('data-unit-id', oldDefenderUnitId);
+        defenderBox.setAttribute('data-unit-id', oldAttackerUnitId);
 
-    if (selectedAttacker && selectedDefender) {
+        // Clear upgrade panels
+        document.getElementById('attacker-upgrades-grid').innerHTML = '';
+        document.getElementById('defender-upgrades-grid').innerHTML = '';
+        document.getElementById('attacker-full-upgrade').checked = false;
+        document.getElementById('defender-full-upgrade').checked = false;
+
+        // Re-fetch all unit data as if newly selected
+        fetchUnitDetails(selectedAttacker, false);
+        fetchUnitDetails(selectedDefender, true);
+        fetchUnitAttacks(selectedAttacker, false);
+        fetchUnitArmours(selectedDefender);
+        fetchUnitVsUnitData(selectedAttacker, selectedDefender);
+        fetchCounterUnitDetails(selectedDefender);
+        fetchTopOpponents(selectedAttacker);
+
+        // Reload upgrades panel
         document.getElementById('upgrades-panel').style.display = 'block';
         loadUpgrades();
     }
 
-    // After swapping the units, update the emblem visibility
+    // Update emblem visibility
     updateEmblemVisibility();
 }
 
@@ -771,33 +807,47 @@ function switchUnits() {
     const defenderBox = document.getElementById('defender-box');
     
     if (attackerBox.querySelector('img') && defenderBox.querySelector('img')) {
-        // Store the current unit IDs
+        // Store the current unit IDs and civilizations
         const oldAttackerId = selectedAttacker;
         const oldDefenderId = selectedDefender;
-        
-        // Swap the HTML content
-        const attackerContent = attackerBox.innerHTML;
-        const defenderContent = defenderBox.innerHTML;
-        attackerBox.innerHTML = defenderContent;
-        defenderBox.innerHTML = attackerContent;
-        
-        // Swap the selected unit IDs
+        const oldAttackerCiv = attackerCiv;
+        const oldDefenderCiv = defenderCiv;
+        const oldAttackerContent = attackerBox.innerHTML;
+        const oldDefenderContent = defenderBox.innerHTML;
+        const oldAttackerUnitId = attackerBox.getAttribute('data-unit-id');
+        const oldDefenderUnitId = defenderBox.getAttribute('data-unit-id');
+
+        // Swap the stored values
         selectedAttacker = oldDefenderId;
         selectedDefender = oldAttackerId;
-        
-        // Re-run all necessary operations
-        fetchUnitDetails(selectedAttacker, false); // For attacker
-        fetchUnitDetails(selectedDefender, true);  // For defender
-        fetchUnitVsUnitData(selectedAttacker, selectedDefender);
-        fetchCounterUnitDetails(selectedDefender); // Add this line to fetch counter unit details
-    }
+        attackerCiv = oldDefenderCiv;
+        defenderCiv = oldAttackerCiv;
+        attackerBox.innerHTML = oldDefenderContent;
+        defenderBox.innerHTML = oldAttackerContent;
+        attackerBox.setAttribute('data-unit-id', oldDefenderUnitId);
+        defenderBox.setAttribute('data-unit-id', oldAttackerUnitId);
 
-    if (selectedAttacker && selectedDefender) {
+        // Clear upgrade panels
+        document.getElementById('attacker-upgrades-grid').innerHTML = '';
+        document.getElementById('defender-upgrades-grid').innerHTML = '';
+        document.getElementById('attacker-full-upgrade').checked = false;
+        document.getElementById('defender-full-upgrade').checked = false;
+
+        // Re-fetch all unit data as if newly selected
+        fetchUnitDetails(selectedAttacker, false);
+        fetchUnitDetails(selectedDefender, true);
+        fetchUnitAttacks(selectedAttacker, false);
+        fetchUnitArmours(selectedDefender);
+        fetchUnitVsUnitData(selectedAttacker, selectedDefender);
+        fetchCounterUnitDetails(selectedDefender);
+        fetchTopOpponents(selectedAttacker);
+
+        // Reload upgrades panel
         document.getElementById('upgrades-panel').style.display = 'block';
         loadUpgrades();
     }
 
-    // After swapping the units, update the emblem visibility
+    // Update emblem visibility
     updateEmblemVisibility();
 }
 
@@ -1010,7 +1060,11 @@ function updateUnitVsUnitUpgrades() {
 }
 
 function formatUnitName(name) {
-    return name.replace(/_/g, ' ');
+    let formattedName = name.replace(/_/g, ' ');
+    if (formattedName.length > 19) {
+        formattedName = formattedName.substring(0, 19) + '.';
+    }
+    return formattedName;
 }
 
 function fetchTopOpponents(attackerId) {
