@@ -1476,6 +1476,108 @@
       .upgrade-section:last-child .upgrades-grid {
         margin-right: 8px; /* Match the checkbox margin */
       }
+
+      #combat-stats-panel {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid #4c3830;
+        border-radius: 10px;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .counter-unit-table th {
+        background-color: rgba(76, 56, 48, 0.9);
+        color: #ffd700;
+        padding: 12px 8px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #4c3830;
+        letter-spacing: 1px;
+      }
+
+      .counter-unit-panel h2,
+      .unit-stats h2,
+      .upgrades-panel h2,
+      .combat-stats-panel h2 {
+        color: #ffd700;
+      }
+
+      .counter-unit-panel h2 {
+        margin: 0 0 15px 0;  /* Standardize margin for all panel titles */
+        font-size: 1.2em;
+        color: #ffd700;
+        text-align: center;
+      }
+
+      /* Remove margin from the panel's flex container */
+      .counter-unit-panel > div:first-child {
+        margin: 0;
+      }
+
+      /* Update any existing margin on the table */
+      .counter-unit-table {
+        margin: 15px 0 0 0;  /* Consistent spacing after title */
+        /* ... rest of existing table styles ... */
+      }
+
+      .help-icon {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        color: #ffd700;
+        font-size: 1em; /* Reduced from 1.2em */
+        cursor: pointer;
+        width: 18px; /* Reduced from 24px */
+        height: 18px; /* Reduced from 24px */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffd700; /* Reduced from 2px */
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 10;
+      }
+
+      .help-icon:hover {
+        transform: scale(1.1);
+        background-color: rgba(255, 215, 0, 0.1);
+      }
+
+      .formula {
+        font-family: 'Times New Roman', serif;
+        font-size: 1.2em;
+        margin: 20px 0;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .formula-explanation {
+        text-align: center;
+        margin: 20px 0;
+        line-height: 1.6;
+      }
+
+      .formula-components {
+        text-align: left;
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 0 20px;
+      }
+
+      .formula-components p {
+        margin: 10px 0;
+      }
+
+      .exception-note {
+        margin: 20px 0;
+        padding: 15px;
+        background-color: rgba(255, 0, 0, 0.1);
+        border-radius: 5px;
+      }
     </style>
   </head>
   <body>
@@ -1513,6 +1615,9 @@
               <span>Select Attacker</span>
             </div>
             <div style="display: flex; flex-direction: column; align-items: center;">
+              <div id="instruction-text" style="color: #ffd700; font-size: 1.2em;">
+                Please select units to continue
+              </div>
               <div class="bottom-panel" id="unit-vs-unit-panel" style="margin-bottom: 20px">
                 <!-- Add margin-bottom for spacing -->
                 <div id="unit-vs-unit-content">
@@ -1528,6 +1633,13 @@
               <span>Select Defender</span>
             </div>
           </div>
+
+          <!-- Add new combat stats panel -->
+          <div class="combat-stats-panel" id="combat-stats-panel" style="display: none;">
+            <h2>Combat Stats</h2>
+          </div>
+
+          <!-- Existing upgrades panel -->
           <div class="upgrades-panel" id="upgrades-panel" style="display: none">
             <h2>Upgrades</h2>
             <!-- Remove style attribute and unnecessary div -->
@@ -1627,6 +1739,35 @@
       </div>
       <div id="units-box"></div>
     </div>
+    <!-- Add after all existing popups -->
+    <div class="popup-overlay" id="explanation-popup" style="display: none;">
+      <div class="popup-header">
+          <h2>Total Net Attack Explained</h2>
+          <button class="close-btn" onclick="closePopup('explanation-popup')">×</button>
+      </div>
+      <div class="formula-explanation">
+          <div class="formula">
+              Total Net Attack = MIN(1, Base Attack + Bonus Damage + Attack Upgrades − Opponent Armour − Opponent Upgrades)
+          </div>
+          <div class="formula-components">
+              <p><strong>Base Attack:</strong> The unit's fundamental attack strength</p>
+              <p><strong>Bonus Damage:</strong> Additional damage against specific unit types (e.g., cavalry bonus)</p>
+              <p><strong>Attack Upgrades:</strong> Combat improvements from buildings like Blacksmith</p>
+              <p><strong>Opponent Armour:</strong> Target unit's inherent defensive value</p>
+              <p><strong>Opponent Upgrades:</strong> Target's defensive improvements</p>
+          </div>
+          <div class="exception-note">
+              All units deal at least 1 damage per attack.<br>
+              Exception: Units with 0 base attack (like Monks and Fishing Ships) can deal no damage
+          </div>
+          <p>
+              For a more detailed explanation of the damage calculation, please visit<br>
+              <a href="https://ugc.aoe2.rocks/general/damage_calculation/" target="_blank" style="color: #ffd700;">
+                  https://ugc.aoe2.rocks/general/damage_calculation/
+              </a>
+          </p>
+      </div>
+    </div>
     <!-- Link to script.js -->
     <script src="/static/js/script.js"></script>
     <script>
@@ -1640,24 +1781,6 @@
 content += `
     <div class="counter-unit-panel" style="margin-left: ${selectedAttacker ? 'auto' : '0'};">
         <div style="display: flex; align-items: center; gap: 30px; margin: 20px 0 10px 0;"> <!-- Add margin-top: 20px and margin-bottom: 10px -->
-            <h2 style="text-align: center; flex: 1; margin: 0;">${defenderName.replace(/_/g, ' ')}     </h2>
-            <div>
-                <input type="checkbox" id="excludeSiege" checked>
-                <span class="tooltip-icon" data-tooltip="Exclude Siege & Dock Units">?</span>
-            </div>
-        </div>
-        <table class="counter-unit-table">
-            <thead>
-                <tr>
-                    <th>WEAK vs.</th>
-                    <th>Net Attack</th>
-                </tr>
-            </thead>
-            <tbody id="counterUnitsBody">
-                ${getFilteredUnits(details)}
-            </tbody>
-        </table>
-    </div>
 `;
 
 // ...existing code...

@@ -7,7 +7,7 @@ const buildings = [
     'DOCK',
     'MONASTERY',
     'MARKET',
-    'TOWN_CENTER' // Moved to the last position
+    'TOWN_CENTER'
 ];
 
 const civilizations = [
@@ -27,8 +27,65 @@ let isDefenderMode = false;
 let selectedCiv = '';
 let selectedAttacker = null;
 let selectedDefender = null;
-let attackerCiv = ''; // Add this at the top with other global variables
-let defenderCiv = ''; // Add this at the top with other global variables
+let attackerCiv = '';
+let defenderCiv = '';
+
+// Add new helper function for resource-based battle simulation
+function calculateUnitsFor1000Resources(costs) {
+    const totalCost = (costs.food || 0) + (costs.gold || 0) + (costs.wood || 0) + (costs.stone || 0);
+    return Math.floor(1000 / totalCost);
+}
+
+function simulateBattle(attackerCount, defenderCount, attackerDamage, defenderHp, defenderDamage, attackerHp) {
+    // Arrays to track remaining HP of each unit
+    let attackers = Array(attackerCount).fill(attackerHp);
+    let defenders = Array(defenderCount).fill(defenderHp);
+    let isAttackerTurn = true;
+    
+    while (attackers.length > 0 && defenders.length > 0) {
+        if (isAttackerTurn) {
+            // Attackers turn - each attacker deals damage
+            let totalDamage = attackers.length * attackerDamage;
+            
+            // Apply damage to defenders until damage is used up
+            while (totalDamage > 0 && defenders.length > 0) {
+                // Apply damage to first defender
+                defenders[0] -= totalDamage;
+                
+                // If defender is dead, remove it
+                if (defenders[0] <= 0) {
+                    defenders.shift();
+                }
+                
+                // All damage is used in one attack
+                break;
+            }
+        } else {
+            // Defenders turn - each defender deals damage
+            let totalDamage = defenders.length * defenderDamage;
+            
+            // Apply damage to attackers until damage is used up
+            while (totalDamage > 0 && attackers.length > 0) {
+                // Apply damage to first attacker
+                attackers[0] -= totalDamage;
+                
+                // If attacker is dead, remove it
+                if (attackers[0] <= 0) {
+                    attackers.shift();
+                }
+                
+                // All damage is used in one attack
+                break;
+            }
+        }
+        isAttackerTurn = !isAttackerTurn;
+    }
+    
+    return {
+        winner: attackers.length > 0 ? 'attacker' : 'defender',
+        remaining: Math.floor(attackers.length > 0 ? attackers.length : defenders.length)
+    };
+}
 
 function formatBuildingName(name) {
     return name.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
@@ -39,7 +96,6 @@ function openSelector(type) {
     isDefenderMode = type === 'defender';
     showCivSelector();
 }
-
 function showCivSelector() {
     const container = document.getElementById('civ-options');
     const sortedCivs = civilizations.sort((a, b) => a.localeCompare(b));
@@ -66,7 +122,6 @@ function selectCiv(civilization) {
     closePopup('civ-selector');
     showBuildingSelector();
 }
-
 
 function showBuildingSelector() {
     const title = document.getElementById('selector-title');
@@ -121,7 +176,6 @@ function fetchUnits(buildingName, isDefender, civilization) {
                         (civilization.toUpperCase() !== 'GENERIC' && unit.CIV.toUpperCase() === 'GENERIC')
                     );
 
-                    // Adjust the sorting logic here
                     filteredUnits.sort((a, b) => {
                         const civ = civilization.trim().toUpperCase();
 
@@ -140,10 +194,10 @@ function fetchUnits(buildingName, isDefender, civilization) {
                             if (unitName === 'TREBUCHET') return 1;
                             if (unitName === 'PETARD') return 2;
                             if (unitCiv === civ) {
-                                if (isEliteUnit(unitName)) return 4;  // Elite unique units
-                                else return 3;  // Standard unique units
+                                if (isEliteUnit(unitName)) return 4;
+                                else return 3;
                             }
-                            return 5; // Other units
+                            return 5;
                         }
 
                         const priorityA = getPriority(a);
@@ -152,12 +206,10 @@ function fetchUnits(buildingName, isDefender, civilization) {
                         if (priorityA !== priorityB) {
                             return priorityA - priorityB;
                         } else {
-                            // If both units have the same priority, sort by base name
                             const baseNameA = stripElitePrefix(a.NAME.trim().toUpperCase());
                             const baseNameB = stripElitePrefix(b.NAME.trim().toUpperCase());
 
                             if (baseNameA === baseNameB) {
-                                // Place standard unit before Elite unit
                                 if (isEliteUnit(a.NAME)) return 1;
                                 if (isEliteUnit(b.NAME)) return -1;
                             }
@@ -176,17 +228,14 @@ function fetchUnits(buildingName, isDefender, civilization) {
             openPopup('units-popup');
         });
 }
-
 function selectUnit(element) {
     const unit = JSON.parse(element.getAttribute('data-unit'));
     const boxId = isDefenderMode ? 'defender-box' : 'attacker-box';
     const box = document.getElementById(boxId);
     const currentCiv = isDefenderMode ? defenderCiv : attackerCiv;
     
-    // Store the selected unit ID in the data attribute
     box.setAttribute('data-unit-id', unit.UNIT_ID);
     
-    // Create HTML content with emblem container
     box.innerHTML = `
         <div class="civ-emblem-container ${selectedAttacker && selectedDefender ? 'show' : ''}">
             <img src="/static/images/Emblems/${currentCiv.toLowerCase()}_emblem.png" 
@@ -208,7 +257,6 @@ function selectUnit(element) {
     } else {
         selectedAttacker = unit.UNIT_ID;
         document.getElementById('left-panel').style.display = 'flex';
-        // Always show top opponents table when attacker is selected
         const container = document.getElementById('counter-unit-details');
         container.innerHTML = `
             <div class="counter-unit-container">
@@ -217,7 +265,7 @@ function selectUnit(element) {
                     <table class="counter-unit-table">
                         <thead>
                             <tr>
-                                <th>STRONG vs.</th> <!-- Changed from 'Name' to 'STRONG vs.' -->
+                                <th>STRONG vs.</th>
                                 <th>Net Attack</th>
                             </tr>
                         </thead>
@@ -230,24 +278,22 @@ function selectUnit(element) {
         `;
         fetchTopOpponents(unit.UNIT_ID);
         
-        // If defender is already selected, fetch counter units
         if (selectedDefender) {
             fetchCounterUnitDetails(selectedDefender);
         }
     }
 
-    // Show the switch button
     if (selectedAttacker && selectedDefender) {
+        document.getElementById('instruction-text').style.display = 'none';
         document.querySelector('.switch-box').style.display = 'flex';
         fetchUnitVsUnitData(selectedAttacker, selectedDefender);
     } else {
-        // Hide the switch button if one of the units is not selected
+        document.getElementById('instruction-text').style.display = 'block';
         document.querySelector('.switch-box').style.display = 'none';
     }
 
-    fetchUnitDetails(unit.UNIT_ID, isDefenderMode); // Fetch and log unit details
+    fetchUnitDetails(unit.UNIT_ID, isDefenderMode);
 
-    // Show the respective panel
     if (isDefenderMode) {
         document.getElementById('right-panel').style.display = 'flex';
     } else {
@@ -255,16 +301,19 @@ function selectUnit(element) {
     }
 
     if (selectedAttacker && selectedDefender) {
-        // Show upgrades panel when both units are selected
         document.getElementById('upgrades-panel').style.display = 'block';
         loadUpgrades();
     }
 
-    // Show/hide emblems based on both units being selected
     updateEmblemVisibility();
+
+    if (selectedAttacker && selectedDefender) {
+        document.getElementById('combat-stats-panel').style.display = 'block';
+        document.getElementById('upgrades-panel').style.display = 'block';
+        loadUpgrades();
+    }
 }
 
-// Add this new function to handle emblem visibility
 function updateEmblemVisibility() {
     const attackerEmblem = document.querySelector('#attacker-box .civ-emblem-container');
     const defenderEmblem = document.querySelector('#defender-box .civ-emblem-container');
@@ -276,104 +325,57 @@ function updateEmblemVisibility() {
     }
 }
 
-function fetchCounterUnitDetails(unitId) {
-    fetch(`/get-counter-unit-details?unit_id=${unitId}`)
-        .then(response => response.json())
-        .then(data => {
-            console.log('Counter unit details:', data);
-            displayCounterUnitDetails(data);
-        })
-        .catch(error => {
-            console.error('Error fetching counter unit details:', error);
-        });
-}
-
-function displayCounterUnitDetails(details) {
-    const container = document.getElementById('counter-unit-details');
-    if (details.error) {
-        container.innerHTML = `<p class="error-message">${details.error}</p>`;
+function displayUnits(unitsData) {
+    const unitsBox = document.getElementById('units-box');
+    
+    if (typeof unitsData === 'string') {
+        unitsBox.innerHTML = `<p class="error-message">${unitsData}</p>`;
         return;
     }
 
-    const defenderName = document.querySelector('#defender-box span')?.textContent || 
-                       document.querySelector('#defender-box img')?.alt || 
-                       'Selected Unit';
+    const groupedUnits = {};
+    unitsData.forEach(unit => {
+        const columnNumber = Math.floor(unit.SORTING);
+        if (!groupedUnits[columnNumber]) {
+            groupedUnits[columnNumber] = [];
+        }
+        groupedUnits[columnNumber].push(unit);
+    });
 
-    let content = '<div class="counter-unit-container">';
-    
-    // Add top opponents table if attacker is selected
-    if (selectedAttacker) {
-        content += `
-            <div class="counter-unit-panel">
-                <h2 id="top-opponents-title"></h2>
-                <table class="counter-unit-table">
-                    <thead>
-                        <tr>
-                            <th>STRONG vs.</th> <!-- Changed from 'Name' to 'STRONG vs.' -->
-                            <th>Net Attack</th>
-                        </tr>
-                    </thead>
-                    <tbody id="top-opponents-body">
-                    </tbody>
-                </table>
-            </div>
-        `;
-    }
+    Object.keys(groupedUnits).forEach(key => {
+        groupedUnits[key].sort((a, b) => a.SORTING - b.SORTING);
+    });
 
-    // Modify the layout to center the title and align checkbox and ? icon to the right
-    content += `
-        <div class="counter-unit-panel" style="margin-left: ${selectedAttacker ? 'auto' : '0'};">
-            <div style="display: flex; align-items: center; gap: 30px;">
-                <h2 style="text-align: center; flex: 1; margin: 0;">${defenderName.replace(/_/g, ' ')}     </h2>
-                <div>
-                    <input type="checkbox" id="excludeSiege" checked>
-                    <span class="tooltip-icon" data-tooltip="Exclude Siege & Dock Units">?</span>
+    const columns = Object.keys(groupedUnits).sort((a, b) => a - b)
+        .map(columnNumber => {
+            const units = groupedUnits[columnNumber];
+            return `
+                <div class="units-column">
+                    ${units.map(unit => `
+                        <div class="unit-card" 
+                             onclick="${unit.isExcluded ? '' : `selectUnit(this)`}" 
+                             data-unit='${JSON.stringify(unit)}'>
+                            <div class="unit-icon">
+                                <img src="/images/${unit.UNIT_ID}.png" 
+                                     onerror="this.style.display='none'" 
+                                     alt="${unit.NAME}">
+                                ${unit.isExcluded ? '<div class="unit-excluded">×</div>' : ''}
+                            </div>
+                            <div class="unit-content">
+                                <div class="unit-name">${unit.NAME.replace(/_/g, ' ')}</div>
+                            </div>
+                        </div>
+                    `).join('')}
                 </div>
-            </div>
-            <table class="counter-unit-table">
-                <thead>
-                    <tr>
-                        <th>WEAK vs.</th> <!-- Changed from 'Name' to 'WEAK vs.' -->
-                        <th>Net Attack</th>
-                    </tr>
-                </thead>
-                <tbody id="counterUnitsBody">
-                    ${getFilteredUnits(details)}
-                </tbody>
-            </table>
+            `;
+        }).join('');
+
+    unitsBox.innerHTML = `
+        <div class="units-grid" style="grid-template-columns: repeat(${Object.keys(groupedUnits).length}, 1fr);">
+            ${columns}
         </div>
     `;
-    content += '</div>';
-    
-    container.innerHTML = content;
-
-    // Re-fetch the top opponents data if there's an attacker
-    if (selectedAttacker) {
-        fetchTopOpponents(selectedAttacker);
-    }
-
-    // Add event listener for checkbox
-    document.getElementById('excludeSiege')?.addEventListener('change', function() {
-        const tbody = document.getElementById('counterUnitsBody');
-        tbody.innerHTML = getFilteredUnits(details);
-    });
 }
-
-function getFilteredUnits(details) {
-    const excludeSiege = document.getElementById('excludeSiege')?.checked ?? true;
-    const filteredDetails = details
-        .filter(unit => !excludeSiege || unit["Siege and Other"] === false)
-        .sort((a, b) => b["Net Damage"] - a["Net Damage"])
-        .slice(0, 20); // Limit to 20 units
-
-    return filteredDetails.map(unit => `
-        <tr>
-            <td>${formatUnitName(unit.Name)}</td>
-            <td>${unit["Net Damage"]}</td>
-        </tr>
-    `).join('');
-}
-
 function fetchUnitDetails(unitId, isDefender) {
     fetch(`/get-unit-details?unit_id=${unitId}`)
         .then(response => response.json())
@@ -381,65 +383,13 @@ function fetchUnitDetails(unitId, isDefender) {
             console.log('Unit details:', data);
             displayUnitStats(data, isDefender);
             if (isDefender) {
-                fetchUnitArmours(unitId); // Fetch armour details for defender
+                fetchUnitArmours(unitId);
             } else {
-                fetchUnitAttacks(unitId, isDefender); // Fetch attack details for attacker
+                fetchUnitAttacks(unitId, isDefender);
             }
         })
         .catch(error => {
             console.error('Error fetching unit details:', error);
-        });
-}
-
-function fetchUnitArmours(unitId) {
-    fetch(`/get-unit-armours?unit_id=${unitId}`)
-        .then(response => response.json())
-        .then(data => {
-            console.log('Unit armours:', data);
-            displayUnitArmours(data);
-        })
-        .catch(error => {
-            console.error('Error fetching unit armours:', error);
-        });
-}
-
-function displayUnitArmours(armourDetails) {
-    const unitStatsContent = document.getElementById('defender-stats-content');
-    
-    // Early return for error
-    if (armourDetails.error) {
-        return;
-    }
-
-    // Get existing basic stats HTML
-    const basicStats = unitStatsContent.querySelector('.unit-stats-grid:first-child')?.outerHTML || '';
-
-    // Prepare the armours section
-    const armours = armourDetails.map(armour => `
-        <div class="unit-stats-item" style="word-break: break-word;">
-            <strong>${armour["Armour Class Name"]}:</strong> ${armour["Armour Amount"]}
-        </div>
-    `).join('');
-
-    // Set complete new content
-    unitStatsContent.innerHTML = `
-        ${basicStats}
-        <h2 style="margin-top: 40px; text-align: left;">Armour Classes</h2>
-        <div class="unit-stats-grid">
-            ${armours}
-        </div>
-    `;
-}
-
-function fetchUnitAttacks(unitId, isDefender) {
-    fetch(`/get-unit-attacks?unit_id=${unitId}`)
-        .then(response => response.json())
-        .then(data => {
-            console.log('Unit attacks:', data);
-            displayUnitAttacks(data, isDefender);
-        })
-        .catch(error => {
-            console.error('Error fetching unit attacks:', error);
         });
 }
 
@@ -480,18 +430,63 @@ function displayUnitStats(unitDetails, isDefender) {
     `;
 }
 
+function fetchUnitArmours(unitId) {
+    fetch(`/get-unit-armours?unit_id=${unitId}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log('Unit armours:', data);
+            displayUnitArmours(data);
+        })
+        .catch(error => {
+            console.error('Error fetching unit armours:', error);
+        });
+}
+
+function displayUnitArmours(armourDetails) {
+    const unitStatsContent = document.getElementById('defender-stats-content');
+    
+    if (armourDetails.error) {
+        return;
+    }
+
+    const basicStats = unitStatsContent.querySelector('.unit-stats-grid:first-child')?.outerHTML || '';
+
+    const armours = armourDetails.map(armour => `
+        <div class="unit-stats-item" style="word-break: break-word;">
+            <strong>${armour["Armour Class Name"]}:</strong> ${armour["Armour Amount"]}
+        </div>
+    `).join('');
+
+    unitStatsContent.innerHTML = `
+        ${basicStats}
+        <h2 style="margin-top: 40px; text-align: left;">Armour Classes</h2>
+        <div class="unit-stats-grid">
+            ${armours}
+        </div>
+    `;
+}
+
+function fetchUnitAttacks(unitId, isDefender) {
+    fetch(`/get-unit-attacks?unit_id=${unitId}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log('Unit attacks:', data);
+            displayUnitAttacks(data, isDefender);
+        })
+        .catch(error => {
+            console.error('Error fetching unit attacks:', error);
+        });
+}
+
 function displayUnitAttacks(attackDetails, isDefender) {
     const unitStatsContent = document.getElementById(isDefender ? 'defender-stats-content' : 'attacker-stats-content');
     
-    // Early return for error
     if (attackDetails.error) {
         return;
     }
 
-    // Get existing basic stats HTML
     const basicStats = unitStatsContent.querySelector('.unit-stats-grid:first-child')?.outerHTML || '';
 
-    // Prepare the attacks section
     const baseAttacks = attackDetails.filter(attack => 
         attack["Attack Class Name"] === "Base Pierce" || attack["Attack Class Name"] === "Base Melee"
     );
@@ -508,7 +503,6 @@ function displayUnitAttacks(attackDetails, isDefender) {
         </div>
     `).join('');
 
-    // Set complete new content
     unitStatsContent.innerHTML = `
         ${basicStats}
         <h2 style="margin-top: 40px;">Attack Classes</h2>
@@ -517,122 +511,16 @@ function displayUnitAttacks(attackDetails, isDefender) {
         </div>
     `;
 }
-
-function displayUnits(unitsData) {
-    const unitsBox = document.getElementById('units-box');
-    
-    if (typeof unitsData === 'string') {
-        unitsBox.innerHTML = `<p class="error-message">${unitsData}</p>`;
-        return;
-    }
-
-    // Group units by the integer part of their SORTING value
-    const groupedUnits = {};
-    unitsData.forEach(unit => {
-        const columnNumber = Math.floor(unit.SORTING);
-        if (!groupedUnits[columnNumber]) {
-            groupedUnits[columnNumber] = [];
-        }
-        groupedUnits[columnNumber].push(unit);
-    });
-
-    // Sort units within each group by their SORTING value
-    Object.keys(groupedUnits).forEach(key => {
-        groupedUnits[key].sort((a, b) => a.SORTING - b.SORTING);
-    });
-
-    // Create the grid with columns
-    const columns = Object.keys(groupedUnits).sort((a, b) => a - b)
-        .map(columnNumber => {
-            const units = groupedUnits[columnNumber];
-            return `
-                <div class="units-column">
-                    ${units.map(unit => `
-                        <div class="unit-card" 
-                             onclick="${unit.isExcluded ? '' : `selectUnit(this)`}" 
-                             data-unit='${JSON.stringify(unit)}'>
-                            <div class="unit-icon">
-                                <img src="/images/${unit.UNIT_ID}.png" 
-                                     onerror="this.style.display='none'" 
-                                     alt="${unit.NAME}">
-                                ${unit.isExcluded ? '<div class="unit-excluded">×</div>' : ''}
-                            </div>
-                            <div class="unit-content">
-                                <div class="unit-name">${unit.NAME.replace(/_/g, ' ')}</div>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
-        }).join('');
-
-    unitsBox.innerHTML = `
-        <div class="units-grid" style="grid-template-columns: repeat(${Object.keys(groupedUnits).length}, 1fr);">
-            ${columns}
-        </div>
-    `;
-}
-
-function switchUnits() {
-    const attackerBox = document.getElementById('attacker-box');
-    const defenderBox = document.getElementById('defender-box');
-    
-    if (attackerBox.querySelector('img') && defenderBox.querySelector('img')) {
-        // Store the current unit IDs and civilizations
-        const oldAttackerId = selectedAttacker;
-        const oldDefenderId = selectedDefender;
-        const oldAttackerCiv = attackerCiv;
-        const oldDefenderCiv = defenderCiv;
-        const oldAttackerContent = attackerBox.innerHTML;
-        const oldDefenderContent = defenderBox.innerHTML;
-        const oldAttackerUnitId = attackerBox.getAttribute('data-unit-id');
-        const oldDefenderUnitId = defenderBox.getAttribute('data-unit-id');
-
-        // Swap the stored values
-        selectedAttacker = oldDefenderId;
-        selectedDefender = oldAttackerId;
-        attackerCiv = oldDefenderCiv;
-        defenderCiv = oldAttackerCiv;
-        attackerBox.innerHTML = oldDefenderContent;
-        defenderBox.innerHTML = oldAttackerContent;
-        attackerBox.setAttribute('data-unit-id', oldDefenderUnitId);
-        defenderBox.setAttribute('data-unit-id', oldAttackerUnitId);
-
-        // Clear upgrade panels
-        document.getElementById('attacker-upgrades-grid').innerHTML = '';
-        document.getElementById('defender-upgrades-grid').innerHTML = '';
-        document.getElementById('attacker-full-upgrade').checked = false;
-        document.getElementById('defender-full-upgrade').checked = false;
-
-        // Re-fetch all unit data as if newly selected
-        fetchUnitDetails(selectedAttacker, false);
-        fetchUnitDetails(selectedDefender, true);
-        fetchUnitAttacks(selectedAttacker, false);
-        fetchUnitArmours(selectedDefender);
-        fetchUnitVsUnitData(selectedAttacker, selectedDefender);
-        fetchCounterUnitDetails(selectedDefender);
-        fetchTopOpponents(selectedAttacker);
-
-        // Reload upgrades panel
-        document.getElementById('upgrades-panel').style.display = 'block';
-        loadUpgrades();
-    }
-
-    // Update emblem visibility
-    updateEmblemVisibility();
-}
-
 function fetchUnitVsUnitData(attackerId, defenderId) {
     fetch(`/get-unit-vs-unit?attacker_id=${attackerId}&defender_id=${defenderId}`)
         .then(response => response.json())
         .then(data => {
-            console.log('Unit vs Unit data:', data); // Add logging
+            console.log('Unit vs Unit data:', data);
             displayUnitVsUnitData(data);
-            // Fetch defender stats to get the armour details
             fetch(`/get-unit-details?unit_id=${defenderId}`)
                 .then(response => response.json())
                 .then(defenderData => {
-                    console.log('Defender details:', defenderData); // Add logging
+                    console.log('Defender details:', defenderData);
                     displayDefenderArmour(data, defenderData);
                 })
                 .catch(error => {
@@ -653,17 +541,14 @@ function displayUnitVsUnitData(data) {
         return;
     }
 
-    // Determine if attacker uses pierce or melee attack
     const hasBasePierce = data.matching_classes.some(cls => 
         cls["Attack Class Name"] === "Base Pierce" && cls["Attack Amount"] !== 0
     );
     
-    // Calculate upgrades
     const attackUpgradeBonus = hasBasePierce ? countPierceAttackUpgrades() : countMeleeAttackUpgrades();
     const armorUpgradeBonus = calculateDefenderArmorUpgrades(hasBasePierce);
     const armorType = hasBasePierce ? "Pierce Armor" : "Melee Armor";
 
-    // Separate base attacks and bonus attacks
     const baseAttacks = data.matching_classes.filter(cls => 
         cls["Attack Class Name"] === "Base Pierce" || 
         cls["Attack Class Name"] === "Base Melee"
@@ -675,13 +560,9 @@ function displayUnitVsUnitData(data) {
         cls["Attack Amount"] !== 0
     );
 
-    // Calculate base attack total
     const baseAttackTotal = baseAttacks.reduce((sum, attack) => sum + attack["Attack Amount"], 0);
-    
-    // Calculate bonus attack total
     const bonusAttackTotal = bonusAttacks.reduce((sum, attack) => sum + attack["Attack Amount"], 0);
 
-    // Generate HTML sections
     const baseAttacksHTML = baseAttacks.map(cls => `
         <div style="display: flex; justify-content: space-between; margin: 2px 0;">
             <span style="color: #fff;">${cls["Attack Class Name"]}:</span>
@@ -699,46 +580,85 @@ function displayUnitVsUnitData(data) {
         `).join('')}
     ` : '';
 
-    // Fetch defender stats to get base armor value
-    fetch(`/get-unit-details?unit_id=${selectedDefender}`)
-        .then(response => response.json())
-        .then(defenderData => {
+    // Fetch both attacker and defender details for resource battle simulation
+    Promise.all([
+        fetch(`/get-unit-details?unit_id=${selectedAttacker}`),
+        fetch(`/get-unit-details?unit_id=${selectedDefender}`)
+    ])
+        .then(responses => Promise.all(responses.map(r => r.json())))
+        .then(([attackerData, defenderData]) => {
             const baseArmorValue = hasBasePierce ? 
                 defenderData.pierce_armor : 
                 defenderData.melee_armor;
             
-            // Calculate total armor including upgrades
             const totalArmorValue = baseArmorValue + armorUpgradeBonus;
+            
+            // Check if base attack is 0 (for special units like monks)
+            const hasZeroAttack = baseAttackTotal === 0 && bonusAttackTotal === 0;
+            const totalNetAttack = hasZeroAttack ? 
+                0 : 
+                Math.max(1, (baseAttackTotal + attackUpgradeBonus) + bonusAttackTotal - totalArmorValue);
 
-            // Calculate total net attack (minimum 1)
-            // (Base attack + Attack upgrades) + Bonus attack - (Base armor + Armor upgrades)
-            const totalNetAttack = Math.max(1, 
-                (baseAttackTotal + attackUpgradeBonus) + 
-                bonusAttackTotal - 
-                totalArmorValue
+            // For units with zero attack, set hits to kill to Infinity or display "N/A"
+            const hitsToKill = hasZeroAttack ? 
+                "N/A" : 
+                Math.ceil(defenderData.hit_points / totalNetAttack);
+
+            const attackerName = document.querySelector('#attacker-box span')?.textContent || 'Attacker';
+            const defenderName = document.querySelector('#defender-box span')?.textContent || 'Defender';
+
+            // Calculate units per 1000 resources
+            const attackerUnits = calculateUnitsFor1000Resources(attackerData.cost);
+            const defenderUnits = calculateUnitsFor1000Resources(defenderData.cost);
+
+            // Simulate the battle
+            const battleResult = simulateBattle(
+                attackerUnits, 
+                defenderUnits,
+                totalNetAttack,
+                defenderData.hit_points,
+                Math.max(1, defenderData.attack - attackerData.melee_armor), // Add armor consideration
+                attackerData.hit_points
             );
 
+            // Update combat stats panel
+            const combatStatsPanel = document.getElementById('combat-stats-panel');
+            combatStatsPanel.innerHTML = `
+                <div style="text-align: left; padding: 10px; font-size: 0.9em;">
+                    • <span style="color: #ffd700;">${attackerName}</span> kills <span style="color: #ffd700;">${defenderName}</span> after <span style="color: #00ff00;">${hitsToKill}</span> <span style="color: white;">attack</span>
+                    <br>
+                    • It takes <span style="color: #00ff00;">${Math.ceil(defenderData.hit_points / totalNetAttack)}</span> <span style="color: #ffd700;">${attackerName}</span> to one-shot <span style="color: #ffd700;">${defenderName}</span>
+                    <br>
+                    • On equal <span style="color: #ff4444;">1000</span> resources, <span style="color: #00ff00;">${attackerUnits}</span> <span style="color: #ffd700;">${attackerName}</span> vs <span style="color: #00ff00;">${defenderUnits}</span> <span style="color: #ffd700;">${defenderName}</span>, 
+                      ${battleResult.winner === 'attacker' ? `<span style="color: #ffd700;">${attackerName}</span>` : `<span style="color: #ffd700;">${defenderName}</span>`} <span style="color: white;">wins with</span> 
+                      <span style="color: #00ff00;">${battleResult.remaining}</span> <span style="color: white;">units remaining</span>
+                </div>
+            `;
+
             content.innerHTML = `
-                <h3 style="color: #ffd700; margin-bottom: 10px; text-align: left;">Attack</h3>
-                ${baseAttacksHTML}
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">Attack Upgrades:</span>
-                    <span style="color: #00ff00; margin-left: 10px;">${attackUpgradeBonus}</span>
-                </div>
-                ${bonusAttacksHTML}
-                <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Opponent Armour</h3>
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">${armorType}:</span>
-                    <span style="color: #ff4444; margin-left: 10px;">${baseArmorValue}</span>
-                </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">Armour Upgrades:</span>
-                    <span style="color: #ff4444; margin-left: 10px;">${armorUpgradeBonus}</span>
-                </div>
-                <div style="margin-top: 15px; background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; border: 1px solid rgba(255, 215, 0, 0.3);">
+    <div style="position: relative;">
+        <div class="help-icon" onclick="openPopup('explanation-popup')" style="position: absolute; top: -30px; right: 0; cursor: pointer; color: #ffd700; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;">?</div>
+                    <h3 style="color: #ffd700; margin: 20px 0 10px 0; text-align: left;">Attack</h3>
+                    ${baseAttacksHTML}
                     <div style="display: flex; justify-content: space-between;">
-                        <span style="color: #ffd700; font-weight: bold; font-size: 1.1em;">Total Net Attack:</span>
-                        <span style="color: #00ff00; font-weight: bold; font-size: 1.1em; margin-left: 10px;">${totalNetAttack}</span>
+                        <span style="color: #fff;">Attack Upgrades:</span>
+                        <span style="color: #00ff00; margin-left: 10px;">${attackUpgradeBonus}</span>
+                    </div>
+                    ${bonusAttacksHTML}
+                    <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Opponent Armour</h3>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: #fff;">${armorType}:</span>
+                        <span style="color: #ff4444; margin-left: 10px;">${baseArmorValue}</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: #fff;">Armour Upgrades:</span>
+                        <span style="color: #ff4444; margin-left: 10px;">${armorUpgradeBonus}</span>
+                    </div>
+                    <div style="margin-top: 15px; background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; border: 1px solid rgba(255, 215, 0, 0.3);">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: #ffd700; font-weight: bold; font-size: 1.1em;">Total Net Attack:</span>
+                            <span style="color: #00ff00; font-weight: bold; font-size: 1.1em; margin-left: 10px;">${totalNetAttack}</span>
+                        </div>
                     </div>
                 </div>
             `;
@@ -746,317 +666,98 @@ function displayUnitVsUnitData(data) {
 
     panel.style.display = 'block';
 }
-
-function displayUnits(unitsData) {
-    const unitsBox = document.getElementById('units-box');
-    
-    if (typeof unitsData === 'string') {
-        unitsBox.innerHTML = `<p class="error-message">${unitsData}</p>`;
-        return;
-    }
-
-    // Group units by the integer part of their SORTING value
-    const groupedUnits = {};
-    unitsData.forEach(unit => {
-        const columnNumber = Math.floor(unit.SORTING);
-        if (!groupedUnits[columnNumber]) {
-            groupedUnits[columnNumber] = [];
-        }
-        groupedUnits[columnNumber].push(unit);
-    });
-
-    // Sort units within each group by their SORTING value
-    Object.keys(groupedUnits).forEach(key => {
-        groupedUnits[key].sort((a, b) => a.SORTING - b.SORTING);
-    });
-
-    // Create the grid with columns
-    const columns = Object.keys(groupedUnits).sort((a, b) => a - b)
-        .map(columnNumber => {
-            const units = groupedUnits[columnNumber];
-            return `
-                <div class="units-column">
-                    ${units.map(unit => `
-                        <div class="unit-card" 
-                             onclick="${unit.isExcluded ? '' : `selectUnit(this)`}" 
-                             data-unit='${JSON.stringify(unit)}'>
-                            <div class="unit-icon">
-                                <img src="/images/${unit.UNIT_ID}.png" 
-                                     onerror="this.style.display='none'" 
-                                     alt="${unit.NAME}">
-                                ${unit.isExcluded ? '<div class="unit-excluded">×</div>' : ''}
-                            </div>
-                            <div class="unit-content">
-                                <div class="unit-name">${unit.NAME.replace(/_/g, ' ')}</div>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
-        }).join('');
-
-    unitsBox.innerHTML = `
-        <div class="units-grid" style="grid-template-columns: repeat(${Object.keys(groupedUnits).length}, 1fr);">
-            ${columns}
-        </div>
-    `;
-}
-
-function switchUnits() {
-    const attackerBox = document.getElementById('attacker-box');
-    const defenderBox = document.getElementById('defender-box');
-    
-    if (attackerBox.querySelector('img') && defenderBox.querySelector('img')) {
-        // Store the current unit IDs and civilizations
-        const oldAttackerId = selectedAttacker;
-        const oldDefenderId = selectedDefender;
-        const oldAttackerCiv = attackerCiv;
-        const oldDefenderCiv = defenderCiv;
-        const oldAttackerContent = attackerBox.innerHTML;
-        const oldDefenderContent = defenderBox.innerHTML;
-        const oldAttackerUnitId = attackerBox.getAttribute('data-unit-id');
-        const oldDefenderUnitId = defenderBox.getAttribute('data-unit-id');
-
-        // Swap the stored values
-        selectedAttacker = oldDefenderId;
-        selectedDefender = oldAttackerId;
-        attackerCiv = oldDefenderCiv;
-        defenderCiv = oldAttackerCiv;
-        attackerBox.innerHTML = oldDefenderContent;
-        defenderBox.innerHTML = oldAttackerContent;
-        attackerBox.setAttribute('data-unit-id', oldDefenderUnitId);
-        defenderBox.setAttribute('data-unit-id', oldAttackerUnitId);
-
-        // Clear upgrade panels
-        document.getElementById('attacker-upgrades-grid').innerHTML = '';
-        document.getElementById('defender-upgrades-grid').innerHTML = '';
-        document.getElementById('attacker-full-upgrade').checked = false;
-        document.getElementById('defender-full-upgrade').checked = false;
-
-        // Re-fetch all unit data as if newly selected
-        fetchUnitDetails(selectedAttacker, false);
-        fetchUnitDetails(selectedDefender, true);
-        fetchUnitAttacks(selectedAttacker, false);
-        fetchUnitArmours(selectedDefender);
-        fetchUnitVsUnitData(selectedAttacker, selectedDefender);
-        fetchCounterUnitDetails(selectedDefender);
-        fetchTopOpponents(selectedAttacker);
-
-        // Reload upgrades panel
-        document.getElementById('upgrades-panel').style.display = 'block';
-        loadUpgrades();
-    }
-
-    // Update emblem visibility
-    updateEmblemVisibility();
-}
-
-function fetchUnitVsUnitData(attackerId, defenderId) {
-    fetch(`/get-unit-vs-unit?attacker_id=${attackerId}&defender_id=${defenderId}`)
+function fetchCounterUnitDetails(unitId) {
+    fetch(`/get-counter-unit-details?unit_id=${unitId}`)
         .then(response => response.json())
         .then(data => {
-            console.log('Unit vs Unit data:', data); // Add logging
-            displayUnitVsUnitData(data);
-            // Fetch defender stats to get the armour details
-            fetch(`/get-unit-details?unit_id=${defenderId}`)
-                .then(response => response.json())
-                .then(defenderData => {
-                    console.log('Defender details:', defenderData); // Add logging
-                    displayDefenderArmour(data, defenderData);
-                })
-                .catch(error => {
-                    console.error('Error fetching defender details:', error);
-                });
+            console.log('Counter unit details:', data);
+            displayCounterUnitDetails(data);
         })
         .catch(error => {
-            console.error('Error fetching unit vs unit data:', error);
+            console.error('Error fetching counter unit details:', error);
         });
 }
 
-function displayUnitVsUnitData(data) {
-    const panel = document.getElementById('unit-vs-unit-panel');
-    const content = document.getElementById('unit-vs-unit-content');
-
-    if (data.error) {
-        content.innerHTML = `<p class="error-message">${data.error}</p>`;
+function displayCounterUnitDetails(details) {
+    const container = document.getElementById('counter-unit-details');
+    if (details.error) {
+        container.innerHTML = `<p class="error-message">${details.error}</p>`;
         return;
     }
 
-    // Determine if attacker uses pierce or melee attack
-    const hasBasePierce = data.matching_classes.some(cls => 
-        cls["Attack Class Name"] === "Base Pierce" && cls["Attack Amount"] !== 0
-    );
+    const defenderName = document.querySelector('#defender-box span')?.textContent || 
+                       document.querySelector('#defender-box img')?.alt || 
+                       'Selected Unit';
+
+    let content = '<div class="counter-unit-container">';
     
-    // Calculate upgrades
-    const attackUpgradeBonus = hasBasePierce ? countPierceAttackUpgrades() : countMeleeAttackUpgrades();
-    const armorUpgradeBonus = calculateDefenderArmorUpgrades(hasBasePierce);
-    const armorType = hasBasePierce ? "Pierce Armor" : "Melee Armor";
-
-    // Separate base attacks and bonus attacks
-    const baseAttacks = data.matching_classes.filter(cls => 
-        cls["Attack Class Name"] === "Base Pierce" || 
-        cls["Attack Class Name"] === "Base Melee"
-    );
-
-    const bonusAttacks = data.matching_classes.filter(cls => 
-        cls["Attack Class Name"] !== "Base Pierce" && 
-        cls["Attack Class Name"] !== "Base Melee" &&
-        cls["Attack Amount"] !== 0
-    );
-
-    // Calculate base attack total
-    const baseAttackTotal = baseAttacks.reduce((sum, attack) => sum + attack["Attack Amount"], 0);
-    
-    // Calculate bonus attack total
-    const bonusAttackTotal = bonusAttacks.reduce((sum, attack) => sum + attack["Attack Amount"], 0);
-
-    // Generate HTML sections
-    const baseAttacksHTML = baseAttacks.map(cls => `
-        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-            <span style="color: #fff;">${cls["Attack Class Name"]}:</span>
-            <span style="color: #00ff00; margin-left: 10px;">${cls["Attack Amount"]}</span>
-        </div>
-    `).join('');
-
-    const bonusAttacksHTML = bonusAttacks.length > 0 ? `
-        <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Bonus Damage</h3>
-        ${bonusAttacks.map(cls => `
-            <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                <span style="color: #fff;">${cls["Attack Class Name"]}:</span>
-                <span style="color: #00ff00; margin-left: 10px;">${cls["Attack Amount"]}</span>
+    if (selectedAttacker) {
+        content += `
+            <div class="counter-unit-panel">
+                <h2 id="top-opponents-title"></h2>
+                <table class="counter-unit-table">
+                    <thead>
+                        <tr>
+                            <th>STRONG vs.</th>
+                            <th>Net Attack</th>
+                        </tr>
+                    </thead>
+                    <tbody id="top-opponents-body">
+                    </tbody>
+                </table>
             </div>
-        `).join('')}
-    ` : '';
+        `;
+    }
 
-    // Fetch defender stats to get base armor value
-    fetch(`/get-unit-details?unit_id=${selectedDefender}`)
-        .then(response => response.json())
-        .then(defenderData => {
-            const baseArmorValue = hasBasePierce ? 
-                defenderData.pierce_armor : 
-                defenderData.melee_armor;
-            
-            // Calculate total armor including upgrades
-            const totalArmorValue = baseArmorValue + armorUpgradeBonus;
-
-            // Calculate total net attack (minimum 1)
-            // (Base attack + Attack upgrades) + Bonus attack - (Base armor + Armor upgrades)
-            const totalNetAttack = Math.max(1, 
-                (baseAttackTotal + attackUpgradeBonus) + 
-                bonusAttackTotal - 
-                totalArmorValue
-            );
-
-            content.innerHTML = `
-                <h3 style="color: #ffd700; margin-bottom: 10px; text-align: left;">Attack</h3>
-                ${baseAttacksHTML}
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">Attack Upgrades:</span>
-                    <span style="color: #00ff00; margin-left: 10px;">${attackUpgradeBonus}</span>
+    content += `
+        <div class="counter-unit-panel" style="margin-left: ${selectedAttacker ? 'auto' : '0'};">
+            <div style="display: flex; align-items: center; gap: 30px;">
+                <h2 style="text-align: center; flex: 1; margin: 0;">${defenderName.replace(/_/g, ' ')}     </h2>
+                <div>
+                    <input type="checkbox" id="excludeSiege" checked>
+                    <span class="tooltip-icon" data-tooltip="Exclude Siege & Dock Units">?</span>
                 </div>
-                ${bonusAttacksHTML}
-                <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Opponent Armour</h3>
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">${armorType}:</span>
-                    <span style="color: #ff4444; margin-left: 10px;">${baseArmorValue}</span>
-                </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">Armour Upgrades:</span>
-                    <span style="color: #ff4444; margin-left: 10px;">${armorUpgradeBonus}</span>
-                </div>
-                <div style="margin-top: 15px; background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; border: 1px solid rgba(255, 215, 0, 0.3);">
-                    <div style="display: flex; justify-content: space-between;">
-                        <span style="color: #ffd700; font-weight: bold; font-size: 1.1em;">Total Net Attack:</span>
-                        <span style="color: #00ff00; font-weight: bold; font-size: 1.1em; margin-left: 10px;">${totalNetAttack}</span>
-                    </div>
-                </div>
-            `;
-        });
-
-    panel.style.display = 'block';
-}
-
-// Add this helper function to calculate total with upgrades
-function calculateTotalWithUpgrades(baseTotal, upgradeCount) {
-    // Calculate raw total with upgrades
-    const rawTotal = Math.max(1, baseTotal + upgradeCount);
-    return rawTotal;
-}
-
-// Add this new function to count pierce attack upgrades
-function countPierceAttackUpgrades() {
-    const grid = document.getElementById('attacker-upgrades-grid');
-    let count = 0;
+            </div>
+            <table class="counter-unit-table">
+                <thead>
+                    <tr>
+                        <th>WEAK vs.</th>
+                        <th>Net Attack</th>
+                    </tr>
+                </thead>
+                <tbody id="counterUnitsBody">
+                    ${getFilteredUnits(details)}
+                </tbody>
+            </table>
+        </div>
+    `;
+    content += '</div>';
     
-    // Check each pierce attack upgrade (a1 through a4)
-    for (let i = 1; i <= 4; i++) {
-        const upgrade = grid.querySelector(`[data-position="a${i}"]`);
-        if (upgrade && upgrade.classList.contains('selected')) {
-            count++;
-        }
+    container.innerHTML = content;
+
+    if (selectedAttacker) {
+        fetchTopOpponents(selectedAttacker);
     }
 
-    // Add Logistica bonus for specific units
-    const d4 = grid.querySelector('[data-position="d4"]');
-    if (d4 && d4.classList.contains('selected') && selectedDefender) {
-        const defenderUnitId = parseInt(selectedDefender);
-        if ([93, 358, 359].includes(defenderUnitId)) {
-            count += 2; // Add +2 attack when attacking Spearman-line units
-        }
-    }
-
-    return count;
+    document.getElementById('excludeSiege')?.addEventListener('change', function() {
+        const tbody = document.getElementById('counterUnitsBody');
+        tbody.innerHTML = getFilteredUnits(details);
+    });
 }
 
-// Update the updateUnitVsUnitUpgrades function
-function updateUnitVsUnitUpgrades() {
-    const content = document.getElementById('unit-vs-unit-content');
-    if (!content) return;
+function getFilteredUnits(details) {
+    const excludeSiege = document.getElementById('excludeSiege')?.checked ?? true;
+    const filteredDetails = details
+        .filter(unit => !excludeSiege || unit["Siege and Other"] === false)
+        .sort((a, b) => b["Net Damage"] - a["Net Damage"])
+        .slice(0, 20);
 
-    // Get all attack-related divs
-    const attackDivs = Array.from(content.querySelectorAll('div'));
-    const baseMeleeIndex = attackDivs.findIndex(div => 
-        div.textContent.includes('Base Melee:')
-    );
-    const basePierceIndex = attackDivs.findIndex(div => 
-        div.textContent.includes('Base Pierce:')
-    );
-
-    let upgradeBonus = 0;
-    let baseAttackValue = 0;
-    let armorType = '';
-
-    // Determine attack type and calculate appropriate upgrade bonus
-    if (baseMeleeIndex !== -1) {
-        baseAttackValue = parseInt(attackDivs[baseMeleeIndex].querySelector('span:last-child').textContent);
-        upgradeBonus = countMeleeAttackUpgrades();
-        armorType = 'Melee Armor:';
-    } else if (basePierceIndex !== -1) {
-        baseAttackValue = parseInt(attackDivs[basePierceIndex].querySelector('span:last-child').textContent);
-        upgradeBonus = countPierceAttackUpgrades();
-        armorType = 'Pierce Armor:';
-    }
-
-    // Update attack upgrades display while preserving styling
-    const upgradesDiv = attackDivs.find(div => div.textContent.includes('Attack Upgrades:'));
-    if (upgradesDiv) {
-        const valueSpan = upgradesDiv.querySelector('span:last-child');
-        valueSpan.textContent = upgradeBonus;
-    }
-
-    // Get armor value
-    const armorDiv = attackDivs.find(div => div.textContent.includes(armorType));
-    const armorValue = armorDiv ? parseInt(armorDiv.querySelector('span:last-child').textContent) : 0;
-
-    // Calculate new total
-    const newTotal = Math.max(1, (baseAttackValue + upgradeBonus) - armorValue);
-
-    // Update Total Net Attack while preserving styling
-    const totalAttackDiv = content.querySelector('div[style*="background-color"]');
-    if (totalAttackDiv) {
-        const totalValueSpan = totalAttackDiv.querySelector('span:last-child');
-        totalValueSpan.textContent = newTotal;
-    }
+    return filteredDetails.map(unit => `
+        <tr>
+            <td>${formatUnitName(unit.Name)}</td>
+            <td>${unit["Net Damage"]}</td>
+        </tr>
+    `).join('');
 }
 
 function formatUnitName(name) {
@@ -1104,7 +805,7 @@ function displayTopOpponentsTable() {
                 <table class="counter-unit-table">
                     <thead>
                         <tr>
-                            <th>STRONG vs.</th> <!-- Changed from 'Name' to 'STRONG vs.' -->
+                            <th>STRONG vs.</th>
                             <th>Net Attack</th>
                         </tr>
                     </thead>
@@ -1115,8 +816,6 @@ function displayTopOpponentsTable() {
         </div>
     `;
 }
-
-// Add this function to handle icon selection
 function toggleUpgradeSelection(element, isDefender = false) {
     if (element.classList.contains('upgrade-restricted')) {
         return;
@@ -1127,15 +826,12 @@ function toggleUpgradeSelection(element, isDefender = false) {
     const gridId = isDefender ? 'defender-upgrades-grid' : 'attacker-upgrades-grid';
     const grid = document.getElementById(gridId);
     
-    // Get the column letter and row number
     const col = position[0];
     const row = parseInt(position[1]);
 
     if (element.classList.contains(selectedClass)) {
-        // Deselection logic
         element.classList.remove(selectedClass);
         
-        // When deselecting, also deselect all higher tiers in the same column (only for the first grid)
         if (row <= 3) {
             for (let i = row + 1; i <= 3; i++) {
                 const higherUpgrade = grid.querySelector(`[data-position="${col}${i}"]:not(.restricted)`);
@@ -1145,10 +841,8 @@ function toggleUpgradeSelection(element, isDefender = false) {
             }
         }
     } else {
-        // Selection logic
         element.classList.add(selectedClass);
         
-        // When selecting, also select all lower tiers in the same column (only for the first grid)
         if (row <= 3) {
             for (let i = row - 1; i >= 1; i--) {
                 const lowerUpgrade = grid.querySelector(`[data-position="${col}${i}"]:not(.restricted)`);
@@ -1159,7 +853,6 @@ function toggleUpgradeSelection(element, isDefender = false) {
         }
     }
 
-    // Update full upgrade checkbox
     const checkboxId = isDefender ? 'defender-full-upgrade' : 'attacker-full-upgrade';
     const checkbox = document.getElementById(checkboxId);
     const allIcons = grid.querySelectorAll('.upgrade-icon:not(.restricted)');
@@ -1168,147 +861,137 @@ function toggleUpgradeSelection(element, isDefender = false) {
     checkbox.checked = allIcons.length === selectedIcons.length;
 
     if (!isDefender) {
-        // After toggling selection, update the unit vs unit display
         updateUnitVsUnitUpgrades();
     }
 
     if (selectedAttacker && selectedDefender) {
-        // Re-fetch and update the unit vs unit display when either attacker or defender upgrades change
         fetchUnitVsUnitData(selectedAttacker, selectedDefender);
     }
 }
 
-// Add this new function to fetch restrictions for a civilization
-function fetchCivRestrictions(civ) {
-    return fetch(`/get-civ-restrictions?civ=${encodeURIComponent(civ)}`)
-        .then(response => response.json());
-}
-
-// Modify the loadUpgrades function to handle restrictions and full upgrade logic
-function loadUpgrades() {
-    const attackerGrid = document.getElementById('attacker-upgrades-grid');
-    const defenderGrid = document.getElementById('defender-upgrades-grid');
-    attackerGrid.innerHTML = ''; // Clear existing content
-    defenderGrid.innerHTML = ''; // Clear existing content
-
-    // Fetch both civilization restrictions
-    Promise.all([
-        fetchCivRestrictions(attackerCiv),
-        fetchCivRestrictions(defenderCiv),
-        fetch('/get-upgrades')
-    ])
-    .then(([attackerRestrictions, defenderRestrictions, response]) => response.json()
-        .then(data => {
-            // Sort icons by their first two characters
-            const sortedIcons = data.sort((a, b) => {
-                const aPrefix = a.slice(0, 2);
-                const bPrefix = b.slice(0, 2);
-                return aPrefix.localeCompare(bPrefix);
-            });
-
-            // Create a 3x5 grid for Blacksmith upgrades and a 1x5 grid for Other upgrades
-            const blacksmithGrid = Array.from({ length: 3 }, () => Array(5).fill(null));
-            const otherGrid = Array.from({ length: 1 }, () => Array(5).fill(null));
-
-            sortedIcons.forEach((icon, index) => {
-                if (index < 15) {
-                    const row = Math.floor(index / 5);
-                    const col = index % 5;
-                    blacksmithGrid[row][col] = icon;
-                } else {
-                    const col = index % 5;
-                    otherGrid[0][col] = icon;
-                }
-            });
-
-            // Generate HTML for the grids
-            const generateGridHTML = (grid, isDefender, restrictions) => {
-                return grid.map((row, rowIndex) => row.map((icon, colIndex) => {
-                    if (icon) {
-                        const position = icon.slice(0, 2); // Get position from filename (e.g., 'e3')
-                        const tooltipText = icon.slice(2, -4).replace(/^\./, '');
-                        const isRestricted = restrictions.includes(position);
-                        
-                        return `
-                            <div class="upgrade-icon ${isRestricted ? 'upgrade-restricted' : ''}" 
-                                 onclick="${isRestricted ? '' : `toggleUpgradeSelection(this, ${isDefender})`}" 
-                                 data-tooltip="${tooltipText}" 
-                                 style="${isRestricted ? 'opacity: 0.5; cursor: not-allowed;' : ''}">
-                                <img src="/static/images/Upgrades/${icon}" alt="${icon}">
-                                ${isRestricted ? '<div class="upgrade-restricted-overlay">×</div>' : ''}
-                            </div>
-                        `;
-                    }
-                    return '';
-                }).join('')).join('');
-            };
-
-            attackerGrid.innerHTML = generateGridHTML(blacksmithGrid, false, attackerRestrictions) + 
-                                   '<div class="separator-line thick-separator"></div>' + 
-                                   generateGridHTML(otherGrid, false, attackerRestrictions);
-            
-            defenderGrid.innerHTML = generateGridHTML(blacksmithGrid, true, defenderRestrictions) + 
-                                   '<div class="separator-line thick-separator"></div>' + 
-                                   generateGridHTML(otherGrid, true, defenderRestrictions);
-
-            // Add event listeners for full upgrade checkboxes
-            const attackerFullUpgrade = document.getElementById('attacker-full-upgrade');
-            const defenderFullUpgrade = document.getElementById('defender-full-upgrade');
-
-            attackerFullUpgrade.addEventListener('change', function() {
-                const unitId = document.getElementById('attacker-box').getAttribute('data-unit-id');
-                if (unitId) {
-                    fetch(`/get-unit-upgrades?unit_id=${unitId}`)
-                        .then(response => response.json())
-                        .then(upgrades => {
-                            const icons = attackerGrid.querySelectorAll('.upgrade-icon:not(.restricted)');
-                            icons.forEach(icon => {
-                                const position = icon.getAttribute('data-position');
-                                if (this.checked && upgrades.includes(position)) {
-                                    icon.classList.add('selected');
-                                } else {
-                                    icon.classList.remove('selected');
-                                }
-                            });
-                        });
-                }
-            });
-
-            defenderFullUpgrade.addEventListener('change', function() {
-                const unitId = document.getElementById('defender-box').getAttribute('data-unit-id');
-                if (unitId) {
-                    fetch(`/get-unit-upgrades?unit_id=${unitId}`)
-                        .then(response => response.json())
-                        .then(upgrades => {
-                            const icons = defenderGrid.querySelectorAll('.upgrade-icon:not(.restricted)');
-                            icons.forEach(icon => {
-                                const position = icon.getAttribute('data-position');
-                                if (this.checked && upgrades.includes(position)) {
-                                    icon.classList.add('defender-selected');
-                                } else {
-                                    icon.classList.remove('defender-selected');
-                                }
-                            });
-                        });
-                }
-            });
-        }))
-    .catch(error => console.error('Error loading upgrades:', error));
-}
-
-document.addEventListener('mousemove', function(e) {
-    const tooltip = document.getElementById('tooltip');
-    const target = e.target.closest('[data-tooltip]');
-    if (target) {
-        tooltip.textContent = target.getAttribute('data-tooltip');
-        tooltip.style.left = e.pageX + 10 + 'px';
-        tooltip.style.top = e.pageY + 10 + 'px';
-        tooltip.style.display = 'block';
-    } else {
-        tooltip.style.display = 'none';
+function countPierceAttackUpgrades() {
+    const grid = document.getElementById('attacker-upgrades-grid');
+    let count = 0;
+    
+    for (let i = 1; i <= 4; i++) {
+        const upgrade = grid.querySelector(`[data-position="a${i}"]`);
+        if (upgrade && upgrade.classList.contains('selected')) {
+            count++;
+        }
     }
-});
 
+    const d4 = grid.querySelector('[data-position="d4"]');
+    if (d4 && d4.classList.contains('selected') && selectedDefender) {
+        const defenderUnitId = parseInt(selectedDefender);
+        if ([93, 358, 359].includes(defenderUnitId)) {
+            count += 2;
+        }
+    }
+
+    return count;
+}
+
+function countMeleeAttackUpgrades() {
+    const grid = document.getElementById('attacker-upgrades-grid');
+    let upgradeBonus = 0;
+    
+    const c1 = grid.querySelector('[data-position="c1"]');
+    const c2 = grid.querySelector('[data-position="c2"]');
+    const c3 = grid.querySelector('[data-position="c3"]');
+    const d4 = grid.querySelector('[data-position="d4"]');
+
+    if (c1 && c1.classList.contains('selected')) upgradeBonus += 1;
+    if (c2 && c2.classList.contains('selected')) upgradeBonus += 1;
+    if (c3 && c3.classList.contains('selected')) upgradeBonus += 2;
+
+    if (d4 && d4.classList.contains('selected') && selectedDefender) {
+        const defenderUnitId = parseInt(selectedDefender);
+        if ([93, 358, 359].includes(defenderUnitId)) {
+            upgradeBonus += 2;
+        }
+    }
+
+    return upgradeBonus;
+}
+
+function calculateDefenderArmorUpgrades(isPierceArmor) {
+    const grid = document.getElementById('defender-upgrades-grid');
+    let armorBonus = 0;
+
+    const isUpgradeSelected = position => {
+        const upgrade = grid.querySelector(`[data-position="${position}"]`);
+        return upgrade && upgrade.classList.contains('defender-selected');
+    };
+
+    if (isUpgradeSelected('b1')) armorBonus += 1;
+    if (isUpgradeSelected('b2')) armorBonus += 1;
+    if (isUpgradeSelected('d1')) armorBonus += 1;
+    if (isUpgradeSelected('d2')) armorBonus += 1;
+    if (isUpgradeSelected('e1')) armorBonus += 1;
+    if (isUpgradeSelected('e2')) armorBonus += 1;
+
+    if (isPierceArmor && isUpgradeSelected('b4')) {
+        armorBonus += 1;
+    }
+
+    if (isPierceArmor) {
+        if (isUpgradeSelected('b3')) armorBonus += 2;
+        if (isUpgradeSelected('d3')) armorBonus += 2;
+        if (isUpgradeSelected('d4')) armorBonus += 2;
+        if (isUpgradeSelected('e3')) armorBonus += 2;
+    } else {
+        if (isUpgradeSelected('b3')) armorBonus += 1;
+        if (isUpgradeSelected('d3')) armorBonus += 1;
+        if (isUpgradeSelected('d4')) armorBonus += 1;
+        if (isUpgradeSelected('e3')) armorBonus += 1;
+    }
+
+    return armorBonus;
+}
+
+function updateUnitVsUnitUpgrades() {
+    const content = document.getElementById('unit-vs-unit-content');
+    if (!content) return;
+
+    const attackDivs = Array.from(content.querySelectorAll('div'));
+    const baseMeleeIndex = attackDivs.findIndex(div => 
+        div.textContent.includes('Base Melee:')
+    );
+    const basePierceIndex = attackDivs.findIndex(div => 
+        div.textContent.includes('Base Pierce:')
+    );
+
+    let upgradeBonus = 0;
+    let baseAttackValue = 0;
+    let armorType = '';
+
+    if (baseMeleeIndex !== -1) {
+        baseAttackValue = parseInt(attackDivs[baseMeleeIndex].querySelector('span:last-child').textContent);
+        upgradeBonus = countMeleeAttackUpgrades();
+        armorType = 'Melee Armor:';
+    } else if (basePierceIndex !== -1) {
+        baseAttackValue = parseInt(attackDivs[basePierceIndex].querySelector('span:last-child').textContent);
+        upgradeBonus = countPierceAttackUpgrades();
+        armorType = 'Pierce Armor:';
+    }
+
+    const upgradesDiv = attackDivs.find(div => div.textContent.includes('Attack Upgrades:'));
+    if (upgradesDiv) {
+        const valueSpan = upgradesDiv.querySelector('span:last-child');
+        valueSpan.textContent = upgradeBonus;
+    }
+
+    const armorDiv = attackDivs.find(div => div.textContent.includes(armorType));
+    const armorValue = armorDiv ? parseInt(armorDiv.querySelector('span:last-child').textContent) : 0;
+
+    const newTotal = Math.max(1, (baseAttackValue + upgradeBonus) - armorValue);
+
+    const totalAttackDiv = content.querySelector('div[style*="background-color"]');
+    if (totalAttackDiv) {
+        const totalValueSpan = totalAttackDiv.querySelector('span:last-child');
+        totalValueSpan.textContent = newTotal;
+    }
+}
 function loadUpgrades() {
     const attackerGrid = document.getElementById('attacker-upgrades-grid');
     const defenderGrid = document.getElementById('defender-upgrades-grid');
@@ -1318,7 +1001,6 @@ function loadUpgrades() {
     const attackerId = document.getElementById('attacker-box').getAttribute('data-unit-id');
     const defenderId = document.getElementById('defender-box').getAttribute('data-unit-id');
 
-    // Fetch all necessary data
     Promise.all([
         fetchCivRestrictions(attackerCiv),
         fetchCivRestrictions(defenderCiv),
@@ -1346,7 +1028,6 @@ function loadUpgrades() {
         defenderUnitUpgrades,
         upgrades
     ]) => {
-        // Create the grids with both civ and unit restrictions
         const generateGridHTML = (grid, isDefender, civRestrictions, unitUpgrades) => {
             return grid.map(row => row.map(icon => {
                 if (icon) {
@@ -1356,7 +1037,6 @@ function loadUpgrades() {
                     const isUnitRestricted = !unitUpgrades.includes(position);
                     const isRestricted = isCivRestricted || isUnitRestricted;
                     
-                    // Add appropriate suffix to tooltip based on restriction type
                     if (isCivRestricted) {
                         tooltipText += " - Not available for the selected civilization";
                     } else if (isUnitRestricted) {
@@ -1379,7 +1059,6 @@ function loadUpgrades() {
             }).join('')).join('');
         };
 
-        // Sort and organize icons
         const sortedIcons = upgrades.sort((a, b) => a.slice(0, 2).localeCompare(b.slice(0, 2)));
         const blacksmithGrid = Array.from({ length: 3 }, () => Array(5).fill(null));
         const otherGrid = Array.from({ length: 1 }, () => Array(5).fill(null));
@@ -1396,7 +1075,6 @@ function loadUpgrades() {
             }
         });
 
-        // Generate grids with both civ and unit restrictions
         attackerGrid.innerHTML = generateGridHTML(blacksmithGrid, false, attackerCivRestrictions, attackerUnitUpgrades) + 
                                '<div class="separator-line thick-separator"></div>' + 
                                generateGridHTML(otherGrid, false, attackerCivRestrictions, attackerUnitUpgrades);
@@ -1405,14 +1083,12 @@ function loadUpgrades() {
                                '<div class="separator-line thick-separator"></div>' + 
                                generateGridHTML(otherGrid, true, defenderCivRestrictions, defenderUnitUpgrades);
 
-        // Setup full upgrade checkboxes
         setupFullUpgradeCheckbox('attacker-full-upgrade', attackerGrid, attackerUnitUpgrades, 'selected');
         setupFullUpgradeCheckbox('defender-full-upgrade', defenderGrid, defenderUnitUpgrades, 'defender-selected');
     })
     .catch(error => console.error('Error loading upgrades:', error));
 }
 
-// Add this helper function to handle checkbox setup
 function setupFullUpgradeCheckbox(checkboxId, grid, unitUpgrades, selectedClass) {
     const checkbox = document.getElementById(checkboxId);
     if (!checkbox) return;
@@ -1430,282 +1106,87 @@ function setupFullUpgradeCheckbox(checkboxId, grid, unitUpgrades, selectedClass)
             }
         });
 
-        // Update unit vs unit display if necessary
         if (selectedAttacker && selectedDefender) {
             fetchUnitVsUnitData(selectedAttacker, selectedDefender);
         }
     });
 
-    // Set initial checkbox state
     const availableIcons = grid.querySelectorAll('.upgrade-icon:not(.upgrade-restricted)');
     const selectedIcons = grid.querySelectorAll(`.upgrade-icon.${selectedClass}`);
     checkbox.checked = availableIcons.length > 0 && availableIcons.length === selectedIcons.length;
 }
 
-// Update toggleUpgradeSelection to handle checkbox state
-function toggleUpgradeSelection(element, isDefender = false) {
-    if (element.classList.contains('upgrade-restricted')) {
-        return;
-    }
-
-    const selectedClass = isDefender ? 'defender-selected' : 'selected';
-    const position = element.getAttribute('data-position');
-    const gridId = isDefender ? 'defender-upgrades-grid' : 'attacker-upgrades-grid';
-    const grid = document.getElementById(gridId);
-    
-    // Get the column letter and row number
-    const col = position[0];
-    const row = parseInt(position[1]);
-
-    if (element.classList.contains(selectedClass)) {
-        // Deselection logic
-        element.classList.remove(selectedClass);
-        
-        // When deselecting, also deselect all higher tiers in the same column (only for the first grid)
-        if (row <= 3) {
-            for (let i = row + 1; i <= 3; i++) {
-                const higherUpgrade = grid.querySelector(`[data-position="${col}${i}"]:not(.restricted)`);
-                if (higherUpgrade) {
-                    higherUpgrade.classList.remove(selectedClass);
-                }
-            }
-        }
+// Tooltip system
+document.addEventListener('mousemove', function(e) {
+    const tooltip = document.getElementById('tooltip');
+    const target = e.target.closest('[data-tooltip]');
+    if (target) {
+        tooltip.textContent = target.getAttribute('data-tooltip');
+        tooltip.style.left = e.pageX + 10 + 'px';
+        tooltip.style.top = e.pageY + 10 + 'px';
+        tooltip.style.display = 'block';
     } else {
-        // Selection logic
-        element.classList.add(selectedClass);
-        
-        // When selecting, also select all lower tiers in the same column (only for the first grid)
-        if (row <= 3) {
-            for (let i = row - 1; i >= 1; i--) {
-                const lowerUpgrade = grid.querySelector(`[data-position="${col}${i}"]:not(.restricted)`);
-                if (lowerUpgrade) {
-                    lowerUpgrade.classList.add(selectedClass);
-                }
-            }
-        }
+        tooltip.style.display = 'none';
     }
+});
 
-    // Update full upgrade checkbox
-    const checkboxId = isDefender ? 'defender-full-upgrade' : 'attacker-full-upgrade';
-    const checkbox = document.getElementById(checkboxId);
-    const allIcons = grid.querySelectorAll('.upgrade-icon:not(.restricted)');
-    const selectedIcons = grid.querySelectorAll(`.upgrade-icon.${selectedClass}`);
-    
-    checkbox.checked = allIcons.length === selectedIcons.length;
-
-    if (!isDefender) {
-        // After toggling selection, update the unit vs unit display
-        updateUnitVsUnitUpgrades();
-    }
-
-    if (selectedAttacker && selectedDefender) {
-        // Re-fetch and update the unit vs unit display when either attacker or defender upgrades change
-        fetchUnitVsUnitData(selectedAttacker, selectedDefender);
-    }
+// Fetch civilization restrictions
+function fetchCivRestrictions(civ) {
+    return fetch(`/get-civ-restrictions?civ=${encodeURIComponent(civ)}`)
+        .then(response => response.json());
 }
 
-function calculateBonusAttackWithUpgrades(unit, upgrades, enemy, isDefender) {
-    // ...existing code...
-    
-    // Calculate pierce attack upgrades
-    if (unit.base_pierce > 0) {
-        let pierceUpgradeCount = 0;
-        if (upgrades.includes('a1')) pierceUpgradeCount++;
-        if (upgrades.includes('a2')) pierceUpgradeCount++;
-        if (upgrades.includes('a3')) pierceUpgradeCount++;
-        if (upgrades.includes('a4')) pierceUpgradeCount++;
-        
-        // Add the pierce attack upgrades to the base pierce
-        attack += pierceUpgradeCount;
-    }
-
-    // ...existing code...
-}
-
-function updateUnitVsUnitPanel() {
-    // ...existing code...
-    
-    // When calculating the damage, ensure pierce attack upgrades are included
-    let attackerDamage = calculateBonusAttackWithUpgrades(attacker, attackerUpgrades, defender, false);
-    let defenderDamage = calculateBonusAttackWithUpgrades(defender, defenderUpgrades, attacker, true);
-    
-    // ...existing code...
-}
-
-// Add this helper function to calculate new total
+// Calculate helper for battle simulation
 function calculateTotalWithUpgrades(baseAmount, hasBasePierce) {
     const upgradeCount = countPierceAttackUpgrades();
-    if (hasBasePierce) {
-        return baseAmount + upgradeCount;
-    }
-    return baseAmount;
+    return hasBasePierce ? baseAmount + upgradeCount : baseAmount;
 }
 
-// Add new function to calculate defender armor upgrades based on armor type
-function calculateDefenderArmorUpgrades(isPierceArmor) {
-    const grid = document.getElementById('defender-upgrades-grid');
-    let armorBonus = 0;
+function switchUnits() {
+    // Get both boxes and panels
+    const attackerBox = document.getElementById('attacker-box');
+    const defenderBox = document.getElementById('defender-box');
+    const attackerStats = document.getElementById('attacker-stats-content');
+    const defenderStats = document.getElementById('defender-stats-content');
 
-    // Helper function to check if an upgrade is selected
-    const isUpgradeSelected = position => {
-        const upgrade = grid.querySelector(`[data-position="${position}"]`);
-        return upgrade && upgrade.classList.contains('defender-selected');
-    };
+    // Store current values
+    const tempAttackerId = selectedAttacker;
+    const tempDefenderId = selectedDefender;
+    const tempAttackerHtml = attackerBox.innerHTML;
+    const tempDefenderHtml = defenderBox.innerHTML;
+    const tempAttackerCiv = attackerCiv;
+    const tempDefenderCiv = defenderCiv;
+    const tempAttackerStats = attackerStats.innerHTML;
+    const tempDefenderStats = defenderStats.innerHTML;
 
-    // Common upgrades that affect both armor types
-    if (isUpgradeSelected('b1')) armorBonus += 1;
-    if (isUpgradeSelected('b2')) armorBonus += 1;
-    if (isUpgradeSelected('d1')) armorBonus += 1;
-    if (isUpgradeSelected('d2')) armorBonus += 1;
-    if (isUpgradeSelected('e1')) armorBonus += 1;
-    if (isUpgradeSelected('e2')) armorBonus += 1;
+    // Swap unit IDs
+    selectedAttacker = tempDefenderId;
+    selectedDefender = tempAttackerId;
 
-    // Add +1 pierce armor when b4 is selected
-    if (isPierceArmor && isUpgradeSelected('b4')) {
-        armorBonus += 1;
+    // Swap HTML content
+    attackerBox.innerHTML = tempDefenderHtml;
+    defenderBox.innerHTML = tempAttackerHtml;
+
+    // Swap stats content
+    attackerStats.innerHTML = tempDefenderStats;
+    defenderStats.innerHTML = tempAttackerStats;
+
+    // Swap data-unit-id attributes
+    attackerBox.setAttribute('data-unit-id', tempDefenderId || '');
+    defenderBox.setAttribute('data-unit-id', tempAttackerId || '');
+
+    // Swap civilizations
+    attackerCiv = tempDefenderCiv;
+    defenderCiv = tempAttackerCiv;
+
+    // Update panels and data
+    if (selectedAttacker && selectedDefender) {
+        // Fetch new stats with swapped roles
+        fetchUnitDetails(selectedAttacker, false);  // Update attacker stats
+        fetchUnitDetails(selectedDefender, true);   // Update defender stats
+        fetchUnitVsUnitData(selectedAttacker, selectedDefender);
+        fetchCounterUnitDetails(selectedDefender);
+        fetchTopOpponents(selectedAttacker);
+        loadUpgrades();
     }
-
-    // Upgrades with different effects based on armor type
-    if (isPierceArmor) {
-        if (isUpgradeSelected('b3')) armorBonus += 2;
-        if (isUpgradeSelected('d3')) armorBonus += 2;
-        if (isUpgradeSelected('d4')) armorBonus += 2;
-        if (isUpgradeSelected('e3')) armorBonus += 2;
-    } else {
-        if (isUpgradeSelected('b3')) armorBonus += 1;
-        if (isUpgradeSelected('d3')) armorBonus += 1;
-        if (isUpgradeSelected('d4')) armorBonus += 1;
-        if (isUpgradeSelected('e3')) armorBonus += 1;
-    }
-
-    return armorBonus;
-}
-
-// Modify the displayUnitVsUnitData function
-function displayUnitVsUnitData(data) {
-    const panel = document.getElementById('unit-vs-unit-panel');
-    const content = document.getElementById('unit-vs-unit-content');
-
-    if (data.error) {
-        content.innerHTML = `<p class="error-message">${data.error}</p>`;
-        return;
-    }
-
-    // Determine if attacker uses pierce or melee attack
-    const hasBasePierce = data.matching_classes.some(cls => 
-        cls["Attack Class Name"] === "Base Pierce" && cls["Attack Amount"] !== 0
-    );
-    
-    // Calculate upgrades
-    const attackUpgradeBonus = hasBasePierce ? countPierceAttackUpgrades() : countMeleeAttackUpgrades();
-    const armorUpgradeBonus = calculateDefenderArmorUpgrades(hasBasePierce);
-    const armorType = hasBasePierce ? "Pierce Armor" : "Melee Armor";
-
-    // Separate base attacks from bonus attacks
-    const baseAttacks = data.matching_classes.filter(cls => 
-        cls["Attack Class Name"] === "Base Pierce" || 
-        cls["Attack Class Name"] === "Base Melee"
-    );
-
-    const bonusAttacks = data.matching_classes.filter(cls => 
-        cls["Attack Class Name"] !== "Base Pierce" && 
-        cls["Attack Class Name"] !== "Base Melee" &&
-        cls["Attack Amount"] !== 0
-    );
-
-    // Calculate base attack total
-    const baseAttackTotal = baseAttacks.reduce((sum, attack) => sum + attack["Attack Amount"], 0);
-    
-    // Calculate bonus attack total
-    const bonusAttackTotal = bonusAttacks.reduce((sum, attack) => sum + attack["Attack Amount"], 0);
-
-    // Generate HTML sections
-    const baseAttacksHTML = baseAttacks.map(cls => `
-        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-            <span style="color: #fff;">${cls["Attack Class Name"]}:</span>
-            <span style="color: #00ff00; margin-left: 10px;">${cls["Attack Amount"]}</span>
-        </div>
-    `).join('');
-
-    const bonusAttacksHTML = bonusAttacks.length > 0 ? `
-        <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Bonus Damage</h3>
-        ${bonusAttacks.map(cls => `
-            <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                <span style="color: #fff;">${cls["Attack Class Name"]}:</span>
-                <span style="color: #00ff00; margin-left: 10px;">${cls["Attack Amount"]}</span>
-            </div>
-        `).join('')}
-    ` : '';
-
-    // Fetch defender stats to get base armor value
-    fetch(`/get-unit-details?unit_id=${selectedDefender}`)
-        .then(response => response.json())
-        .then(defenderData => {
-            const baseArmorValue = hasBasePierce ? 
-                defenderData.pierce_armor : 
-                defenderData.melee_armor;
-            
-            // Calculate total armor including upgrades
-            const totalArmorValue = baseArmorValue + armorUpgradeBonus;
-
-            // Calculate total net attack (minimum 1)
-            // (Base attack + Attack upgrades) + Bonus attack - (Base armor + Armor upgrades)
-            const totalNetAttack = Math.max(1, 
-                (baseAttackTotal + attackUpgradeBonus) + 
-                bonusAttackTotal - 
-                totalArmorValue
-            );
-
-            content.innerHTML = `
-                <h3 style="color: #ffd700; margin-bottom: 10px; text-align: left;">Attack</h3>
-                ${baseAttacksHTML}
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">Attack Upgrades:</span>
-                    <span style="color: #00ff00; margin-left: 10px;">${attackUpgradeBonus}</span>
-                </div>
-                ${bonusAttacksHTML}
-                <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Opponent Armour</h3>
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">${armorType}:</span>
-                    <span style="color: #ff4444; margin-left: 10px;">${baseArmorValue}</span>
-                </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <span style="color: #fff;">Armour Upgrades:</span>
-                    <span style="color: #ff4444; margin-left: 10px;">${armorUpgradeBonus}</span>
-                </div>
-                <div style="margin-top: 15px; background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; border: 1px solid rgba(255, 215, 0, 0.3);">
-                    <div style="display: flex; justify-content: space-between;">
-                        <span style="color: #ffd700; font-weight: bold; font-size: 1.1em;">Total Net Attack:</span>
-                        <span style="color: #00ff00; font-weight: bold; font-size: 1.1em; margin-left: 10px;">${totalNetAttack}</span>
-                    </div>
-                </div>
-            `;
-        });
-
-    panel.style.display = 'block';
-}
-
-function countMeleeAttackUpgrades() {
-    const grid = document.getElementById('attacker-upgrades-grid');
-    let upgradeBonus = 0;
-    
-    // Check each melee attack upgrade (c1 through c3)
-    const c1 = grid.querySelector('[data-position="c1"]');
-    const c2 = grid.querySelector('[data-position="c2"]');
-    const c3 = grid.querySelector('[data-position="c3"]');
-    const d4 = grid.querySelector('[data-position="d4"]');
-
-    if (c1 && c1.classList.contains('selected')) upgradeBonus += 1;
-    if (c2 && c2.classList.contains('selected')) upgradeBonus += 1;
-    if (c3 && c3.classList.contains('selected')) upgradeBonus += 2;
-
-    // Check for Logistica (d4) bonus against specific units
-    if (d4 && d4.classList.contains('selected') && selectedDefender) {
-        const defenderUnitId = parseInt(selectedDefender);
-        if ([93, 358, 359].includes(defenderUnitId)) {
-            upgradeBonus += 2; // Add +2 attack when attacking Spearman-line units
-        }
-    }
-
-    return upgradeBonus;
 }
