@@ -36,7 +36,8 @@ pip install -r requirements.txt
 python app.py
 ```
 
-This repo uses the full.json extracted by HSZemi. Place the full.json from the link below in the devops/data folder
+- Uncomemnt the last two rows of the app.py if you are running it locally. 
+- for Update and maintenance: downlaod the latest full.json as well as the units_buildings_techs.json extracted by HSZemi  from the link below and place it in the devops/data folder.
  https://github.com/HSZemi/aoe2dat/tree/master/data
 
 ## Usage

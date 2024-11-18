@@ -39,7 +39,7 @@
 
       .overlay {
         background-color: rgba(0, 0, 0, 0.75); /* Changed opacity to 75% */
-        width: 98vw; /* Increased from 90vw to 98vw */
+        width: min(98vw, 1800px); /* Reduced from 2400px */
         max-width: 2400px; /* Increased from 1800px to 2400px */
         height: calc(100vh - 40px); /* Reduced from 160px to 40px to extend further down */
         min-height: 600px; /* Add min-height */
@@ -49,7 +49,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start; /* Change to flex-start */
-        padding: 1vh 2vw; /* Use relative units */
+        padding: 1vh 1vw; /* Reduced padding */
         margin: 10px auto; /* Added bottom margin */
         position: relative; /* Add this */
         overflow-y: auto; /* Add scroll to overlay */
@@ -78,8 +78,8 @@
 
       .middle {
         margin: 0 auto; /* Remove negative margin */
-        width: calc(100% - 750px); /* Adjusted to account for panels and smaller margins */
-        min-width: 700px; /* Increase from 600px */
+        width: min(calc(100% - 600px), 1000px); /* More compact max-width */
+        min-width: 500px; /* Reduced from 700px */
         max-width: 1400px; /* Increase from 1200px */
         display: flex;
         flex-direction: column;
@@ -87,7 +87,7 @@
         align-items: center;
         border: 2px solid #4c3830;
         border-radius: 10px;
-        padding: 20px; /* Increased padding */
+        padding: 15px; /* Reduced from 20px */
         background-color: rgba(0, 0, 0, 0.5);
         position: relative; /* Add this line */
         width: calc(100% - 604px); /* Keep this calc but it will adjust with panel sizes */
@@ -611,8 +611,8 @@
 
       .counter-unit-panel {
         flex: 1;
-        min-width: 300px; /* Added minimum width */
-        max-width: 600px; /* Added maximum width */
+        min-width: 250px; /* Reduced from 300px */
+        max-width: 450px; /* Reduced from 600px */
         background-color: rgba(0, 0, 0, 0.8);
         color: white;
         padding: 20px;
@@ -743,9 +743,8 @@
       }
 
       .upgrades-panel {
-        width: fit-content;
-        min-width: 600px; /* Add min-width */
-        max-width: 1200px; /* Add max-width */
+        width: min(100%, 1000px); /* More dynamic width */
+        min-width: auto; /* Remove fixed min-width */
         margin: 2vh auto; /* Center horizontally */
         padding: 15px;
         background-color: rgba(0, 0, 0, 0.8);
@@ -770,6 +769,7 @@
         gap: 10px;
         width: fit-content;
         margin: 0 auto;
+        margin-left: 0; /* Ensure grid aligns with checkbox above */
       }
 
       .defender-upgrades-grid {
@@ -854,9 +854,9 @@
       }
 
       .panel {
-        width: 350px;  /* Increased from 300px - fixed width for both panels */
-        min-width: 350px;  /* Increased from 300px - ensure minimum width */
-        margin: 0 20px;  /* Consistent margins on both sides */
+        width: 280px;  /* Reduced from 350px */
+        min-width: 280px;  /* Reduced from 350px */
+        margin: 0 10px;  /* Reduced from 20px */
         display: none;
         flex-direction: column;
         height: auto;  /* Allow height to grow */
@@ -904,6 +904,8 @@
         flex: 1; /* Allow sections to grow */
         min-width: fit-content; /* Add this line */
         max-width: calc(50% - 5px); /* Reduce from 20px to 5px */
+        align-items: flex-start; /* Align children to the left */
+        width: fit-content; /* Add this to ensure section only takes needed width */
       }
 
       .upgrade-checkbox {
@@ -912,6 +914,8 @@
         gap: 5px;
         margin-bottom: 5px; /* Reduce from 10px to 5px */
         color: white;
+        width: fit-content;
+        min-width: 120px; /* Match the width of upgrade icons */
       }
 
       .upgrade-checkbox input[type="checkbox"] {
@@ -953,8 +957,8 @@
         justify-content: space-between;
         align-items: flex-start; /* Align items to top */
         width: 100%;
-        gap: 40px; /* Increased gap between panels */
-        padding: 0 2vw;
+        gap: 20px; /* Reduced from 40px */
+        padding: 0 1vw; /* Reduced padding */
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -966,7 +970,12 @@
       /* Add media queries for smaller screens */
       @media screen and (max-width: 1200px) {
         .middle {
-          width: 80%;
+          width: min(calc(100% - 400px), 800px);
+        }
+
+        .panel {
+          width: 200px;
+          min-width: 200px;
         }
 
         .select-boxes {
@@ -1450,6 +1459,23 @@
         height: auto;
         min-height: fit-content;
       }
+
+      /* Add new styles for defender section */
+      .upgrade-section:last-child {
+        width: fit-content; /* Keep section width minimal */
+        margin-left: auto; /* Push to the right */
+      }
+
+      .upgrade-section:last-child .upgrade-checkbox {
+        width: fit-content;
+        min-width: 120px;
+        margin-right: 8px; /* Add some spacing on the right */
+        justify-content: flex-end; /* Right align the checkbox content */
+      }
+
+      .upgrade-section:last-child .upgrades-grid {
+        margin-right: 8px; /* Match the checkbox margin */
+      }
     </style>
   </head>
   <body>
@@ -1508,7 +1534,7 @@
             <div class="upgrades-container">
               <div class="upgrade-section">
                 <label class="upgrade-checkbox">
-                  <input type="checkbox" id="attacker-full-upgrade" />
+                  <input type="checkbox" id="attacker-full-upgrade" style="margin-left: 8px;" />
                   Full upgrade
                 </label>
                 <div class="upgrades-grid" id="attacker-upgrades-grid"></div>
