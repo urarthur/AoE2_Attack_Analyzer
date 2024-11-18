@@ -625,7 +625,7 @@ function displayUnitVsUnitData(data) {
             const combatStatsPanel = document.getElementById('combat-stats-panel');
             combatStatsPanel.innerHTML = `
                 <div style="text-align: left; padding: 10px; font-size: 0.9em;">
-                    • <span style="color: #ffd700;">${attackerName}</span> kills <span style="color: #ffd700;">${defenderName}</span> after <span style="color: #00ff00;">${hitsToKill}</span> <span style="color: white;">attack</span>
+                    • <span style="color: #ffd700;">${attackerName}</span> kills <span style="color: #ffd700;">${defenderName}</span> after <span style="color: #00ff00;">${hitsToKill}</span> <span style="color: white;">${hitsToKill === 1 ? 'attack' : 'attacks'}</span>
                     <br>
                     • It takes <span style="color: #00ff00;">${Math.ceil(defenderData.hit_points / totalNetAttack)}</span> <span style="color: #ffd700;">${attackerName}</span> to one-shot <span style="color: #ffd700;">${defenderName}</span>
                     <br>
@@ -830,9 +830,11 @@ function toggleUpgradeSelection(element, isDefender = false) {
     const row = parseInt(position[1]);
 
     if (element.classList.contains(selectedClass)) {
+        // Handle deselection
         element.classList.remove(selectedClass);
         
         if (row <= 3) {
+            // When deselecting, also deselect higher tier upgrades
             for (let i = row + 1; i <= 3; i++) {
                 const higherUpgrade = grid.querySelector(`[data-position="${col}${i}"]:not(.restricted)`);
                 if (higherUpgrade) {
@@ -841,9 +843,11 @@ function toggleUpgradeSelection(element, isDefender = false) {
             }
         }
     } else {
+        // Handle selection
         element.classList.add(selectedClass);
         
         if (row <= 3) {
+            // When selecting, also select lower tier upgrades
             for (let i = row - 1; i >= 1; i--) {
                 const lowerUpgrade = grid.querySelector(`[data-position="${col}${i}"]:not(.restricted)`);
                 if (lowerUpgrade) {
@@ -853,17 +857,14 @@ function toggleUpgradeSelection(element, isDefender = false) {
         }
     }
 
+    // Update checkbox state
     const checkboxId = isDefender ? 'defender-full-upgrade' : 'attacker-full-upgrade';
     const checkbox = document.getElementById(checkboxId);
-    const allIcons = grid.querySelectorAll('.upgrade-icon:not(.restricted)');
+    const allIcons = grid.querySelectorAll('.upgrade-icon:not(.upgrade-restricted)');
     const selectedIcons = grid.querySelectorAll(`.upgrade-icon.${selectedClass}`);
-    
     checkbox.checked = allIcons.length === selectedIcons.length;
 
-    if (!isDefender) {
-        updateUnitVsUnitUpgrades();
-    }
-
+    // Always fetch new data when changing upgrades
     if (selectedAttacker && selectedDefender) {
         fetchUnitVsUnitData(selectedAttacker, selectedDefender);
     }
