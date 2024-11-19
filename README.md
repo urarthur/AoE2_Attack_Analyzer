@@ -74,7 +74,7 @@ This project was created under Microsoft's "Game Content Usage Rules" using asse
 
 ## Version
 
-Current version: Age of Empires II:DE - Update 127161 (Oct. 2024)
+Current version: Age of Empires II:DE - Update 128442 (nov. 2024)
 
 ## Contact
 

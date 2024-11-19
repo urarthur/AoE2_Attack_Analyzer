@@ -23,7 +23,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -51,7 +51,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -84,7 +84,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 32,
@@ -127,7 +127,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 32,
@@ -246,7 +246,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 1,
@@ -304,7 +304,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 1,
@@ -362,7 +362,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 3,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -385,7 +385,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 3,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -413,7 +413,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -441,7 +441,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -545,7 +545,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -578,7 +578,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -687,12 +687,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 8,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 6,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 30,
@@ -730,7 +730,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 2,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 1,
@@ -773,7 +773,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 2,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 1,
@@ -917,7 +917,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -950,7 +950,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -983,7 +983,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 3,
@@ -993,7 +993,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -1021,7 +1021,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 3,
@@ -1031,7 +1031,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -1135,7 +1135,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1168,7 +1168,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1201,7 +1201,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1234,7 +1234,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1272,7 +1272,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1310,7 +1310,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1343,12 +1343,12 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 13,
                 "Attack Amount": 0,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             }
         ]
     },
@@ -1381,7 +1381,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 2,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -1419,7 +1419,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -1457,7 +1457,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -1489,7 +1489,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 9,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 3,
@@ -1499,7 +1499,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 4,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 34,
@@ -1532,12 +1532,12 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 13,
                 "Attack Amount": 0,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             }
         ]
     },
@@ -1555,7 +1555,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 40,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 4,
@@ -1570,7 +1570,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 40,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 34,
@@ -1646,7 +1646,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 39,
@@ -1689,7 +1689,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1722,7 +1722,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1755,7 +1755,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -1783,7 +1783,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 6,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 14,
@@ -1793,7 +1793,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 37,
@@ -1831,12 +1831,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 15,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 9,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 30,
@@ -1898,7 +1898,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 1,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -2015,12 +2015,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 22,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 16,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 30,
@@ -2068,12 +2068,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 32,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 17,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 30,
@@ -2228,7 +2228,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 11,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 3,
@@ -2238,7 +2238,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 4,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 34,
@@ -2314,7 +2314,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -2347,7 +2347,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 39,
@@ -2390,12 +2390,12 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 13,
                 "Attack Amount": 0,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             }
         ]
     },
@@ -2449,12 +2449,12 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 3,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 2,
                 "Attack Amount": 2,
-                "Attack Class Name": "Turtle Ships and Thirisadai"
+                "Attack Class Name": "Turtle Ships & Thirisadai"
             },
             {
                 "Attack Class": 4,
@@ -2487,12 +2487,12 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 4,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 2,
                 "Attack Amount": 3,
-                "Attack Class Name": "Turtle Ships and Thirisadai"
+                "Attack Class Name": "Turtle Ships & Thirisadai"
             },
             {
                 "Attack Class": 4,
@@ -2525,7 +2525,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 8,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 3,
@@ -2535,7 +2535,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 3,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 34,
@@ -2573,7 +2573,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 2,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -2702,7 +2702,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -2814,12 +2814,12 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 3,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 2,
                 "Attack Amount": 1,
-                "Attack Class Name": "Turtle Ships and Thirisadai"
+                "Attack Class Name": "Turtle Ships & Thirisadai"
             },
             {
                 "Attack Class": 4,
@@ -2991,7 +2991,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3029,7 +3029,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3072,7 +3072,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3115,7 +3115,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3153,7 +3153,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3191,7 +3191,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3229,7 +3229,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 12,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 22,
@@ -3282,7 +3282,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 12,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 22,
@@ -3320,7 +3320,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 8,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 21,
@@ -3353,7 +3353,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 12,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 21,
@@ -3391,12 +3391,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 5,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 4,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 5,
@@ -3434,12 +3434,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 7,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 5,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 5,
@@ -3492,7 +3492,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             }
         ]
     },
@@ -3525,7 +3525,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3563,7 +3563,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3591,7 +3591,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 3,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 27,
@@ -3611,7 +3611,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 8,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 34,
@@ -3649,7 +3649,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 4,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 27,
@@ -3669,7 +3669,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 8,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 34,
@@ -3854,7 +3854,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 1,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 20,
@@ -3897,7 +3897,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 2,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 20,
@@ -3950,7 +3950,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -3983,7 +3983,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -4021,7 +4021,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -4059,7 +4059,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -4097,7 +4097,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 32,
@@ -4135,7 +4135,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 32,
@@ -4168,7 +4168,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 20,
@@ -4216,7 +4216,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 20,
@@ -4264,7 +4264,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 3,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 1,
@@ -4292,12 +4292,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 18,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 9,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 11,
@@ -4350,7 +4350,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 9,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 3,
@@ -4360,7 +4360,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 4,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 34,
@@ -4383,12 +4383,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 9,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 5,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 11,
@@ -4436,12 +4436,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 18,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 9,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 11,
@@ -4494,7 +4494,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 10,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 3,
@@ -4504,7 +4504,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 4,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 34,
@@ -4532,7 +4532,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 20,
@@ -4547,7 +4547,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 0,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 30,
@@ -4580,12 +4580,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 4,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 2,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 20,
@@ -4628,7 +4628,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 3,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 20,
@@ -4638,7 +4638,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 1,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 21,
@@ -4785,7 +4785,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 15,
@@ -4833,7 +4833,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 15,
@@ -4881,7 +4881,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 4,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 15,
@@ -4924,7 +4924,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 7,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 15,
@@ -4982,7 +4982,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -5005,7 +5005,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 50,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -5205,7 +5205,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 50,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 4,
@@ -5220,7 +5220,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 50,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 34,
@@ -5324,7 +5324,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 9,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 3,
@@ -5334,7 +5334,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 4,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 34,
@@ -5433,12 +5433,12 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 16,
                 "Attack Amount": 0,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 11,
@@ -5501,7 +5501,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -5572,7 +5572,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -5638,7 +5638,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 30,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 15,
@@ -5681,7 +5681,7 @@
             {
                 "Attack Class": 13,
                 "Attack Amount": 30,
-                "Attack Class Name": "Stone Defense & Harbors"
+                "Attack Class Name": "Stone Defense & Harb."
             },
             {
                 "Attack Class": 15,
@@ -5729,7 +5729,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -5762,7 +5762,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -5795,7 +5795,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 1,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 38,
@@ -5828,7 +5828,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 1,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 38,
@@ -5851,7 +5851,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 6,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 3,
@@ -5861,7 +5861,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 4,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 34,
@@ -5884,7 +5884,7 @@
             {
                 "Attack Class": 16,
                 "Attack Amount": 7,
-                "Attack Class Name": "Ships (except Fish ships)"
+                "Attack Class Name": "Ships (excl. fishing ships)"
             },
             {
                 "Attack Class": 3,
@@ -5894,7 +5894,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 4,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 34,
@@ -5988,7 +5988,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 9,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 21,
@@ -6026,7 +6026,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 12,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 21,
@@ -6074,7 +6074,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -6107,7 +6107,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -6211,7 +6211,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 4,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 39,
@@ -6239,7 +6239,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 6,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 39,
@@ -6348,7 +6348,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -6381,7 +6381,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -6409,7 +6409,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 2,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -6432,7 +6432,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 3,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -6460,7 +6460,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             },
             {
                 "Attack Class": 1,
@@ -6498,7 +6498,7 @@
             {
                 "Attack Class": 17,
                 "Attack Amount": 0,
-                "Attack Class Name": "High Pierce Armor Siege Units"
+                "Attack Class Name": "High Pierce Arm. Siege"
             }
         ]
     },
@@ -6526,7 +6526,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,
@@ -6559,7 +6559,7 @@
             {
                 "Attack Class": 8,
                 "Attack Amount": 0,
-                "Attack Class Name": "Mounted Units (exc. Camels)"
+                "Attack Class Name": "Mounted Units (excl. Camels)"
             },
             {
                 "Attack Class": 30,

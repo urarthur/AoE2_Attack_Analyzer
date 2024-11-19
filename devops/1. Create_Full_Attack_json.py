@@ -1,8 +1,7 @@
 import json
 import pandas as pd
-import csv
 
-def extract_all_units_attacks(input_json_path, classes_xlsx_path, units_xlsx_path, json_output_path, csv_output_path):
+def extract_all_units_attacks(input_json_path, classes_xlsx_path, units_xlsx_path, json_output_path):
     # Load the class mapping from the Excel file
     class_mapping = pd.read_excel(classes_xlsx_path)
     class_mapping_dict = dict(zip(class_mapping['Class'], class_mapping['Class Name']))
@@ -75,36 +74,18 @@ def extract_all_units_attacks(input_json_path, classes_xlsx_path, units_xlsx_pat
         # Append the unit record to the all_units_records list
         all_units_records.append(unit_record)
 
-    # Save extracted data to CSV using csv.writer
-    with open(csv_output_path, 'w', newline='') as output_file:
-        csv_writer = csv.writer(output_file)
-        # Write headers
-        csv_writer.writerow(['Unit ID', 'Unit Name', 'Building', 'Civ', 'Attack Class', 'Attack Amount', 'Attack Class Name'])
-
-        # Write data rows
-        for record in all_units_records:
-            for attack in record["Attacks"]:
-                csv_writer.writerow([
-                    record['Unit ID'],
-                    record['Unit Name'],
-                    record['Building'],
-                    record['Civ'],
-                    attack['Attack Class'],
-                    attack['Attack Amount'],
-                    attack['Attack Class Name']
-                ])
+  
 
     # Save extracted data to JSON
     with open(json_output_path, 'w') as json_file:
         json.dump(all_units_records, json_file, indent=4)
 
-    print(f"\nData has been successfully extracted and saved to {csv_output_path} and {json_output_path}")
+    print(f"\nData has been successfully extracted and saved to {json_output_path}")
 
 # Example usage
 input_json_path = 'data/full.json'
 classes_xlsx_path = 'data/Classes.xlsx'
 units_xlsx_path = 'data/UNITS.xlsx'
 json_output_path = 'data/all_units_attacks_data.json'
-csv_output_path = 'data/all_units_attacks_data.csv'
 
-extract_all_units_attacks(input_json_path, classes_xlsx_path, units_xlsx_path, json_output_path, csv_output_path)
+extract_all_units_attacks(input_json_path, classes_xlsx_path, units_xlsx_path, json_output_path)

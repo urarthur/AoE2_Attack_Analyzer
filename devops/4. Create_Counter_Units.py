@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import openpyxl
 
-def process_all_units(attacks_json_path, armours_json_path, units_xlsx_path, filter_xlsx_path, units_buildings_techs_path, full_counter_csv_path, full_counter_json_path):
+def process_all_units(attacks_json_path, armours_json_path, units_xlsx_path, filter_xlsx_path, units_buildings_techs_path, full_counter_json_path):
     # Load attack data
     with open(attacks_json_path, 'r') as attack_file:
         attacks_data = json.load(attack_file)
@@ -116,10 +116,6 @@ def process_all_units(attacks_json_path, armours_json_path, units_xlsx_path, fil
     combined_top_main_counters = pd.concat(all_top_main_counters, ignore_index=True)
     combined_top_other_counters = pd.concat(all_top_other_counters, ignore_index=True)
 
-    # Save to a single CSV with two sheets
-    with pd.ExcelWriter(full_counter_csv_path, engine='xlsxwriter') as writer:
-        combined_top_main_counters.to_excel(writer, sheet_name='Top Main Counters', index=False)
-        combined_top_other_counters.to_excel(writer, sheet_name='Top Other Counters', index=False)
 
     # Save to a single JSON file with the new structure
     combined_json_data = {}
@@ -159,7 +155,7 @@ def process_all_units(attacks_json_path, armours_json_path, units_xlsx_path, fil
     with open(full_counter_json_path, 'w') as json_file:
         json.dump(combined_json_data, json_file, indent=4)
 
-    print(f"Combined CSV with two tabs saved to {full_counter_csv_path}.")
+
     print(f"Combined JSON saved to {full_counter_json_path}.")
 
 # Example usage
@@ -170,7 +166,6 @@ if __name__ == "__main__":
     units_xlsx_path = 'data/UNITS.xlsx'
     filter_xlsx_path = 'data/CounterCalcFilter.xlsx'
     units_buildings_techs_path = 'data/units_buildings_techs.json'
-    full_counter_csv_path = 'data/CounterUnits.xlsx'
     full_counter_json_path = 'data/CounterUnits.json'
 
     # Process all units
@@ -180,6 +175,5 @@ if __name__ == "__main__":
         units_xlsx_path,
         filter_xlsx_path,
         units_buildings_techs_path,
-        full_counter_csv_path,
         full_counter_json_path
     )

@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-def retrieve_unit_comparisons(attacks_json_path, armours_json_path, output_csv_path, output_json_path):
+def retrieve_unit_comparisons(attacks_json_path, armours_json_path, output_json_path):
     # Load attack data
     with open(attacks_json_path, 'r') as attack_file:
         attacks_data = json.load(attack_file)
@@ -81,8 +81,6 @@ def retrieve_unit_comparisons(attacks_json_path, armours_json_path, output_csv_p
         for opponent_id, opponent_data in attacker_data["Opponents"].items()
     ])
 
-    # Save results to CSV
-    results_df.to_csv(output_csv_path, index=False)
     
     # Save results to JSON
     with open(output_json_path, 'w') as json_file:
@@ -91,9 +89,8 @@ def retrieve_unit_comparisons(attacks_json_path, armours_json_path, output_csv_p
 # Example usage
 attacks_json_path = 'data/all_units_attacks_data.json'
 armours_json_path = 'data/all_units_armours_data.json'
-output_csv_path = 'data/Unit_vs_Unit_Matrix.csv'
 output_json_path = 'data/Unit_vs_Unit_Matrix.json'
 
-retrieve_unit_comparisons(attacks_json_path, armours_json_path, output_csv_path, output_json_path)
+retrieve_unit_comparisons(attacks_json_path, armours_json_path, output_json_path)
 
-print(f"Unit comparisons have been successfully saved to {output_csv_path} and {output_json_path}.")
+print(f"Unit comparisons have been successfully saved to d {output_json_path}.")
