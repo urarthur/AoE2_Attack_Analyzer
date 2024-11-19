@@ -393,12 +393,55 @@ function fetchUnitDetails(unitId, isDefender) {
         });
 }
 
+// Update getHpBonus to include both c4 and e4 bonuses
+function getHpBonus(grid) {
+    let bonus = 0;
+    const c4 = grid.querySelector('[data-position="c4"]');
+    const e4 = grid.querySelector('[data-position="e4"]');
+    const selectedClass = grid.id === 'defender-upgrades-grid' ? 'defender-selected' : 'selected';
+    
+    if (c4 && c4.classList.contains(selectedClass)) {
+        bonus += 20;
+    }
+    if (e4 && e4.classList.contains(selectedClass)) {
+        bonus += 15;
+    }
+    
+    return bonus;
+}
+
+// Add new function to get e4 armor bonuses
+function getE4ArmorBonus(grid) {
+    const e4 = grid.querySelector('[data-position="e4"]');
+    const selectedClass = grid.id === 'defender-upgrades-grid' ? 'defender-selected' : 'selected';
+    
+    if (e4 && e4.classList.contains(selectedClass)) {
+        return {
+            meleeArmor: 1,
+            pierceArmor: 2
+        };
+    }
+    return {
+        meleeArmor: 0,
+        pierceArmor: 0
+    };
+}
+
+// Modify displayUnitStats to handle HP bonus from c4 upgrade
 function displayUnitStats(unitDetails, isDefender) {
     const unitStatsContent = document.getElementById(isDefender ? 'defender-stats-content' : 'attacker-stats-content');
     if (unitDetails.error) {
         unitStatsContent.innerHTML = `<p class="error-message">${unitDetails.error}</p>`;
         return;
     }
+
+    const grid = document.getElementById(isDefender ? 'defender-upgrades-grid' : 'attacker-upgrades-grid');
+    const hpBonus = grid ? getHpBonus(grid) : 0;
+    const e4Bonus = grid ? getE4ArmorBonus(grid) : { meleeArmor: 0, pierceArmor: 0 };
+    
+    const actualHp = unitDetails.hit_points + hpBonus;  // Changed from multiplication to addition
+    const actualMeleeArmor = unitDetails.melee_armor + e4Bonus.meleeArmor;
+    const actualPierceArmor = unitDetails.pierce_armor + e4Bonus.pierceArmor;
 
     const cost = [];
     if (unitDetails.cost.wood > 0) cost.push(`<span><img src="/static/images/Other/wood.png" alt="Wood" style="height: 20px; vertical-align: middle;"> ${unitDetails.cost.wood}</span>`);
@@ -418,13 +461,13 @@ function displayUnitStats(unitDetails, isDefender) {
                 <strong>Attack:</strong> <span>${unitDetails.attack}</span>
             </div>
             <div class="unit-stats-item">
-                <strong>Melee Armor:</strong> <span>${unitDetails.melee_armor}</span>
+                <strong>Melee Armor:</strong> <span>${actualMeleeArmor}</span>
             </div>
             <div class="unit-stats-item">
-                <strong>Pierce Armor:</strong> <span>${unitDetails.pierce_armor}</span>
+                <strong>Pierce Armor:</strong> <span>${actualPierceArmor}</span>
             </div>
             <div class="unit-stats-item">
-                <strong>Hit Points:</strong> <span>${unitDetails.hit_points}</span>
+                <strong>Hit Points:</strong> <span>${actualHp}</span>
             </div>
         </div>
     `;
@@ -532,6 +575,7 @@ function fetchUnitVsUnitData(attackerId, defenderId) {
         });
 }
 
+// Modify displayUnitVsUnitData to use updated HP values
 function displayUnitVsUnitData(data) {
     const panel = document.getElementById('unit-vs-unit-panel');
     const content = document.getElementById('unit-vs-unit-content');
@@ -587,6 +631,14 @@ function displayUnitVsUnitData(data) {
     ])
         .then(responses => Promise.all(responses.map(r => r.json())))
         .then(([attackerData, defenderData]) => {
+            const attackerGrid = document.getElementById('attacker-upgrades-grid');
+            const defenderGrid = document.getElementById('defender-upgrades-grid');
+            const attackerHpBonus = getHpBonus(attackerGrid);
+            const defenderHpBonus = getHpBonus(defenderGrid);
+
+            const attackerHp = attackerData.hit_points + attackerHpBonus;  // Changed from multiplication to addition
+            const defenderHp = defenderData.hit_points + defenderHpBonus;  // Changed from multiplication to addition
+
             const baseArmorValue = hasBasePierce ? 
                 defenderData.pierce_armor : 
                 defenderData.melee_armor;
@@ -602,7 +654,7 @@ function displayUnitVsUnitData(data) {
             // For units with zero attack, set hits to kill to Infinity or display "N/A"
             const hitsToKill = hasZeroAttack ? 
                 "N/A" : 
-                Math.ceil(defenderData.hit_points / totalNetAttack);
+                Math.ceil(defenderHp / totalNetAttack);
 
             const attackerName = document.querySelector('#attacker-box span')?.textContent || 'Attacker';
             const defenderName = document.querySelector('#defender-box span')?.textContent || 'Defender';
@@ -616,18 +668,19 @@ function displayUnitVsUnitData(data) {
                 attackerUnits, 
                 defenderUnits,
                 totalNetAttack,
-                defenderData.hit_points,
+                defenderHp,
                 Math.max(1, defenderData.attack - attackerData.melee_armor), // Add armor consideration
-                attackerData.hit_points
+                attackerHp
             );
 
             // Update combat stats panel
             const combatStatsPanel = document.getElementById('combat-stats-panel');
-            combatStatsPanel.innerHTML = `
+            const combatStatsContent = document.getElementById('combat-stats-content');
+            combatStatsContent.innerHTML = `
                 <div style="text-align: left; padding: 10px; font-size: 0.9em;">
                     • <span style="color: #ffd700;">${attackerName}</span> kills <span style="color: #ffd700;">${defenderName}</span> after <span style="color: #00ff00;">${hitsToKill}</span> <span style="color: white;">${hitsToKill === 1 ? 'attack' : 'attacks'}</span>
                     <br>
-                    • It takes <span style="color: #00ff00;">${Math.ceil(defenderData.hit_points / totalNetAttack)}</span> <span style="color: #ffd700;">${attackerName}</span> to one-shot <span style="color: #ffd700;">${defenderName}</span>
+                    • It takes <span style="color: #00ff00;">${Math.ceil(defenderHp / totalNetAttack)}</span> <span style="color: #ffd700;">${attackerName}</span> to one-shot <span style="color: #ffd700;">${defenderName}</span>
                     <br>
                     • On equal <span style="color: #ff4444;">1000</span> resources, <span style="color: #00ff00;">${attackerUnits}</span> <span style="color: #ffd700;">${attackerName}</span> vs <span style="color: #00ff00;">${defenderUnits}</span> <span style="color: #ffd700;">${defenderName}</span>, 
                       ${battleResult.winner === 'attacker' ? `<span style="color: #ffd700;">${attackerName}</span>` : `<span style="color: #ffd700;">${defenderName}</span>`} <span style="color: white;">wins with</span> 
@@ -816,6 +869,7 @@ function displayTopOpponentsTable() {
         </div>
     `;
 }
+// Modify toggleUpgradeSelection to update stats when e4 is toggled
 function toggleUpgradeSelection(element, isDefender = false) {
     if (element.classList.contains('upgrade-restricted')) {
         return;
@@ -863,6 +917,14 @@ function toggleUpgradeSelection(element, isDefender = false) {
     const allIcons = grid.querySelectorAll('.upgrade-icon:not(.upgrade-restricted)');
     const selectedIcons = grid.querySelectorAll(`.upgrade-icon.${selectedClass}`);
     checkbox.checked = allIcons.length === selectedIcons.length;
+
+    // Update stats if c4 or e4 was toggled or if it's a defender upgrade (since e4 affects armor)
+    if (position === 'c4' || position === 'e4' || isDefender) {
+        const unitId = isDefender ? selectedDefender : selectedAttacker;
+        if (unitId) {
+            fetchUnitDetails(unitId, isDefender);
+        }
+    }
 
     // Always fetch new data when changing upgrades
     if (selectedAttacker && selectedDefender) {
@@ -915,6 +977,7 @@ function countMeleeAttackUpgrades() {
     return upgradeBonus;
 }
 
+// Modify calculateDefenderArmorUpgrades to include e4 bonus
 function calculateDefenderArmorUpgrades(isPierceArmor) {
     const grid = document.getElementById('defender-upgrades-grid');
     let armorBonus = 0;
@@ -924,6 +987,7 @@ function calculateDefenderArmorUpgrades(isPierceArmor) {
         return upgrade && upgrade.classList.contains('defender-selected');
     };
 
+    // Calculate regular armor upgrades
     if (isUpgradeSelected('b1')) armorBonus += 1;
     if (isUpgradeSelected('b2')) armorBonus += 1;
     if (isUpgradeSelected('d1')) armorBonus += 1;
@@ -946,6 +1010,10 @@ function calculateDefenderArmorUpgrades(isPierceArmor) {
         if (isUpgradeSelected('d4')) armorBonus += 1;
         if (isUpgradeSelected('e3')) armorBonus += 1;
     }
+
+    // Add e4 armor bonus
+    const e4Bonus = getE4ArmorBonus(grid);
+    armorBonus += isPierceArmor ? e4Bonus.pierceArmor : e4Bonus.meleeArmor;
 
     return armorBonus;
 }

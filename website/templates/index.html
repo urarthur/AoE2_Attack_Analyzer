@@ -11,7 +11,7 @@
   gtag('config', 'G-1XV0706V4D');
 </script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=5.0, user-scalable=yes" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Age of Empires 2: DE</title>
     <link rel="icon" href="../static/images/Other/Aoe2.png" type="image/png" />
@@ -991,124 +991,171 @@
 
       @media screen and (max-width: 768px) {
         body {
-          padding-bottom: 0; /* Remove padding */
-          font-size: 14px; /* Base font size for mobile */
-        }
-
-        .overlay {
-          width: 95vw;
-          padding: 10px;
-          margin: 10px auto;
-          height: auto;
-          min-height: calc(100vh - 40px);
-        }
-
-        .content-wrapper {
-          padding: 10px;
+          overflow: auto !important; /* Allow both vertical and horizontal scrolling */
+          min-width: fit-content; /* Ensure content doesn't shrink below its minimum width */
+          min-height: 100vh;
+          padding: 0;
           margin: 0;
         }
 
-        .middle {
-          width: 100%;
-          min-width: unset;
-          padding: 5px;
+        .overlay {
+          width: fit-content; /* Allow content to determine width */
+          min-width: 100vw; /* At least full viewport width */
+          height: auto;
+          min-height: 100vh;
+          margin: 0;
+          padding: 10px;
+          border-radius: 0;
+          overflow: visible; /* Allow content to be visible outside */
         }
 
-        .select-boxes {
-          flex-wrap: wrap;
+        .panel-container {
+          flex-direction: row; /* Keep panels side by side */
+          flex-wrap: nowrap; /* Prevent wrapping */
           gap: 10px;
+          width: fit-content; /* Allow container to grow based on content */
+          min-width: 100%; /* At least full width of parent */
+          overflow: visible; /* Allow content to be visible outside */
+        }
+
+        #left-panel, #right-panel {
+          position: relative; /* Keep panels in normal flow */
+          width: 300px; /* Fixed width for panels */
+          min-width: 300px; /* Prevent shrinking */
+          margin: 0;
+          flex-shrink: 0; /* Prevent panels from shrinking */
+        }
+
+        .middle {
+          width: 500px; /* Fixed width for middle section */
+          min-width: 500px; /* Prevent shrinking */
+          margin: 0 10px;
+          flex-shrink: 0; /* Prevent middle section from shrinking */
+        }
+
+        /* Update scrolling containers to show scrollbars when needed */
+        .content-wrapper,
+        .units-grid,
+        .select-buildings,
+        .unit-stats {
+          overflow: auto;
+          -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        }
+
+        /* Ensure select boxes stay visible */
+        .select-boxes {
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 10px;
+          width: 100%;
+          min-width: fit-content;
         }
 
         .select-box {
-          width: calc(50% - 20px); /* Two boxes per row */
-          height: auto;
-          aspect-ratio: 1;
-          min-width: 100px;
-          font-size: clamp(0.8rem, 3vw, 1.2rem); /* Responsive font size */
+          width: 120px;
+          height: 120px;
+          min-width: 120px;
+          flex-shrink: 0;
         }
 
-        .select-box img {
-          width: clamp(40px, 8vw, 80px);
-          height: auto;
-        }
-
-        .unit-stats {
+        /* Make sure tables don't shrink below readable size */
+        .counter-unit-table {
+          min-width: 280px;
           width: 100%;
-          min-width: unset;
-          font-size: 0.9em;
         }
 
-        .popup-overlay {
-          width: 90vw;
-          height: 80vh;
-          padding: 10px;
-        }
-
-        .popup-header h2 {
-          font-size: 1.2em;
-        }
-
-        .select-buildings {
-          grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-          gap: 8px;
-        }
-
-        .building-option, .civ-option {
-          width: 100%;
-          height: auto;
-          aspect-ratio: 1;
-          font-size: 0.9em;
-          padding: 5px;
-        }
-
-        .building-option img, .civ-emblem {
-          width: clamp(40px, 8vw, 60px);
-          height: auto;
-        }
-
+        /* Ensure upgrade panels are scrollable */
         .upgrades-panel {
-          width: 100%;
-          min-width: unset;
-          padding: 10px;
+          overflow: auto;
+          min-width: fit-content;
         }
 
-        .upgrades-grid {
-          gap: 5px;
+        .upgrades-container {
+          min-width: fit-content;
         }
 
-        .upgrade-icon {
-          width: clamp(30px, 8vw, 50px);
-          height: auto;
-          aspect-ratio: 1;
-        }
-
-        .upgrade-icon img {
-          width: 100%;
-          height: auto;
-        }
-
+        /* Add horizontal scrolling to specific components if needed */
         .counter-unit-container {
-          flex-direction: column;
+          overflow-x: auto;
+          min-width: fit-content;
+          display: flex;
           gap: 10px;
         }
 
         .counter-unit-panel {
-          width: 100%;
-          font-size: 0.9em;
+          min-width: 280px;
+          flex-shrink: 0;
         }
 
-        .unit-vs-unit-panel {
-          font-size: 0.9em;
+        /* Ensure the page title stays at the top */
+        .page-title {
+          position: sticky;
+          top: 0;
+          z-index: 10;
+          background-color: rgba(0, 0, 0, 0.8);
+          padding: 10px 0;
+          margin: 0;
         }
 
-        .copyright {
-          font-size: 0.7em;
-          padding: 10px;
-          margin: 10px 0;
-        }
-
+        /* Remove any fixed positioning that might cause layout issues */
         .logo {
-          width: 40px; /* Even smaller on mobile */
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 11;
+        }
+
+        .page-title {
+          font-size: 1.4em;
+          margin: 10px 0;
+          background: none;  /* Remove any background */
+          background-color: transparent;  /* Ensure background is transparent */
+          box-shadow: none;  /* Remove any shadow effects */
+          -webkit-backdrop-filter: none;  /* Remove any backdrop filters */
+          backdrop-filter: none;  /* Remove any backdrop filters */
+        }
+
+        .select-box {
+          width: 100%;
+          padding-top: 56.25%; /* This creates 16:9 ratio (9/16 = 0.5625) */
+          position: relative;
+          max-width: 280px; /* Optional: limit maximum width */
+          height: 0; /* Height will be determined by padding-top */
+        }
+
+        .select-box > div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .select-boxes {
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          gap: 20px;
+        }
+
+        /* Ensure images within select boxes maintain aspect ratio */
+        .select-box img {
+          width: auto;
+          height: auto;
+          max-width: 40%;
+          max-height: 40%;
+          object-fit: contain;
+        }
+
+        /* Adjust text size to be proportional */
+        .select-box span {
+          font-size: 1rem;
+          margin-top: 10px;
+          text-align: center;
         }
       }
 
@@ -1352,56 +1399,53 @@
         }
       }
 
-      @media screen and (orientation: portrait) {
-        html {
-          transform: rotate(-90deg);
-          transform-origin: left top;
-          width: 100vh;
-          height: 100vw;
-          overflow-x: hidden;
-          position: absolute;
-          top: 100%;
-          left: 0;
-        }
-        body {
-          margin: 0;
-          width: 100vh;
-          height: 100vw;
-          transform-origin: top left;
-          overflow-x: hidden;
-          position: relative;
-        }
-      }
-
-      /* Add this to your existing media queries */
       @media screen and (max-width: 768px) {
         html {
-          overflow: hidden;
+          font-size: 14px;
         }
         body {
-          overflow: auto;
+          overflow-y: scroll;
           -webkit-overflow-scrolling: touch;
+          min-height: 100vh;
         }
         .overlay {
-          height: 100vh;
+          height: auto;
+          min-height: 100vh;
           width: 100vw;
-          overflow: auto;
+          overflow-y: auto;
+          margin: 0;
+          border-radius: 0;
         }
-      }
+        
+        .panel-container {
+          flex-direction: column;
+        }
+        
+        .middle {
+          order: -1;
+          width: 100%;
+          margin: 10px 0;
+        }
+        
+        #left-panel, #right-panel {
+          width: 100%;
+          max-width: none;
+          margin: 10px 0;
+        }
+        
+        .select-boxes {
+          flex-direction: column;
+          gap: 20px;
+        }
 
-      /* Force landscape for iOS devices */
-      @supports (-webkit-overflow-scrolling: touch) {
-        @media screen and (orientation: portrait) {
-          html {
-            transform: rotate(-90deg);
-            transform-origin: left top;
-            width: 100vh;
-            height: 100vw;
-            overflow-x: hidden;
-            position: absolute;
-            top: 100%;
-            left: 0;
-          }
+        .page-title {
+          font-size: 1.4em;
+          margin: 10px 0;
+          background: none;  /* Remove any background */
+          background-color: transparent;  /* Ensure background is transparent */
+          box-shadow: none;  /* Remove any shadow effects */
+          -webkit-backdrop-filter: none;  /* Remove any backdrop filters */
+          backdrop-filter: none;  /* Remove any backdrop filters */
         }
       }
 
@@ -1578,6 +1622,259 @@
         background-color: rgba(255, 0, 0, 0.1);
         border-radius: 5px;
       }
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  /* Base container adjustments */
+  body {
+    min-height: 100vh;
+    font-size: 14px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 5px;
+    border-radius: 0;
+    overflow-y: auto;
+  }
+
+  /* Panel container layout */
+  .panel-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0;
+    height: auto;
+  }
+
+  /* Middle section */
+  .middle {
+    order: 0;
+    width: 100%;
+    min-width: 0;
+    margin: 5px 0;
+    padding: 5px;
+  }
+
+  /* Side panels */
+  #left-panel, #right-panel {
+    width: calc(50% - 5px);
+    min-width: 0;
+    margin: 0;
+    padding: 5px;
+    flex-shrink: 1;
+    font-size: 0.9em;
+  }
+
+  /* Selection boxes */
+  .select-boxes {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+  }
+
+  .select-box {
+    width: 80px;
+    height: 80px;
+    min-width: 0;
+    padding: 5px;
+  }
+
+  .select-box img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .select-box span {
+    font-size: 0.8em;
+    padding: 2px;
+  }
+
+  /* Stats panels */
+  .unit-stats {
+    margin: 5px 0;
+    padding: 5px;
+  }
+
+  .unit-stats h2 {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+
+  .unit-stats-item {
+    padding: 4px;
+    font-size: 0.8em;
+  }
+
+  /* Combat and upgrade panels */
+  #combat-stats-panel,
+  .upgrades-panel {
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 0.9em;
+  }
+
+  .upgrades-container {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .upgrade-section {
+    max-width: calc(50% - 5px);
+  }
+
+  /* Counter unit panels */
+  .counter-unit-container {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .counter-unit-panel {
+    width: calc(50% - 5px);
+    padding: 5px;
+    margin: 0;
+  }
+
+  .counter-unit-table {
+    font-size: 0.8em;
+  }
+
+  .counter-unit-table th,
+  .counter-unit-table td {
+    padding: 3px;
+  }
+
+  /* Reduce page title size */
+  .page-title {
+    font-size: 1.4em;
+    margin: 10px 0;
+  }
+
+  /* Adjust logo size */
+  .logo {
+    width: 30px;
+    top: 5px;
+    left: 5px;
+  }
+
+  /* Copyright section */
+  .copyright {
+    font-size: 0.7em;
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 360px) {
+  .panel-container {
+    flex-direction: column;
+  }
+
+  #left-panel, #right-panel {
+    width: 100%;
+  }
+
+  .select-box {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Landscape mode */
+@media screen and (max-height: 500px) {
+  .overlay {
+    overflow-y: scroll;
+  }
+
+  .panel-container {
+    flex-direction: row;
+  }
+
+  #left-panel, #right-panel {
+    width: calc(25% - 5px);
+  }
+
+  .middle {
+    width: 50%;
+  }
+
+  .select-boxes {
+    flex-direction: row;
+  }
+}
+
+/* Modify counter-unit-container styles */
+.counter-unit-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.counter-unit-panel {
+    flex: 1;
+    min-width: 280px; /* Minimum width to prevent squishing */
+    margin-bottom: 10px; /* Add bottom margin for wrapped items */
+}
+
+/* Add these new mobile landscape styles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .counter-unit-container {
+        flex-direction: row;
+        flex-wrap: nowrap; /* Prevent wrapping in landscape */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        padding-bottom: 10px; /* Space for scrollbar */
+        gap: 10px; /* Reduce gap in landscape */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+
+    .counter-unit-panel {
+        flex: 0 0 auto; /* Don't grow or shrink */
+        width: calc(50% - 5px); /* Fixed width calculation */
+        min-width: 250px; /* Smaller minimum width */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+
+    /* Make tables more compact in landscape */
+    .counter-unit-table th,
+    .counter-unit-table td {
+        padding: 4px 8px;
+        font-size: 0.9em;
+    }
+
+    /* Add horizontal scroll indicator */
+    .counter-unit-container::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .counter-unit-container::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+    }
+}
+
+/* Additional mobile portrait styles */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .counter-unit-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .counter-unit-panel {
+        width: 100%;
+        margin: 0;
+    }
+}
     </style>
   </head>
   <body>
@@ -1636,7 +1933,8 @@
 
           <!-- Add new combat stats panel -->
           <div class="combat-stats-panel" id="combat-stats-panel" style="display: none;">
-            <h2>Combat Stats</h2>
+            <h2 style="text-align: center; color: #ffd700; margin: 0 0 15px 0; font-size: 1.2em;">Combat Stats</h2>
+            <div id="combat-stats-content"></div>
           </div>
 
           <!-- Existing upgrades panel -->
@@ -1749,13 +2047,7 @@
           <div class="formula">
               Total Net Attack = MIN(1, Base Attack + Bonus Damage + Attack Upgrades − Opponent Armour − Opponent Upgrades)
           </div>
-          <div class="formula-components">
-              <p><strong>Base Attack:</strong> The unit's fundamental attack strength</p>
-              <p><strong>Bonus Damage:</strong> Additional damage against specific unit types (e.g., cavalry bonus)</p>
-              <p><strong>Attack Upgrades:</strong> Combat improvements from buildings like Blacksmith</p>
-              <p><strong>Opponent Armour:</strong> Target unit's inherent defensive value</p>
-              <p><strong>Opponent Upgrades:</strong> Target's defensive improvements</p>
-          </div>
+    
           <div class="exception-note">
               All units deal at least 1 damage per attack.<br>
               Exception: Units with 0 base attack (like Monks and Fishing Ships) can deal no damage
