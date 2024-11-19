@@ -1,0 +1,24 @@
+Maintenance & update
+
+1. Download full.json and  units_buildings_techs.json  https://github.com/HSZemi/aoe2dat/tree/master/data 
+   and place them in devops/data folder. 
+2. Check if excel files need to be updated if there are any changes to 
+	1. names of the classes (almost never), 
+	2. new units, 
+	3. new civ, 
+	4. changes in upgrades per unit and civ
+	5. new siege and dock units for the CounterCalcFilter
+
+2. cd to dir devops\data
+
+3. run .py files to create the json ouputs.
+	1. Create_Full_Attack_json
+	2. Create_Full_Armor_json
+	3. Create_Unit_vs_Unit_Matrix
+	4. Create_Counter_Units
+	5. Convert_Excel_Json
+
+4. copy the json files (except the full.json) from devops/data to website/static
+5. delete de full.json from devops/data as its too big to commit to GitHub
+6. update the readme and copyright part with the version number (see link above)
+7. manual deploy on render
