@@ -17,12 +17,20 @@ def load_json_data():
 
 load_json_data()
 
-# Modify get_units_from_excel to include both EXCLUDE and INCLUDE columns
-def get_units_from_excel():
-    df = pd.read_excel(os.path.join(os.path.dirname(__file__), 'static', 'UNITS.xlsx'), 
-                       usecols="A:G",  # Include both F (EXCLUDE) and G (INCLUDE)
-                       names=['UNIT_ID', 'NAME', 'BUILDING', 'CIV', 'SORTING', 'EXCLUDE', 'INCLUDE'])
-    return df.to_dict('records')
+def get_units_from_json():
+    with open(os.path.join(os.path.dirname(__file__), 'static', 'UNITS.json')) as f:
+        return [
+            {
+                'UNIT_ID': int(unit_id),
+                'NAME': data['NAME'],
+                'BUILDING': data['BUILDING'],
+                'CIV': data['CIV'],
+                'SORTING': float(data['SORTING']),
+                'EXCLUDE': [] if data['EXCLUDE'] is None else [int(x) for x in str(data['EXCLUDE']).split(';')],
+                'INCLUDE': [] if data['INCLUDE'] is None else [int(x) for x in str(data['INCLUDE']).split(';')]
+            }
+            for unit_id, data in json.load(f).items()
+        ]
 
 def load_json_file(filename):
     return json.load(open(os.path.join(os.path.dirname(__file__), 'static', filename)))
@@ -104,32 +112,27 @@ def get_top_opponents(attacker_id, limit=20):
 
 def get_civ_restrictions(civ_name):
     try:
-        # Read the CIV.xlsx file
-        df = pd.read_excel(os.path.join(os.path.dirname(__file__), 'static', 'CIV.xlsx'))
-        
-        # Find the row for the specified civilization
-        civ_row = df[df.iloc[:, 1] == civ_name]
-        
-        if civ_row.empty:
-            return []
-            
-        # Get restrictions from the third column
-        restrictions = civ_row.iloc[0, 2]
-        
-        if pd.isna(restrictions):
-            return []
-            
-        # Split restrictions by semicolon and return as list
-        return [r.strip() for r in str(restrictions).split(';') if r.strip()]
+        with open(os.path.join(os.path.dirname(__file__), 'static', 'CIV.json')) as f:
+            civ_data = json.load(f)
+            for civ in civ_data.values():
+                if civ['CIV'] == civ_name:
+                    restrictions = civ['Upgrades exclude']
+                    if restrictions is None:
+                        return []
+                    return [r.strip() for r in restrictions.split(';')]
+        return []
     except Exception as e:
         print(f"Error reading CIV restrictions: {e}")
         return []
 
 def get_civ_id(civ_name: str) -> Optional[int]:
     try:
-        df = pd.read_excel(os.path.join(os.path.dirname(__file__), 'static', 'CIV.xlsx'))
-        civ_row = df[df.iloc[:, 1] == civ_name]
-        return int(civ_row.iloc[0, 0]) if not civ_row.empty else None
+        with open(os.path.join(os.path.dirname(__file__), 'static', 'CIV.json')) as f:
+            civ_data = json.load(f)
+            for civ_id, civ in civ_data.items():
+                if civ['CIV'] == civ_name:
+                    return int(civ_id)
+        return None
     except Exception as e:
         print(f"Error getting civ ID: {e}")
         return None
@@ -151,31 +154,17 @@ def get_units():
     building_name = request.args.get('building')
     civ_name = request.args.get('civ')
     
-    # Read the units data
-    df = pd.read_excel(os.path.join(os.path.dirname(__file__), 'static', 'UNITS.xlsx'), 
-                      usecols="A:G",
-                      names=['UNIT_ID', 'NAME', 'BUILDING', 'CIV', 'SORTING', 'EXCLUDE', 'INCLUDE'])
+    # Get all units from JSON
+    units_data = get_units_from_json()
     
     # Filter by building
-    df = df[df['BUILDING'].str.upper() == building_name]
+    filtered_units = [u for u in units_data if u['BUILDING'].upper() == building_name]
     
     # Get civ ID
     civ_id = get_civ_id(civ_name) if civ_name else None
 
-    # Convert DataFrame to list of dictionaries, handling NaN values
-    filtered_units = []
-    for _, row in df.iterrows():
-        unit = {
-            'UNIT_ID': int(row['UNIT_ID']),
-            'NAME': str(row['NAME']),
-            'BUILDING': str(row['BUILDING']),
-            'CIV': str(row['CIV']),
-            'SORTING': float(row['SORTING']),
-            'EXCLUDE': [] if pd.isna(row['EXCLUDE']) else [int(x) for x in str(row['EXCLUDE']).split(';') if x.strip()],
-            'INCLUDE': [] if pd.isna(row['INCLUDE']) else [int(x) for x in str(row['INCLUDE']).split(';') if x.strip()]
-        }
-        
-        # Check if unit should be excluded based on both EXCLUDE and INCLUDE logic
+    # Process exclusions and inclusions
+    for unit in filtered_units:
         is_excluded = False
         if civ_id is not None:
             # Check exclusion list
@@ -188,9 +177,7 @@ def get_units():
                     is_excluded = True
         
         unit['isExcluded'] = is_excluded
-        # Add the unit regardless of exclusion status
-        filtered_units.append(unit)
-    
+
     return jsonify({'units': filtered_units, 'action': 'show_units_layer'})
 
 @app.route('/get-unit-details', methods=['GET'])
@@ -240,17 +227,18 @@ def get_civ_restrictions_route():
 
 @app.route('/get-unit-upgrades', methods=['GET'])
 def get_unit_upgrades():
-    unit_id = int(request.args.get('unit_id'))
-    df = pd.read_excel(os.path.join(os.path.dirname(__file__), 'static', 'UNITS.xlsx'), 
-                       usecols="A:H",  # Include the UPGRADES column
-                       names=['UNIT_ID', 'NAME', 'BUILDING', 'CIV', 'SORTING', 'EXCLUDE', 'INCLUDE', 'UPGRADES'])
-    unit_row = df[df['UNIT_ID'] == unit_id]
-    if unit_row.empty:
+    unit_id = str(request.args.get('unit_id'))
+    try:
+        with open(os.path.join(os.path.dirname(__file__), 'static', 'UNITS.json')) as f:
+            units_data = json.load(f)
+            unit_data = units_data.get(unit_id, {})
+            upgrades = unit_data.get('UPGRADES')
+            if not upgrades:
+                return jsonify([])
+            return jsonify([u.strip() for u in upgrades.split(';') if u.strip()])
+    except Exception as e:
+        print(f"Error getting unit upgrades: {e}")
         return jsonify([])
-    upgrades = unit_row.iloc[0]['UPGRADES']
-    if pd.isna(upgrades):
-        return jsonify([])
-    return jsonify([u.strip() for u in upgrades.split(';') if u.strip()])
 
-#if __name__ == "__main__":
-#   app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == "__main__":
+   app.run(host='0.0.0.0', port=5000, debug=True)
