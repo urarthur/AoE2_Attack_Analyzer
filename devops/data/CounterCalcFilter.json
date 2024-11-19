@@ -1,0 +1,192 @@
+[
+    {
+        "UNIT ID":331,
+        "NAME":"TREBUCHET",
+        "BUILDING":"CASTLE"
+    },
+    {
+        "UNIT ID":528,
+        "NAME":"HEAVY_DEMO_SHIP",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":527,
+        "NAME":"DEMOLITION_SHIP",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":1104,
+        "NAME":"DEMOLITION_RAFT",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":588,
+        "NAME":"SIEGE_ONAGER",
+        "BUILDING":"SIEGE WORKSHOP"
+    },
+    {
+        "UNIT ID":691,
+        "NAME":"ELITE_CANNON_GALLEON",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":420,
+        "NAME":"CANNON_GALLEON",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":550,
+        "NAME":"ONAGER",
+        "BUILDING":"SIEGE WORKSHOP"
+    },
+    {
+        "UNIT ID":831,
+        "NAME":"TURTLE_SHIP",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":832,
+        "NAME":"ELITE_TURTLE_SHIP",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":1709,
+        "NAME":"HOUFNICE",
+        "BUILDING":"SIEGE WORKSHOP"
+    },
+    {
+        "UNIT ID":36,
+        "NAME":"BOMBARD_CANNON",
+        "BUILDING":"SIEGE WORKSHOP"
+    },
+    {
+        "UNIT ID":280,
+        "NAME":"MANGONEL",
+        "BUILDING":"SIEGE WORKSHOP"
+    },
+    {
+        "UNIT ID":440,
+        "NAME":"PETARD",
+        "BUILDING":"CASTLE"
+    },
+    {
+        "UNIT ID":1263,
+        "NAME":"FLAMING_CAMEL",
+        "BUILDING":"SIEGE WORKSHOP"
+    },
+    {
+        "UNIT ID":542,
+        "NAME":"HEAVY_SCORPION",
+        "BUILDING":"Siege Units"
+    },
+    {
+        "UNIT ID":279,
+        "NAME":"SCORPION",
+        "BUILDING":"Siege Units"
+    },
+    {
+        "UNIT ID":422,
+        "NAME":"CAPPED_RAM",
+        "BUILDING":"Siege Units"
+    },
+    {
+        "UNIT ID":548,
+        "NAME":"SIEGE_RAM",
+        "BUILDING":"Siege Units"
+    },
+    {
+        "UNIT ID":1105,
+        "NAME":"SIEGE_TOWER",
+        "BUILDING":"Siege Units"
+    },
+    {
+        "UNIT ID":1258,
+        "NAME":"BATTERING_RAM",
+        "BUILDING":"Siege Units"
+    },
+    {
+        "UNIT ID":1744,
+        "NAME":"ARMORED_ELEPHANT",
+        "BUILDING":"Siege Units"
+    },
+    {
+        "UNIT ID":1746,
+        "NAME":"SIEGE_ELEPHANT",
+        "BUILDING":"Siege Units"
+    },
+    {
+        "UNIT ID":13,
+        "NAME":"FISHING_SHIP",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":17,
+        "NAME":"TRADE_COG",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":21,
+        "NAME":"WAR_GALLEY",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":250,
+        "NAME":"LONGBOAT",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":442,
+        "NAME":"GALLEON",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":529,
+        "NAME":"FIRE_SHIP",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":532,
+        "NAME":"FAST_FIRE_SHIP",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":533,
+        "NAME":"ELITE_LONGBOAT",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":539,
+        "NAME":"GALLEY",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":545,
+        "NAME":"TRANSPORT_SHIP",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":1004,
+        "NAME":"CARAVEL",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":1006,
+        "NAME":"ELITE_CARAVEL",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":1103,
+        "NAME":"FIRE_GALLEY",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":1750,
+        "NAME":"THIRISADAI",
+        "BUILDING":"DOCK"
+    },
+    {
+        "UNIT ID":1795,
+        "NAME":"DROMON",
+        "BUILDING":"DOCK"
+    }
+]

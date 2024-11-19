@@ -1,0 +1,1822 @@
+[
+    {
+        "UNIT ID":1800,
+        "NAME":"COMPOSITE_BOWMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Armenians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":1802,
+        "NAME":"ELITE_COMPOSITE_BOWMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Armenians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":725,
+        "NAME":"JAGUAR_WARRIOR",
+        "BUILDING":"CASTLE",
+        "CIV":"Aztecs",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":726,
+        "NAME":"ELITE_JAGUAR_WARRIOR",
+        "BUILDING":"CASTLE",
+        "CIV":"Aztecs",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1759,
+        "NAME":"RATHA_(RANGED)",
+        "BUILDING":"CASTLE",
+        "CIV":"Bengalis",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4; d4"
+    },
+    {
+        "UNIT ID":1761,
+        "NAME":"ELITE_RATHA_(RANGED)",
+        "BUILDING":"CASTLE",
+        "CIV":"Bengalis",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4;d4"
+    },
+    {
+        "UNIT ID":1007,
+        "NAME":"CAMEL_ARCHER",
+        "BUILDING":"CASTLE",
+        "CIV":"Berbers",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4;d4"
+    },
+    {
+        "UNIT ID":1009,
+        "NAME":"ELITE_CAMEL_ARCHER",
+        "BUILDING":"CASTLE",
+        "CIV":"Berbers",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4;d4"
+    },
+    {
+        "UNIT ID":1704,
+        "NAME":"HUSSITE_WAGON",
+        "BUILDING":"CASTLE",
+        "CIV":"Bohemians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1706,
+        "NAME":"ELITE_HUSSITE_WAGON",
+        "BUILDING":"CASTLE",
+        "CIV":"Bohemians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":8,
+        "NAME":"LONGBOWMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Britons",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":530,
+        "NAME":"ELITE_LONGBOWMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Britons",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":1225,
+        "NAME":"KONNIK",
+        "BUILDING":"CASTLE",
+        "CIV":"Bulgarians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1227,
+        "NAME":"ELITE_KONNIK",
+        "BUILDING":"CASTLE",
+        "CIV":"Bulgarians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1252,
+        "NAME":"DISMOUNTED_KONNIK",
+        "BUILDING":"CASTLE",
+        "CIV":"Bulgarians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1253,
+        "NAME":"DISMOUNTED_ELITE_KONNIK",
+        "BUILDING":"CASTLE",
+        "CIV":"Bulgarians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1655,
+        "NAME":"COUSTILLIER",
+        "BUILDING":"CASTLE",
+        "CIV":"Burgundians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1657,
+        "NAME":"ELITE_COUSTILLIER",
+        "BUILDING":"CASTLE",
+        "CIV":"Burgundians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1699,
+        "NAME":"FLEMISHPIKEMAN",
+        "BUILDING":"BARRACKS",
+        "CIV":"Burgundians",
+        "SORTING":4.2,
+        "EXCLUDE":null,
+        "INCLUDE":8,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1126,
+        "NAME":"ARAMBAI",
+        "BUILDING":"CASTLE",
+        "CIV":"Burmese",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c4; d4; b1; b2; b3; a4"
+    },
+    {
+        "UNIT ID":1128,
+        "NAME":"ELITE_ARAMBAI",
+        "BUILDING":"CASTLE",
+        "CIV":"Burmese",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c4; d4; b1; b2; b3; a4"
+    },
+    {
+        "UNIT ID":40,
+        "NAME":"CATAPHRACT",
+        "BUILDING":"CASTLE",
+        "CIV":"Byzantines",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":553,
+        "NAME":"ELITE_CATAPHRACT",
+        "BUILDING":"CASTLE",
+        "CIV":"Byzantines",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":232,
+        "NAME":"WOAD_RAIDER",
+        "BUILDING":"CASTLE",
+        "CIV":"Celts",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":534,
+        "NAME":"ELITE_WOAD_RAIDER",
+        "BUILDING":"CASTLE",
+        "CIV":"Celts",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":73,
+        "NAME":"CHU_KO_NU",
+        "BUILDING":"CASTLE",
+        "CIV":"Chinese",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":559,
+        "NAME":"ELITE_CHU_KO_NU",
+        "BUILDING":"CASTLE",
+        "CIV":"Chinese",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":1231,
+        "NAME":"KIPCHAK",
+        "BUILDING":"CASTLE",
+        "CIV":"Cumans",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4; d4"
+    },
+    {
+        "UNIT ID":1233,
+        "NAME":"ELITE_KIPCHAK",
+        "BUILDING":"CASTLE",
+        "CIV":"Cumans",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4; d4"
+    },
+    {
+        "UNIT ID":1735,
+        "NAME":"URUMI_SWORDSMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Dravidians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1737,
+        "NAME":"ELITE_URUMI_SWORDSMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Dravidians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1016,
+        "NAME":"SHOTEL_WARRIOR",
+        "BUILDING":"CASTLE",
+        "CIV":"Ethiopians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1018,
+        "NAME":"ELITE_SHOTEL_WARRIOR",
+        "BUILDING":"CASTLE",
+        "CIV":"Ethiopians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":281,
+        "NAME":"THROWING_AXEMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Franks",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":531,
+        "NAME":"ELITE_THROWING_AXEMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Franks",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":4,
+        "NAME":"ARCHER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"GENERIC",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":5,
+        "NAME":"HAND_CANNONEER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"GENERIC",
+        "SORTING":6.1,
+        "EXCLUDE":"1;2;3;6;7;9;11;12;13;15;21;28;29;31;32;34;36;38;39;44;45",
+        "INCLUDE":null,
+        "UPGRADES":"b1; b2; b3"
+    },
+    {
+        "UNIT ID":6,
+        "NAME":"ELITE_SKIRMISHER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"GENERIC",
+        "SORTING":2.2,
+        "EXCLUDE":43,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":7,
+        "NAME":"SKIRMISHER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"GENERIC",
+        "SORTING":2.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":13,
+        "NAME":"FISHING_SHIP",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":6.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":17,
+        "NAME":"TRADE_COG",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":6.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":21,
+        "NAME":"WAR_GALLEY",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4"
+    },
+    {
+        "UNIT ID":24,
+        "NAME":"CROSSBOWMAN",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"GENERIC",
+        "SORTING":1.2,
+        "EXCLUDE":"7;40",
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":36,
+        "NAME":"BOMBARD_CANNON",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":4.1,
+        "EXCLUDE":"1;2;3;6;7;11;12;13;17;21;22;24;25;28;31;32;36;38;39;41;45",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":38,
+        "NAME":"KNIGHT",
+        "BUILDING":"STABLE",
+        "CIV":"GENERIC",
+        "SORTING":1.1,
+        "EXCLUDE":"2;3;14;19;20;22;31",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":39,
+        "NAME":"CAVALRY_ARCHER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"GENERIC",
+        "SORTING":5.1,
+        "EXCLUDE":"2;3;5;14;19;22;31",
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4; d4"
+    },
+    {
+        "UNIT ID":74,
+        "NAME":"MILITIA",
+        "BUILDING":"BARRACKS",
+        "CIV":"GENERIC",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3; b4"
+    },
+    {
+        "UNIT ID":75,
+        "NAME":"MAN_AT_ARMS",
+        "BUILDING":"BARRACKS",
+        "CIV":"GENERIC",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3; b4"
+    },
+    {
+        "UNIT ID":77,
+        "NAME":"LONG_SWORDSMAN",
+        "BUILDING":"BARRACKS",
+        "CIV":"GENERIC",
+        "SORTING":1.3,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3; b4"
+    },
+    {
+        "UNIT ID":83,
+        "NAME":"VILLAGER",
+        "BUILDING":"TOWN_CENTER",
+        "CIV":"GENERIC",
+        "SORTING":1.0,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"e4"
+    },
+    {
+        "UNIT ID":93,
+        "NAME":"SPEARMAN",
+        "BUILDING":"BARRACKS",
+        "CIV":"GENERIC",
+        "SORTING":2.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":125,
+        "NAME":"MONK",
+        "BUILDING":"MONASTERY",
+        "CIV":"GENERIC",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":128,
+        "NAME":"TRADE_CART",
+        "BUILDING":"MARKET",
+        "CIV":"GENERIC",
+        "SORTING":1.0,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":279,
+        "NAME":"SCORPION",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":3.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":280,
+        "NAME":"MANGONEL",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":2.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":283,
+        "NAME":"CAVALIER",
+        "BUILDING":"STABLE",
+        "CIV":"GENERIC",
+        "SORTING":1.2,
+        "EXCLUDE":"2;3;14;19;20;22;31;37",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":331,
+        "NAME":"TREBUCHET",
+        "BUILDING":"CASTLE",
+        "CIV":"GENERIC",
+        "SORTING":3.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":358,
+        "NAME":"PIKEMAN",
+        "BUILDING":"BARRACKS",
+        "CIV":"GENERIC",
+        "SORTING":2.2,
+        "EXCLUDE":"19;43",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":359,
+        "NAME":"HALBERDIER",
+        "BUILDING":"BARRACKS",
+        "CIV":"GENERIC",
+        "SORTING":2.3,
+        "EXCLUDE":"2;4;19;20;23;30;32;34;37;43;45",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":420,
+        "NAME":"CANNON_GALLEON",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":4.3,
+        "EXCLUDE":"1;2;10;13;17;21;22;31;36",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":422,
+        "NAME":"CAPPED_RAM",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":1.2,
+        "EXCLUDE":"3;14;19;20",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":440,
+        "NAME":"PETARD",
+        "BUILDING":"CASTLE",
+        "CIV":"GENERIC",
+        "SORTING":2.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":441,
+        "NAME":"HUSSAR",
+        "BUILDING":"STABLE",
+        "CIV":"GENERIC",
+        "SORTING":2.3,
+        "EXCLUDE":"1;2;3;5;6;12;14;16;22;24;27;29;30;31;34;35;36;38;42;44;45",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":442,
+        "NAME":"GALLEON",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":1.3,
+        "EXCLUDE":"2;30",
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4"
+    },
+    {
+        "UNIT ID":448,
+        "NAME":"SCOUT_CAVALRY",
+        "BUILDING":"STABLE",
+        "CIV":"GENERIC",
+        "SORTING":2.1,
+        "EXCLUDE":"2;22;31",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":473,
+        "NAME":"TWO_HANDED_SWORDSMAN",
+        "BUILDING":"BARRACKS",
+        "CIV":"GENERIC",
+        "SORTING":1.4,
+        "EXCLUDE":"33;36",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3; b4"
+    },
+    {
+        "UNIT ID":474,
+        "NAME":"HEAVY_CAV_ARCHER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"GENERIC",
+        "SORTING":5.2,
+        "EXCLUDE":"1;2;3;5;8;14;19;212;23;29;31;35;38;41;45",
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4;d4"
+    },
+    {
+        "UNIT ID":492,
+        "NAME":"ARBALESTER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"GENERIC",
+        "SORTING":1.3,
+        "EXCLUDE":"4;7;8;9;11;13;16;17;18;19;20;21;27;33;36;39;40;41;42;43",
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":527,
+        "NAME":"DEMOLITION_SHIP",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":5.2,
+        "EXCLUDE":"26;36",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":528,
+        "NAME":"HEAVY_DEMO_SHIP",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":5.3,
+        "EXCLUDE":"2;3;5;7;8;9;13;15;17;20;22;23;24;25;26;27;28;29;34;36;39;41",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":529,
+        "NAME":"FIRE_SHIP",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":2.2,
+        "EXCLUDE":45,
+        "INCLUDE":null,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":532,
+        "NAME":"FAST_FIRE_SHIP",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":2.3,
+        "EXCLUDE":"1;5;7;9;11;12;15;19;20;21;37;35;43;44;45",
+        "INCLUDE":null,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":539,
+        "NAME":"GALLEY",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4"
+    },
+    {
+        "UNIT ID":542,
+        "NAME":"HEAVY_SCORPION",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":3.2,
+        "EXCLUDE":"2;8;10;13;20;21;23;26;27;30;34;35;37;40;44",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":545,
+        "NAME":"TRANSPORT_SHIP",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":6.3,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":546,
+        "NAME":"LIGHT_CAVALRY",
+        "BUILDING":"STABLE",
+        "CIV":"GENERIC",
+        "SORTING":2.2,
+        "EXCLUDE":"2;22;31;42",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":548,
+        "NAME":"SIEGE_RAM",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":1.3,
+        "EXCLUDE":"1;3;4;5;6;8;9;14;16;18;19;20;23;24;26;27;28;29;30;35;42;44",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":550,
+        "NAME":"ONAGER",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":2.2,
+        "EXCLUDE":"21;43",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":567,
+        "NAME":"CHAMPION",
+        "BUILDING":"BARRACKS",
+        "CIV":"GENERIC",
+        "SORTING":1.5,
+        "EXCLUDE":"7;15;19;21;25;29;31;33;36;41",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3; b4"
+    },
+    {
+        "UNIT ID":569,
+        "NAME":"PALADIN",
+        "BUILDING":"STABLE",
+        "CIV":"GENERIC",
+        "SORTING":1.3,
+        "EXCLUDE":"1;2;3;4;5;6;7;9;2;14;15;17;18;19;20;22;23;24;25;26;29;30;31;32;33;34;35;36;37;38;39;41;43;44;45",
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":588,
+        "NAME":"SIEGE_ONAGER",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":2.3,
+        "EXCLUDE":"1;3;4;5;6;8;9;10;12;16;18;19;20;21;22;23;24;26;27;28;31;33;34;35;36;40;41;43;44;45",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":691,
+        "NAME":"ELITE_CANNON_GALLEON",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":4.4,
+        "EXCLUDE":"1;2;6;7;9;10;11;12;13;15;16;17;18;19;21;22;28;30;31;32;34;36;38;39;42",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1103,
+        "NAME":"FIRE_GALLEY",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":2.1,
+        "EXCLUDE":45,
+        "INCLUDE":null,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":1104,
+        "NAME":"DEMOLITION_RAFT",
+        "BUILDING":"DOCK",
+        "CIV":"GENERIC",
+        "SORTING":5.1,
+        "EXCLUDE":"26;36",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1105,
+        "NAME":"SIEGE_TOWER",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":6.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"e4"
+    },
+    {
+        "UNIT ID":1258,
+        "NAME":"BATTERING_RAM",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"GENERIC",
+        "SORTING":1.1,
+        "EXCLUDE":"3;14;19;20",
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1803,
+        "NAME":"MONASPA",
+        "BUILDING":"CASTLE",
+        "CIV":"Georgians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1805,
+        "NAME":"ELITE_MONASPA",
+        "BUILDING":"CASTLE",
+        "CIV":"Georgians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":41,
+        "NAME":"HUSKARL",
+        "BUILDING":"CASTLE",
+        "CIV":"Goths",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":555,
+        "NAME":"ELITE_HUSKARL",
+        "BUILDING":"CASTLE",
+        "CIV":"Goths",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1741,
+        "NAME":"CHAKRAM_THROWER",
+        "BUILDING":"CASTLE",
+        "CIV":"Gurjaras",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1743,
+        "NAME":"ELITE_CHAKRAM_THROWER",
+        "BUILDING":"CASTLE",
+        "CIV":"Gurjaras",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1747,
+        "NAME":"GHULAM",
+        "BUILDING":"CASTLE",
+        "CIV":"Hindustanis",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1749,
+        "NAME":"ELITE_GHULAM",
+        "BUILDING":"CASTLE",
+        "CIV":"Hindustanis",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":755,
+        "NAME":"TARKAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Huns",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":757,
+        "NAME":"ELITE_TARKAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Huns",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":879,
+        "NAME":"KAMAYUK",
+        "BUILDING":"CASTLE",
+        "CIV":"Incas",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":881,
+        "NAME":"ELITE_KAMAYUK",
+        "BUILDING":"CASTLE",
+        "CIV":"Incas",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":866,
+        "NAME":"GENOESE_CROSSBOWMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Italians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":868,
+        "NAME":"ELITE_GENOESE_CROSSBOWMAN",
+        "BUILDING":"CASTLE",
+        "CIV":"Italians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":882,
+        "NAME":"CONDOTTIERO",
+        "BUILDING":"BARRACKS",
+        "CIV":"Italians",
+        "SORTING":4.1,
+        "EXCLUDE":null,
+        "INCLUDE":23,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":291,
+        "NAME":"SAMURAI",
+        "BUILDING":"CASTLE",
+        "CIV":"Japanese",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":560,
+        "NAME":"ELITE_SAMURAI",
+        "BUILDING":"CASTLE",
+        "CIV":"Japanese",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1120,
+        "NAME":"BALLISTA_ELEPHANT",
+        "BUILDING":"CASTLE",
+        "CIV":"Khmer",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"e1; e2 ;e3; a4; c4"
+    },
+    {
+        "UNIT ID":1122,
+        "NAME":"ELITE_BALLISTA_ELEPHANT",
+        "BUILDING":"CASTLE",
+        "CIV":"Khmer",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"e1; e2 ;e3; a4; c4"
+    },
+    {
+        "UNIT ID":827,
+        "NAME":"WAR_WAGON",
+        "BUILDING":"CASTLE",
+        "CIV":"Koreans",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4; d4"
+    },
+    {
+        "UNIT ID":829,
+        "NAME":"ELITE_WAR_WAGON",
+        "BUILDING":"CASTLE",
+        "CIV":"Koreans",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4; d4"
+    },
+    {
+        "UNIT ID":1234,
+        "NAME":"LEITIS",
+        "BUILDING":"CASTLE",
+        "CIV":"Lithuanians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1236,
+        "NAME":"ELITE_LEITIS",
+        "BUILDING":"CASTLE",
+        "CIV":"Lithuanians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":869,
+        "NAME":"MAGYAR_HUSZAR",
+        "BUILDING":"CASTLE",
+        "CIV":"Magyars",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":871,
+        "NAME":"ELITE_MAGYAR_HUSZAR",
+        "BUILDING":"CASTLE",
+        "CIV":"Magyars",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1123,
+        "NAME":"KARAMBIT_WARRIOR",
+        "BUILDING":"CASTLE",
+        "CIV":"Malay",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1125,
+        "NAME":"ELITE_KARAMBIT_WARRIOR",
+        "BUILDING":"CASTLE",
+        "CIV":"Malay",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1013,
+        "NAME":"GBETO",
+        "BUILDING":"CASTLE",
+        "CIV":"Malians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"d1;d2;d3"
+    },
+    {
+        "UNIT ID":1015,
+        "NAME":"ELITE_GBETO",
+        "BUILDING":"CASTLE",
+        "CIV":"Malians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"d1;d2;d3"
+    },
+    {
+        "UNIT ID":763,
+        "NAME":"PLUMED_ARCHER",
+        "BUILDING":"CASTLE",
+        "CIV":"Mayans",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":765,
+        "NAME":"ELITE_PLUMED_ARCHER",
+        "BUILDING":"CASTLE",
+        "CIV":"Mayans",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":11,
+        "NAME":"MANGUDAI",
+        "BUILDING":"CASTLE",
+        "CIV":"Mongols",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4; d4"
+    },
+    {
+        "UNIT ID":561,
+        "NAME":"ELITE_MANGUDAI",
+        "BUILDING":"CASTLE",
+        "CIV":"Mongols",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; c4; d4"
+    },
+    {
+        "UNIT ID":185,
+        "NAME":"SLINGER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"NON-GENERIC",
+        "SORTING":6.2,
+        "EXCLUDE":null,
+        "INCLUDE":22,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":207,
+        "NAME":"IMPERIAL_CAMEL_RIDER",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":5.4,
+        "EXCLUDE":null,
+        "INCLUDE":20,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":250,
+        "NAME":"LONGBOAT",
+        "BUILDING":"DOCK",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.3,
+        "EXCLUDE":null,
+        "INCLUDE":45,
+        "UPGRADES":"a1; a2; a3; a4"
+    },
+    {
+        "UNIT ID":329,
+        "NAME":"CAMEL_RIDER",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":5.2,
+        "EXCLUDE":null,
+        "INCLUDE":"4;10;12;13;15;19;20;30;33;34;41;43",
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":330,
+        "NAME":"HEAVY_CAMEL_RIDER",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":5.3,
+        "EXCLUDE":null,
+        "INCLUDE":"4;10;12;15;19;20;30;33;34;41;43",
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":533,
+        "NAME":"ELITE_LONGBOAT",
+        "BUILDING":"DOCK",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.4,
+        "EXCLUDE":null,
+        "INCLUDE":45,
+        "UPGRADES":"a1; a2; a3; a4"
+    },
+    {
+        "UNIT ID":751,
+        "NAME":"EAGLE_SCOUT",
+        "BUILDING":"BARRACKS",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.1,
+        "EXCLUDE":null,
+        "INCLUDE":"2;22;31",
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":752,
+        "NAME":"ELITE_EAGLE_WARRIOR",
+        "BUILDING":"BARRACKS",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.3,
+        "EXCLUDE":null,
+        "INCLUDE":"2;22;31",
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":753,
+        "NAME":"EAGLE_WARRIOR",
+        "BUILDING":"BARRACKS",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.2,
+        "EXCLUDE":null,
+        "INCLUDE":"2;22;31",
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":775,
+        "NAME":"MISSIONARY",
+        "BUILDING":"MONASTERY",
+        "CIV":"NON-GENERIC",
+        "SORTING":2.1,
+        "EXCLUDE":null,
+        "INCLUDE":40,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":831,
+        "NAME":"TURTLE_SHIP",
+        "BUILDING":"DOCK",
+        "CIV":"NON-GENERIC",
+        "SORTING":4.1,
+        "EXCLUDE":null,
+        "INCLUDE":26,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":832,
+        "NAME":"ELITE_TURTLE_SHIP",
+        "BUILDING":"DOCK",
+        "CIV":"NON-GENERIC",
+        "SORTING":4.2,
+        "EXCLUDE":null,
+        "INCLUDE":26,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":873,
+        "NAME":"ELEPHANT_ARCHER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.1,
+        "EXCLUDE":null,
+        "INCLUDE":"3;14;19",
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; d4"
+    },
+    {
+        "UNIT ID":875,
+        "NAME":"ELITE_ELEPHANT_ARCHER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.2,
+        "EXCLUDE":null,
+        "INCLUDE":"3;14;19",
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3; d4"
+    },
+    {
+        "UNIT ID":1010,
+        "NAME":"GENITOUR",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"NON-GENERIC",
+        "SORTING":4.1,
+        "EXCLUDE":null,
+        "INCLUDE":4,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":1012,
+        "NAME":"ELITE_GENITOUR",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"NON-GENERIC",
+        "SORTING":4.2,
+        "EXCLUDE":null,
+        "INCLUDE":4,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":1132,
+        "NAME":"BATTLE_ELEPHANT",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.1,
+        "EXCLUDE":null,
+        "INCLUDE":"3;9;14;25;29;44",
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1134,
+        "NAME":"ELITE_BATTLE_ELEPHANT",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.2,
+        "EXCLUDE":null,
+        "INCLUDE":"3;9;14;25;29;44",
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1155,
+        "NAME":"IMPERIAL_SKIRMISHER",
+        "BUILDING":"ARCHERY_RANGE",
+        "CIV":"NON-GENERIC",
+        "SORTING":2.3,
+        "EXCLUDE":null,
+        "INCLUDE":44,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":1263,
+        "NAME":"FLAMING_CAMEL",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"NON-GENERIC",
+        "SORTING":6.2,
+        "EXCLUDE":null,
+        "INCLUDE":41,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1370,
+        "NAME":"STEPPE_LANCER",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":4.1,
+        "EXCLUDE":null,
+        "INCLUDE":"13;32;41",
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1372,
+        "NAME":"ELITE_STEPPE_LANCER",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":4.2,
+        "EXCLUDE":null,
+        "INCLUDE":"13;32;41",
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1570,
+        "NAME":"XOLOTL_WARRIOR",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":6.3,
+        "EXCLUDE":null,
+        "INCLUDE":"2;22;31",
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1707,
+        "NAME":"WINGED_HUSSAR",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":2.3,
+        "EXCLUDE":null,
+        "INCLUDE":"34;27",
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1709,
+        "NAME":"HOUFNICE",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"NON-GENERIC",
+        "SORTING":4.2,
+        "EXCLUDE":null,
+        "INCLUDE":5,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1744,
+        "NAME":"ARMORED_ELEPHANT",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"NON-GENERIC",
+        "SORTING":5.1,
+        "EXCLUDE":null,
+        "INCLUDE":"3;14;19;20",
+        "UPGRADES":"a4; c1; c2; c3; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1746,
+        "NAME":"SIEGE_ELEPHANT",
+        "BUILDING":"SIEGE_WORKSHOP",
+        "CIV":"NON-GENERIC",
+        "SORTING":5.2,
+        "EXCLUDE":null,
+        "INCLUDE":"3;14;19;20",
+        "UPGRADES":"a4; c1; c2; c3; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1750,
+        "NAME":"THIRISADAI",
+        "BUILDING":"DOCK",
+        "CIV":"NON-GENERIC",
+        "SORTING":6.3,
+        "EXCLUDE":null,
+        "INCLUDE":14,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":1751,
+        "NAME":"SHRIVAMSHA_RIDER",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":6.1,
+        "EXCLUDE":null,
+        "INCLUDE":20,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1753,
+        "NAME":"ELITE_SHRIVAMSHA_RIDER",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":6.2,
+        "EXCLUDE":null,
+        "INCLUDE":20,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1755,
+        "NAME":"CAMEL_SCOUT",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":5.1,
+        "EXCLUDE":null,
+        "INCLUDE":20,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1793,
+        "NAME":"LEGIONARY",
+        "BUILDING":"BARRACKS",
+        "CIV":"NON-GENERIC",
+        "SORTING":4.3,
+        "EXCLUDE":null,
+        "INCLUDE":36,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1795,
+        "NAME":"DROMON",
+        "BUILDING":"DOCK",
+        "CIV":"NON-GENERIC",
+        "SORTING":6.4,
+        "EXCLUDE":null,
+        "INCLUDE":14,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1811,
+        "NAME":"WARRIOR_PRIEST",
+        "BUILDING":"MONASTERY",
+        "CIV":"NON-GENERIC",
+        "SORTING":3.1,
+        "EXCLUDE":null,
+        "INCLUDE":1,
+        "UPGRADES":null
+    },
+    {
+        "UNIT ID":1813,
+        "NAME":"SAVAR",
+        "BUILDING":"STABLE",
+        "CIV":"NON-GENERIC",
+        "SORTING":1.3,
+        "EXCLUDE":null,
+        "INCLUDE":33,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":239,
+        "NAME":"WAR_ELEPHANT",
+        "BUILDING":"CASTLE",
+        "CIV":"Persians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":558,
+        "NAME":"ELITE_WAR_ELEPHANT",
+        "BUILDING":"CASTLE",
+        "CIV":"Persians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1701,
+        "NAME":"OBUCH",
+        "BUILDING":"CASTLE",
+        "CIV":"Poles",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1703,
+        "NAME":"ELITE_OBUCH",
+        "BUILDING":"CASTLE",
+        "CIV":"Poles",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1001,
+        "NAME":"ORGAN_GUN",
+        "BUILDING":"CASTLE",
+        "CIV":"Portuguese",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1003,
+        "NAME":"ELITE_ORGAN_GUN",
+        "BUILDING":"CASTLE",
+        "CIV":"Portuguese",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a4"
+    },
+    {
+        "UNIT ID":1004,
+        "NAME":"CARAVEL",
+        "BUILDING":"DOCK",
+        "CIV":"Portuguese",
+        "SORTING":3.1,
+        "EXCLUDE":null,
+        "INCLUDE":35,
+        "UPGRADES":"a1; a2; a3; a4"
+    },
+    {
+        "UNIT ID":1006,
+        "NAME":"ELITE_CARAVEL",
+        "BUILDING":"DOCK",
+        "CIV":"Portuguese",
+        "SORTING":3.2,
+        "EXCLUDE":null,
+        "INCLUDE":35,
+        "UPGRADES":"a1; a2; a3; a4"
+    },
+    {
+        "UNIT ID":1790,
+        "NAME":"CENTURION",
+        "BUILDING":"CASTLE",
+        "CIV":"Romans",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1792,
+        "NAME":"ELITE_CENTURION",
+        "BUILDING":"CASTLE",
+        "CIV":"Romans",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":282,
+        "NAME":"MAMELUKE",
+        "BUILDING":"CASTLE",
+        "CIV":"Saracens",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":556,
+        "NAME":"ELITE_MAMELUKE",
+        "BUILDING":"CASTLE",
+        "CIV":"Saracens",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1658,
+        "NAME":"SERJEANT",
+        "BUILDING":"CASTLE",
+        "CIV":"Sicilians",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":1659,
+        "NAME":"ELITE_SERJEANT",
+        "BUILDING":"CASTLE",
+        "CIV":"Sicilians",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":876,
+        "NAME":"BOYAR",
+        "BUILDING":"CASTLE",
+        "CIV":"Slavs",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":878,
+        "NAME":"ELITE_BOYAR",
+        "BUILDING":"CASTLE",
+        "CIV":"Slavs",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":771,
+        "NAME":"CONQUISTADOR",
+        "BUILDING":"CASTLE",
+        "CIV":"Spanish",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"b1; b2; b3"
+    },
+    {
+        "UNIT ID":773,
+        "NAME":"ELITE_CONQUISTADOR",
+        "BUILDING":"CASTLE",
+        "CIV":"Spanish",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"b1; b2; b3"
+    },
+    {
+        "UNIT ID":1228,
+        "NAME":"KESHIK",
+        "BUILDING":"CASTLE",
+        "CIV":"Tatars",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":1230,
+        "NAME":"ELITE_KESHIK",
+        "BUILDING":"CASTLE",
+        "CIV":"Tatars",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; c4; e1; e2; e3"
+    },
+    {
+        "UNIT ID":25,
+        "NAME":"TEUTONIC_KNIGHT",
+        "BUILDING":"CASTLE",
+        "CIV":"Teutons",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":554,
+        "NAME":"ELITE_TEUTONIC_KNIGHT",
+        "BUILDING":"CASTLE",
+        "CIV":"Teutons",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":46,
+        "NAME":"JANISSARY",
+        "BUILDING":"CASTLE",
+        "CIV":"Turks",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"b1; b2; b3"
+    },
+    {
+        "UNIT ID":557,
+        "NAME":"ELITE_JANISSARY",
+        "BUILDING":"CASTLE",
+        "CIV":"Turks",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"b1; b2; b3"
+    },
+    {
+        "UNIT ID":1129,
+        "NAME":"RATTAN_ARCHER",
+        "BUILDING":"CASTLE",
+        "CIV":"Vietnamese",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":1131,
+        "NAME":"ELITE_RATTAN_ARCHER",
+        "BUILDING":"CASTLE",
+        "CIV":"Vietnamese",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"a1; a2; a3; a4; b1; b2; b3"
+    },
+    {
+        "UNIT ID":692,
+        "NAME":"BERSERK",
+        "BUILDING":"CASTLE",
+        "CIV":"Vikings",
+        "SORTING":1.1,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    },
+    {
+        "UNIT ID":694,
+        "NAME":"ELITE_BERSERK",
+        "BUILDING":"CASTLE",
+        "CIV":"Vikings",
+        "SORTING":1.2,
+        "EXCLUDE":null,
+        "INCLUDE":null,
+        "UPGRADES":"c1; c2; c3; d1; d2; d3"
+    }
+]
