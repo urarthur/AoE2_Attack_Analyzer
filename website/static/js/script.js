@@ -36,45 +36,28 @@ function calculateUnitsFor1000Resources(costs) {
     return Math.floor(1000 / totalCost);
 }
 
-function simulateBattle(attackerCount, defenderCount, attackerDamage, defenderHp, defenderDamage, attackerHp) {
-    // Arrays to track remaining HP of each unit
+function simulateBattle(attackerCount, defenderCount, attackerDamage, defenderHp, defenderBaseDamage, defenderBonusDamage, attackerHp) {
     let attackers = Array(attackerCount).fill(attackerHp);
     let defenders = Array(defenderCount).fill(defenderHp);
     let isAttackerTurn = true;
     
     while (attackers.length > 0 && defenders.length > 0) {
         if (isAttackerTurn) {
-            // Attackers turn - each attacker deals damage
             let totalDamage = attackers.length * attackerDamage;
-            
-            // Apply damage to defenders until damage is used up
             while (totalDamage > 0 && defenders.length > 0) {
-                // Apply damage to first defender
                 defenders[0] -= totalDamage;
-                
-                // If defender is dead, remove it
                 if (defenders[0] <= 0) {
                     defenders.shift();
                 }
-                
-                // All damage is used in one attack
                 break;
             }
         } else {
-            // Defenders turn - each defender deals damage
-            let totalDamage = defenders.length * defenderDamage;
-            
-            // Apply damage to attackers until damage is used up
+            let totalDamage = defenders.length * (defenderBaseDamage + defenderBonusDamage);
             while (totalDamage > 0 && attackers.length > 0) {
-                // Apply damage to first attacker
                 attackers[0] -= totalDamage;
-                
-                // If attacker is dead, remove it
                 if (attackers[0] <= 0) {
                     attackers.shift();
                 }
-                
-                // All damage is used in one attack
                 break;
             }
         }
@@ -575,6 +558,47 @@ function fetchUnitVsUnitData(attackerId, defenderId) {
         });
 }
 
+// Add this helper function to calculate attacker's armor upgrades
+function calculateAttackerArmorUpgrades(isPierceArmor) {
+    const grid = document.getElementById('attacker-upgrades-grid');
+    let armorBonus = 0;
+
+    const isUpgradeSelected = position => {
+        const upgrade = grid.querySelector(`[data-position="${position}"]`);
+        return upgrade && upgrade.classList.contains('selected');
+    };
+
+    // Calculate armor upgrades
+    if (isUpgradeSelected('b1')) armorBonus += 1;
+    if (isUpgradeSelected('b2')) armorBonus += 1;
+    if (isUpgradeSelected('d1')) armorBonus += 1;
+    if (isUpgradeSelected('d2')) armorBonus += 1;
+    if (isUpgradeSelected('e1')) armorBonus += 1;
+    if (isUpgradeSelected('e2')) armorBonus += 1;
+
+    if (isPierceArmor && isUpgradeSelected('b4')) {
+        armorBonus += 1;
+    }
+
+    if (isPierceArmor) {
+        if (isUpgradeSelected('b3')) armorBonus += 2;
+        if (isUpgradeSelected('d3')) armorBonus += 2;
+        if (isUpgradeSelected('d4')) armorBonus += 2;
+        if (isUpgradeSelected('e3')) armorBonus += 2;
+    } else {
+        if (isUpgradeSelected('b3')) armorBonus += 1;
+        if (isUpgradeSelected('d3')) armorBonus += 1;
+        if (isUpgradeSelected('d4')) armorBonus += 1;
+        if (isUpgradeSelected('e3')) armorBonus += 1;
+    }
+
+    // Add e4 armor bonus
+    const e4Bonus = getE4ArmorBonus(grid);
+    armorBonus += isPierceArmor ? e4Bonus.pierceArmor : e4Bonus.meleeArmor;
+
+    return armorBonus;
+}
+
 // Modify displayUnitVsUnitData to use updated HP values
 function displayUnitVsUnitData(data) {
     const panel = document.getElementById('unit-vs-unit-panel');
@@ -663,13 +687,36 @@ function displayUnitVsUnitData(data) {
             const attackerUnits = calculateUnitsFor1000Resources(attackerData.cost);
             const defenderUnits = calculateUnitsFor1000Resources(defenderData.cost);
 
-            // Simulate the battle
+            // Calculate defender's attack upgrades based on attack type
+            const defenderHasBasePierce = defenderData.attack_type === 'Pierce';
+            const defenderAttackUpgrades = defenderHasBasePierce ? 
+                countPierceAttackUpgradesForDefender() : 
+                countMeleeAttackUpgradesForDefender();
+
+            // Calculate attacker's armor upgrades
+            const attackerArmorBonus = calculateAttackerArmorUpgrades(defenderHasBasePierce);
+
+            // Calculate defender's total attack including upgrades and attacker's armor
+            const defenderBaseAttack = defenderData.attack;
+            const defenderTotalAttack = Math.max(1, 
+                defenderBaseAttack + defenderAttackUpgrades - 
+                (attackerData.melee_armor + attackerArmorBonus)
+            );
+
+            // Calculate defender's bonus damage against attacker
+            const defenderBonusDamage = data.defender_matching_classes
+                .filter(cls => cls["Attack Class Name"] !== "Base Pierce" && 
+                             cls["Attack Class Name"] !== "Base Melee")
+                .reduce((sum, cls) => sum + cls["Attack Amount"], 0);
+
+            // Simulate battle with bonus damage included
             const battleResult = simulateBattle(
-                attackerUnits, 
+                attackerUnits,
                 defenderUnits,
                 totalNetAttack,
                 defenderHp,
-                Math.max(1, defenderData.attack - attackerData.melee_armor), // Add armor consideration
+                defenderTotalAttack,
+                defenderBonusDamage,
                 attackerHp
             );
 
@@ -719,6 +766,38 @@ function displayUnitVsUnitData(data) {
 
     panel.style.display = 'block';
 }
+
+// Add these helper functions for defender's attack upgrades
+function countPierceAttackUpgradesForDefender() {
+    const grid = document.getElementById('defender-upgrades-grid');
+    let count = 0;
+    
+    // Each a1-a4 upgrade gives +1 pierce attack
+    for (let i = 1; i <= 4; i++) {
+        const upgrade = grid.querySelector(`[data-position="a${i}"]`);
+        if (upgrade && upgrade.classList.contains('defender-selected')) {
+            count += 1;
+        }
+    }
+    return count;
+}
+
+function countMeleeAttackUpgradesForDefender() {
+    const grid = document.getElementById('defender-upgrades-grid');
+    let count = 0;
+    
+    // c1 and c2 give +1, c3 gives +2
+    const c1 = grid.querySelector('[data-position="c1"]');
+    const c2 = grid.querySelector('[data-position="c2"]');
+    const c3 = grid.querySelector('[data-position="c3"]');
+
+    if (c1 && c1.classList.contains('defender-selected')) count += 1;
+    if (c2 && c2.classList.contains('defender-selected')) count += 1;
+    if (c3 && c3.classList.contains('defender-selected')) count += 2;
+
+    return count;
+}
+
 function fetchCounterUnitDetails(unitId) {
     fetch(`/get-counter-unit-details?unit_id=${unitId}`)
         .then(response => response.json())
@@ -764,8 +843,9 @@ function displayCounterUnitDetails(details) {
 
     content += `
         <div class="counter-unit-panel" style="margin-left: ${selectedAttacker ? 'auto' : '0'};">
-            <div style="display: flex; align-items: center; gap: 30px;">
-                <h2 style="text-align: center; flex: 1; margin: 0;">${defenderName.replace(/_/g, ' ')}     </h2>
+            <div style="display: flex; align-items: center;">
+                <h2 style="text-align: center; margin: 0; flex: 1;">${defenderName.replace(/_/g, ' ')}</h2>
+                <span style="margin: 0 15px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 <div>
                     <input type="checkbox" id="excludeSiege" checked>
                     <span class="tooltip-icon" data-tooltip="Exclude Siege & Dock Units">?</span>
@@ -1258,4 +1338,185 @@ function switchUnits() {
         fetchTopOpponents(selectedAttacker);
         loadUpgrades();
     }
+}
+
+// Add helper function to determine unit's attack type
+function isUnitPierceAttacker(unitAttacks) {
+    return unitAttacks.some(attack => attack["Attack Class Name"] === "Base Pierce");
+}
+
+// Update displayUnitVsUnitData function to properly determine defender's attack type
+function displayUnitVsUnitData(data) {
+    const panel = document.getElementById('unit-vs-unit-panel');
+    const content = document.getElementById('unit-vs-unit-content');
+
+    if (data.error) {
+        content.innerHTML = `<p class="error-message">${data.error}</p>`;
+        return;
+    }
+
+    const hasBasePierce = data.matching_classes.some(cls => 
+        cls["Attack Class Name"] === "Base Pierce" && cls["Attack Amount"] !== 0
+    );
+    
+    const attackUpgradeBonus = hasBasePierce ? countPierceAttackUpgrades() : countMeleeAttackUpgrades();
+    const armorUpgradeBonus = calculateDefenderArmorUpgrades(hasBasePierce);
+    const armorType = hasBasePierce ? "Pierce Armor" : "Melee Armor";
+
+    const baseAttacks = data.matching_classes.filter(cls => 
+        cls["Attack Class Name"] === "Base Pierce" || 
+        cls["Attack Class Name"] === "Base Melee"
+    );
+
+    const bonusAttacks = data.matching_classes.filter(cls => 
+        cls["Attack Class Name"] !== "Base Pierce" && 
+        cls["Attack Class Name"] !== "Base Melee" &&
+        cls["Attack Amount"] !== 0
+    );
+
+    const baseAttackTotal = baseAttacks.reduce((sum, attack) => sum + attack["Attack Amount"], 0);
+    const bonusAttackTotal = bonusAttacks.reduce((sum, attack) => sum + attack["Attack Amount"], 0);
+
+    const baseAttacksHTML = baseAttacks.map(cls => `
+        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
+            <span style="color: #fff;">${cls["Attack Class Name"]}:</span>
+            <span style="color: #00ff00; margin-left: 10px;">${cls["Attack Amount"]}</span>
+        </div>
+    `).join('');
+
+    const bonusAttacksHTML = bonusAttacks.length > 0 ? `
+        <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Bonus Damage</h3>
+        ${bonusAttacks.map(cls => `
+            <div style="display: flex; justify-content: space-between; margin: 2px 0;">
+                <span style="color: #fff;">${cls["Attack Class Name"]}:</span>
+                <span style="color: #00ff00; margin-left: 10px;">${cls["Attack Amount"]}</span>
+            </div>
+        `).join('')}
+    ` : '';
+
+    // Fetch both attacker and defender details for resource battle simulation
+    Promise.all([
+        fetch(`/get-unit-details?unit_id=${selectedAttacker}`),
+        fetch(`/get-unit-details?unit_id=${selectedDefender}`)
+    ])
+        .then(responses => Promise.all(responses.map(r => r.json())))
+        .then(([attackerData, defenderData]) => {
+            const attackerGrid = document.getElementById('attacker-upgrades-grid');
+            const defenderGrid = document.getElementById('defender-upgrades-grid');
+            const attackerHpBonus = getHpBonus(attackerGrid);
+            const defenderHpBonus = getHpBonus(defenderGrid);
+
+            const attackerHp = attackerData.hit_points + attackerHpBonus;  // Changed from multiplication to addition
+            const defenderHp = defenderData.hit_points + defenderHpBonus;  // Changed from multiplication to addition
+
+            const baseArmorValue = hasBasePierce ? 
+                defenderData.pierce_armor : 
+                defenderData.melee_armor;
+            
+            const totalArmorValue = baseArmorValue + armorUpgradeBonus;
+            
+            // Check if base attack is 0 (for special units like monks)
+            const hasZeroAttack = baseAttackTotal === 0 && bonusAttackTotal === 0;
+            const totalNetAttack = hasZeroAttack ? 
+                0 : 
+                Math.max(1, (baseAttackTotal + attackUpgradeBonus) + bonusAttackTotal - totalArmorValue);
+
+            // For units with zero attack, set hits to kill to Infinity or display "N/A"
+            const hitsToKill = hasZeroAttack ? 
+                "N/A" : 
+                Math.ceil(defenderHp / totalNetAttack);
+
+            const attackerName = document.querySelector('#attacker-box span')?.textContent || 'Attacker';
+            const defenderName = document.querySelector('#defender-box span')?.textContent || 'Defender';
+
+            // Calculate units per 1000 resources
+            const attackerUnits = calculateUnitsFor1000Resources(attackerData.cost);
+            const defenderUnits = calculateUnitsFor1000Resources(defenderData.cost);
+
+            // First determine if defender uses pierce or melee attack
+            fetch(`/get-unit-attacks?unit_id=${selectedDefender}`)
+                .then(response => response.json())
+                .then(defenderAttacks => {
+                    const defenderHasBasePierce = defenderAttacks.some(
+                        attack => attack["Attack Class Name"] === "Base Pierce"
+                    );
+
+                    // Calculate defender's attack upgrades based on attack type
+                    const defenderAttackUpgrades = defenderHasBasePierce ? 
+                        countPierceAttackUpgradesForDefender() : 
+                        countMeleeAttackUpgradesForDefender();
+
+                    // Calculate attacker's armor upgrades for the correct type
+                    const attackerArmorBonus = calculateAttackerArmorUpgrades(!defenderHasBasePierce);
+
+                    // Calculate defender's total attack including upgrades and attacker's armor
+                    const defenderBaseAttack = defenderData.attack;
+                    const defenderTotalAttack = Math.max(1, 
+                        defenderBaseAttack + defenderAttackUpgrades - 
+                        (attackerData.melee_armor + attackerArmorBonus)
+                    );
+
+                    // Calculate defender's bonus damage against attacker
+                    const defenderBonusDamage = data.defender_matching_classes
+                        .filter(cls => cls["Attack Class Name"] !== "Base Pierce" && 
+                                     cls["Attack Class Name"] !== "Base Melee")
+                        .reduce((sum, cls) => sum + cls["Attack Amount"], 0);
+
+                    // Simulate battle with bonus damage included
+                    const battleResult = simulateBattle(
+                        attackerUnits,
+                        defenderUnits,
+                        totalNetAttack,
+                        defenderHp,
+                        defenderTotalAttack,
+                        defenderBonusDamage,
+                        attackerHp
+                    );
+
+                    // Update combat stats panel
+                    const combatStatsPanel = document.getElementById('combat-stats-panel');
+                    const combatStatsContent = document.getElementById('combat-stats-content');
+                    combatStatsContent.innerHTML = `
+                        <div style="text-align: left; padding: 10px; font-size: 0.9em;">
+                            • <span style="color: #ffd700;">${attackerName}</span> kills <span style="color: #ffd700;">${defenderName}</span> after <span style="color: #00ff00;">${hitsToKill}</span> <span style="color: white;">${hitsToKill === 1 ? 'attack' : 'attacks'}</span>
+                            <br>
+                            • It takes <span style="color: #00ff00;">${Math.ceil(defenderHp / totalNetAttack)}</span> <span style="color: #ffd700;">${attackerName}</span> to one-shot <span style="color: #ffd700;">${defenderName}</span>
+                            <br>
+                            • On equal <span style="color: #ff4444;">1000</span> resources, <span style="color: #00ff00;">${attackerUnits}</span> <span style="color: #ffd700;">${attackerName}</span> vs <span style="color: #00ff00;">${defenderUnits}</span> <span style="color: #ffd700;">${defenderName}</span>, 
+                              ${battleResult.winner === 'attacker' ? `<span style="color: #ffd700;">${attackerName}</span>` : `<span style="color: #ffd700;">${defenderName}</span>`} <span style="color: white;">wins with</span> 
+                              <span style="color: #00ff00;">${battleResult.remaining}</span> <span style="color: white;">units remaining</span>
+                        </div>
+                    `;
+
+                    content.innerHTML = `
+            <div style="position: relative;">
+                <div class="help-icon" onclick="openPopup('explanation-popup')" style="position: absolute; top: -30px; right: 0; cursor: pointer; color: #ffd700; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;">?</div>
+                            <h3 style="color: #ffd700; margin: 20px 0 10px 0; text-align: left;">Attack</h3>
+                            ${baseAttacksHTML}
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: #fff;">Attack Upgrades:</span>
+                                <span style="color: #00ff00; margin-left: 10px;">${attackUpgradeBonus}</span>
+                            </div>
+                            ${bonusAttacksHTML}
+                            <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Opponent Armour</h3>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: #fff;">${armorType}:</span>
+                                <span style="color: #ff4444; margin-left: 10px;">${baseArmorValue}</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: #fff;">Armour Upgrades:</span>
+                                <span style="color: #ff4444; margin-left: 10px;">${armorUpgradeBonus}</span>
+                            </div>
+                            <div style="margin-top: 15px; background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; border: 1px solid rgba(255, 215, 0, 0.3);">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span style="color: #ffd700; font-weight: bold; font-size: 1.1em;">Total Net Attack:</span>
+                                    <span style="color: #00ff00; font-weight: bold; font-size: 1.1em; margin-left: 10px;">${totalNetAttack}</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+        });
+
+    panel.style.display = 'block';
 }

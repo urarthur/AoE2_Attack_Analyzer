@@ -50,37 +50,38 @@ def get_unit_armours_from_json(unit_id):
     return unit["Armours"] if unit else None
 
 def get_unit_vs_unit_data(attacker_id, defender_id):
+    # Get attacker's data against defender
     attacker_data = unit_vs_unit_data.get(str(attacker_id), {})
-    defender_data = attacker_data.get('Opponents', {}).get(str(defender_id), {})
+    defender_vs_attacker_data = unit_vs_unit_data.get(str(defender_id), {})
+    
+    # Get both attack data
+    attacker_vs_defender = attacker_data.get('Opponents', {}).get(str(defender_id), {})
+    defender_vs_attacker = defender_vs_attacker_data.get('Opponents', {}).get(str(attacker_id), {})
     
     # Get defender's armor data
     defender_armors = get_unit_armours_from_json(defender_id)
     
-    # Process matching classes to include both attack and armor values
+    # Process matching classes for attacker
     matching_classes = []
-    for cls in defender_data.get('Matching Classes', []):
+    for cls in attacker_vs_defender.get('Matching Classes', []):
         attack_class_name = cls['Attack Class Name']
         attack_amount = cls['Attack Amount']
         
-        # Don't modify base pierce or base melee calculations
         if attack_class_name in ["Base Pierce", "Base Melee"]:
             matching_classes.append({
                 'Attack Class Name': attack_class_name,
                 'Attack Amount': attack_amount
             })
             continue
-        
-        # For bonus damages, find matching armor class
+            
         matching_armor = next(
             (armor for armor in defender_armors 
              if armor['Armour Class Name'] == attack_class_name),
             None
         )
         
-        # If there's a matching armor class, calculate the net bonus
         if matching_armor:
             armor_amount = matching_armor['Armour Amount']
-            # Negative armor increases damage, positive armor reduces it
             net_amount = attack_amount - armor_amount
         else:
             net_amount = attack_amount
@@ -92,12 +93,24 @@ def get_unit_vs_unit_data(attacker_id, defender_id):
             'Armor Amount': matching_armor['Armour Amount'] if matching_armor else 0
         })
     
+    # Process matching classes for defender
+    defender_matching_classes = []
+    for cls in defender_vs_attacker.get('Matching Classes', []):
+        attack_class_name = cls['Attack Class Name']
+        attack_amount = cls['Attack Amount']
+        defender_matching_classes.append({
+            'Attack Class Name': attack_class_name,
+            'Attack Amount': attack_amount
+        })
+    
     return {
         'attacker_name': attacker_data.get('Unit Name', 'Unknown'),
-        'defender_name': defender_data.get('Opponent Name', 'Unknown'),
-        'total_attack_amount': defender_data.get('Total Attack Amount', 0),
+        'defender_name': attacker_vs_defender.get('Opponent Name', 'Unknown'),
+        'total_attack_amount': attacker_vs_defender.get('Total Attack Amount', 0),
         'matching_classes': matching_classes,
-        'notes': defender_data.get('Notes', '')
+        'defender_matching_classes': defender_matching_classes,
+        'defender_total_attack': defender_vs_attacker.get('Total Attack Amount', 0),
+        'notes': attacker_vs_defender.get('Notes', '')
     }
 
 def get_top_opponents(attacker_id, limit=20):
@@ -241,4 +254,4 @@ def get_unit_upgrades():
         return jsonify([])
 
 #if __name__ == "__main__":
-# app.run(host='0.0.0.0', port=5000, debug=True)
+ #app.run(host='0.0.0.0', port=5000, debug=True)

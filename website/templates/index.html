@@ -92,6 +92,9 @@
         position: relative; /* Add this line */
         width: calc(100% - 604px); /* Keep this calc but it will adjust with panel sizes */
         margin: 0 2px;
+        flex: 1;  /* Allow middle section to take remaining space */
+        min-width: 500px;  /* Minimum width */
+        margin: 0 20px;
       }
 
       .select-boxes {
@@ -504,6 +507,7 @@
         border: 2px solid #4c3830;
         border-radius: 10px;
         overflow: visible;
+        white-space: nowrap;  /* Prevent text wrapping */
       }
 
       .unit-stats h2 {
@@ -536,6 +540,8 @@
         word-break: break-word;  /* Allow words to break */
         min-height: fit-content;  /* Ensure minimum height fits content */
         text-align: left;  /* Add this to ensure content is left-aligned */
+        white-space: nowrap;  /* Prevent text wrapping */
+        gap: 20px;  /* Add space between label and value */
       }
 
       .unit-stats-item strong {
@@ -547,6 +553,7 @@
         text-align: right;
         overflow-wrap: break-word;
         word-wrap: break-word;
+        flex-shrink: 0;  /* Prevent value from shrinking */
       }
 
       .error-message {
@@ -854,9 +861,11 @@
       }
 
       .panel {
-        width: 280px;  /* Reduced from 350px */
-        min-width: 280px;  /* Reduced from 350px */
-        margin: 0 10px;  /* Reduced from 20px */
+        width: auto;  /* Changed from fixed width */
+        min-width: 280px;  /* Minimum width */
+        max-width: 400px;  /* Maximum width */
+        flex: 0 1 auto;  /* Don't grow, can shrink, auto basis */
+        margin: 0 10px;
         display: none;
         flex-direction: column;
         height: auto;  /* Allow height to grow */
@@ -965,10 +974,11 @@
         width: 100%;
         gap: 0;  /* Remove gap between panels */
         padding: 0;  /* Remove padding */
+        overflow-x: auto;  /* Allow horizontal scrolling if needed */
       }
 
       /* Add media queries for smaller screens */
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1400px) {
         .middle {
           width: min(calc(100% - 400px), 800px);
         }
@@ -986,6 +996,16 @@
         .select-box {
           width: 120px;
           height: 120px;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        .panel {
+          min-width: 250px;
+        }
+        
+        .middle {
+          min-width: 450px;
         }
       }
 
