@@ -2065,12 +2065,14 @@
       </div>
       <div class="formula-explanation">
           <div class="formula">
-              Total Net Attack = MIN(1, Base Attack + Bonus Damage + Attack Upgrades − Opponent Armour − Opponent Upgrades)
+                Total Net Attack = MAX(1, Attack + Bonus damage)<br>
+                Attack = MAX(0, Base Attack + Attack upgrades - Base Armor - Armor upgrades)<br>
+                Bonus damage = MAX(0,Attack class  - Armor class)
           </div>
     
           <div class="exception-note">
               All units deal at least 1 damage per attack.<br>
-              Exception: Units with 0 base attack (like Monks and Fishing Ships) can deal no damage
+              Exception: Units with 0 base attack (like Monks and Fishing Ships) can deal no damagees)
           </div>
           <p>
               For a more detailed explanation of the damage calculation, please visit<br>
