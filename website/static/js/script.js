@@ -671,9 +671,8 @@ function displayUnitVsUnitData(data) {
             
             // Check if base attack is 0 (for special units like monks)
             const hasZeroAttack = baseAttackTotal === 0 && bonusAttackTotal === 0;
-            const totalNetAttack = hasZeroAttack ? 
-                0 : 
-                Math.max(1, (baseAttackTotal + attackUpgradeBonus) + bonusAttackTotal - totalArmorValue);
+            const baseAttackComponent = baseAttackTotal === 0 ? 0 : Math.max(0, baseAttackTotal + attackUpgradeBonus - totalArmorValue);
+            const totalNetAttack = baseAttackComponent + bonusAttackTotal;
 
             // For units with zero attack, set hits to kill to Infinity or display "N/A"
             const hitsToKill = hasZeroAttack ? 
@@ -744,8 +743,6 @@ function displayUnitVsUnitData(data) {
                         <span style="color: #fff;">Attack Upgrades:</span>
                         <span style="color: #00ff00; margin-left: 10px;">${attackUpgradeBonus}</span>
                     </div>
-                    ${bonusAttacksHTML}
-                    <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Opponent Armour</h3>
                     <div style="display: flex; justify-content: space-between;">
                         <span style="color: #fff;">${armorType}:</span>
                         <span style="color: #ff4444; margin-left: 10px;">${baseArmorValue}</span>
@@ -754,6 +751,7 @@ function displayUnitVsUnitData(data) {
                         <span style="color: #fff;">Armour Upgrades:</span>
                         <span style="color: #ff4444; margin-left: 10px;">${armorUpgradeBonus}</span>
                     </div>
+                    ${bonusAttacksHTML}
                     <div style="margin-top: 15px; background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; border: 1px solid rgba(255, 215, 0, 0.3);">
                         <div style="display: flex; justify-content: space-between;">
                             <span style="color: #ffd700; font-weight: bold; font-size: 1.1em;">Total Net Attack:</span>
@@ -1417,9 +1415,8 @@ function displayUnitVsUnitData(data) {
             
             // Check if base attack is 0 (for special units like monks)
             const hasZeroAttack = baseAttackTotal === 0 && bonusAttackTotal === 0;
-            const totalNetAttack = hasZeroAttack ? 
-                0 : 
-                Math.max(1, (baseAttackTotal + attackUpgradeBonus) + bonusAttackTotal - totalArmorValue);
+            const baseAttackComponent = baseAttackTotal === 0 ? 0 : Math.max(0, baseAttackTotal + attackUpgradeBonus - totalArmorValue);
+            const totalNetAttack = baseAttackComponent + bonusAttackTotal;
 
             // For units with zero attack, set hits to kill to Infinity or display "N/A"
             const hitsToKill = hasZeroAttack ? 
@@ -1497,8 +1494,6 @@ function displayUnitVsUnitData(data) {
                                 <span style="color: #fff;">Attack Upgrades:</span>
                                 <span style="color: #00ff00; margin-left: 10px;">${attackUpgradeBonus}</span>
                             </div>
-                            ${bonusAttacksHTML}
-                            <h3 style="color: #ffd700; margin: 10px 0; text-align: left;">Opponent Armour</h3>
                             <div style="display: flex; justify-content: space-between;">
                                 <span style="color: #fff;">${armorType}:</span>
                                 <span style="color: #ff4444; margin-left: 10px;">${baseArmorValue}</span>
@@ -1507,6 +1502,7 @@ function displayUnitVsUnitData(data) {
                                 <span style="color: #fff;">Armour Upgrades:</span>
                                 <span style="color: #ff4444; margin-left: 10px;">${armorUpgradeBonus}</span>
                             </div>
+                            ${bonusAttacksHTML}
                             <div style="margin-top: 15px; background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; border: 1px solid rgba(255, 215, 0, 0.3);">
                                 <div style="display: flex; justify-content: space-between;">
                                     <span style="color: #ffd700; font-weight: bold; font-size: 1.1em;">Total Net Attack:</span>
